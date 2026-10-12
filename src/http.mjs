@@ -206,7 +206,7 @@ export function createHttp(options = {}) {
 
   /**
    * 取 JSON。与 fetchText 的唯一差别：404 抛错。
-   * 搜索端点返回 404 意味着端点没了，把它读成「今天没有新岗位」会静默漏掉整个源。
+   * 搜索端点返回 404 意味着端点没了，把它读成「今天没有新职位」会静默漏掉整个源。
    */
   async function fetchJson(url, opts = {}) {
     return request(url, opts, async (res, u, attempts) => {

@@ -2,10 +2,10 @@
 //
 // 两层的分工（SPEC §6.3）：
 //   1. 按 id —— 跨关键词、跨页的重复。id 一定是精确的。
-//   2. 按 fingerprint —— JobsDB 上同一岗位 repost 会拿到新 job id，
-//      中介也会重复发同一岗位。指纹用「公司 + 归一化标题 + 地点」识别它。
+//   2. 按 fingerprint —— JobsDB 上同一职位 repost 会拿到新 job id，
+//      中介也会重复发同一职位。指纹用「公司 + 归一化标题 + 地点」识别它。
 //
-// 指纹命中时保留首次的 firstSeenAt，不重新点亮 NEW 徽章 —— 一个半年前的岗位
+// 指纹命中时保留首次的 firstSeenAt，不重新点亮 NEW 徽章 —— 一个半年前的职位
 // repost 后 postedAt 看起来是新的，用 postedAt 判新旧会持续产生假 NEW。
 
 import { createHash } from 'node:crypto';
@@ -29,7 +29,7 @@ function squeeze(value) {
 
 /**
  * 轻量去复数：只砍长度 > 3 且非 -ss 结尾的尾随 s。
- * 目的是让 "Trainee Solicitors" 与 "Trainee Solicitor" 指纹相同（同一岗位的
+ * 目的是让 "Trainee Solicitors" 与 "Trainee Solicitor" 指纹相同（同一职位的
  * 常见 repost 变体），同时不碰 "funds" 之外的短词。
  */
 function stripPlural(token) {
@@ -62,7 +62,7 @@ export function normalizeTitle(title) {
  * 公司名归一化：只做大小写与标点。
  *
  * 刻意**不**消除 "Co" / "Company" / "Ltd" / "LLP" 之类的后缀 —— 两家不同的所
- * 名字相近时，误合会让一条真实岗位消失，比少识别一次 repost 更糟。
+ * 名字相近时，误合会让一条真实职位消失，比少识别一次 repost 更糟。
  */
 export function normalizeCompany(company) {
   return squeeze(fold(company));
@@ -102,7 +102,7 @@ function newestDate(a, b) {
 }
 
 function keyOf(source, fingerprint) {
-  // 指纹按源隔离：不同来源的同名岗位是两条 Listing，各自保留各自的 URL。
+  // 指纹按源隔离：不同来源的同名职位是两条 Listing，各自保留各自的 URL。
   // 跨源合并会丢掉一个可点的原始职位页，代价大于收益。
   return `${source ?? ''}::${fingerprint}`;
 }
@@ -163,7 +163,7 @@ function createRecord(incoming, fingerprint, nowIso, silentNew) {
  * @param {Date|string} opts.now 本次运行时刻
  * @param {boolean} [opts.silentNew] 静默期：入库但不点亮 NEW
  * @param {Set<string>} [opts.completeSources] 本次真正跑完的源。
- *   **只有跑完的源才参与「下架」判定** —— 源失败时把它的岗位全标成下架，
+ *   **只有跑完的源才参与「下架」判定** —— 源失败时把它的职位全标成下架，
  *   等于静默地少显示数据，正是失败降级要避免的事。
  * @returns {{jobs: object[], added: object[], updated: object[], delisted: object[]}}
  */

@@ -45,11 +45,11 @@ export function matchesTrack(job, track) {
 
 /**
  * 一次筛完。view='recent' 走 7 天窗口，view='archive' 出全部历史。
- * archive 默认带上已下架记录（页面负责置灰）。
+ * 归档视图带上已下架记录（页面负责置灰）—— 记录只标记状态不删除，
+ * 所以这里没有「隐藏已下架」的开关，需要时再加。
  */
-export function filterJobs(jobs, { q = '', track = 'all', view = 'recent', now, windows, hideDelisted = false } = {}) {
+export function filterJobs(jobs, { q = '', track = 'all', view = 'recent', now, windows } = {}) {
   return (jobs ?? []).filter((job) => {
-    if (hideDelisted && job.stillListed === false) return false;
     if (view === 'recent' && !isRecent(job, now, windows)) return false;
     if (!matchesTrack(job, track)) return false;
     if (!matchesQuery(job, q)) return false;

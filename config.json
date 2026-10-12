@@ -20,6 +20,7 @@
   "sources": {
     "jobsdb": {
       "enabled": true,
+      "label": "JobsDB",
       "api": "https://hk.jobsdb.com/api/jobsearch/v5/search",
       "siteKey": "HK-Main",
       "pageSize": 100,
@@ -28,10 +29,10 @@
     },
     "linkedin": {
       "enabled": true,
+      "label": "LinkedIn",
       "searchUrl": "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
       "transport": "curl",
       "location": "Hong Kong",
-      "pageSize": 10,
       "maxPages": 5,
       "pageDelayMs": 1200
     }

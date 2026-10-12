@@ -122,6 +122,39 @@ test('达到 maxPages 就停', async () => {
   assert.equal(state.calls, 2);
 });
 
+test('第 1 页响应里没有 data 数组必须抛错，不能静默返回空', async () => {
+  // 端点变更时最容易出现的形态：200 + 合法 JSON，但没有 data。
+  // 若返回空数组，jobsdb 会被当成「跑完的源、今天零岗位」，
+  // 进而把整个 JobsDB 存量判为已下架 —— 正是 SPEC §9 警告的静默失败。
+  const { http } = stubHttp([{ totalCount: 0, info: {}, somethingElse: true }]);
+  await assert.rejects(
+    () => fetchJobsdb(CFG, { keywords: 'x', http }),
+    /第 1 页零结果/,
+  );
+});
+
+test('第 1 页 data 为空数组同样抛错（这些关键词不可能零结果）', async () => {
+  const { http } = stubHttp([{ totalCount: 0, data: [] }]);
+  await assert.rejects(() => fetchJobsdb(CFG, { keywords: 'x', http }), /第 1 页零结果/);
+});
+
+test('抓取空档：第 2 页变成没有 data 的响应，结果当最后一页处理', async () => {
+  const { state, http } = stubHttp([PAGE, { info: {} }]);
+  const jobs = await fetchJobsdb({ ...CFG, pageSize: 3 }, { keywords: 'x', http });
+  assert.equal(jobs.length, 3);
+  assert.equal(state.calls, 2);
+});
+
+test('excerptLength 来自 site 配置并真正生效（不是写死的 300）', async () => {
+  const { http } = stubHttp([PAGE, { data: [] }]);
+  const jobs = await fetchJobsdb({ ...CFG, pageSize: 3 }, { keywords: 'x', http, excerptLength: 40 });
+
+  assert.ok(jobs.length > 0);
+  for (const job of jobs) {
+    if (job.excerpt) assert.ok(job.excerpt.length <= 41, `摘要过长：${job.excerpt.length}`);
+  }
+});
+
 test('返回的 URL 全部通过白名单校验（防配置写错把请求打到别处）', async () => {
   const { http } = stubHttp([PAGE, { data: [] }]);
   const jobs = await fetchJobsdb(CFG, { keywords: 'x', http });

@@ -82,13 +82,10 @@ test('recent 视图只出 7 天内发布的', () => {
   assert.equal(filterJobs(jobs, { view: 'archive', now: NOW, windows: WINDOWS }).length, 2, '归档视图出全部');
 });
 
-test('归档视图默认带上已下架记录，hideDelisted 时才排除', () => {
+test('归档视图带上已下架记录（页面负责置灰，不在这里过滤掉）', () => {
   const jobs = [job({ id: 'gone', stillListed: false }), job({ id: 'live' })];
-  assert.equal(filterJobs(jobs, { view: 'archive', now: NOW, windows: WINDOWS }).length, 2);
-  assert.deepEqual(
-    filterJobs(jobs, { view: 'archive', now: NOW, windows: WINDOWS, hideDelisted: true }).map((j) => j.id),
-    ['live'],
-  );
+  const out = filterJobs(jobs, { view: 'archive', now: NOW, windows: WINDOWS }).map((j) => j.id);
+  assert.deepEqual(out.sort(), ['gone', 'live']);
 });
 
 test('排序：按发布日期，同日期按首次见到', () => {

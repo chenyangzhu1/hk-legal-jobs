@@ -364,7 +364,10 @@ test('feed.json 裁剪掉站点不用的字段，并带上 meta', async () => {
 
     assert.equal(feed.meta.complete, true);
     assert.equal(feed.meta.ranAt, NOW.toISOString());
-    assert.equal(feed.meta.counts.total, 1);
+    assert.equal(feed.jobs.length, 1);
+    // 站点算 7 天窗口与来源显示名都靠 meta 带过去，不是前端写死的
+    assert.equal(feed.meta.windows.recentDays, 7);
+    assert.deepEqual(feed.meta.sourceLabels, { jobsdb: 'jobsdb', linkedin: 'linkedin' });
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

@@ -1,11 +1,11 @@
 // T5 — 把一条职位映射到 tracks[]（多标签），并执行负面过滤。
 //
 // 为什么过滤必须抓标题：SEEK 的 v5 搜索是语义匹配，搜 "paralegal" 会返回
-// "Litigation Clerk"、"Legal Secretary"、"法务专员" 等大量不含关键词的岗位。
+// "Litigation Clerk"、"Legal Secretary"、"法务专员" 等大量不含关键词的职位。
 // 实测 130 条唯一标题里只有 67 条真正属于这两条 track —— 过滤在这里，
 // 不在抓取层。
 //
-// 匹配语义全部来自 config.json，代码里不写死任何岗位词。
+// 匹配语义全部来自 config.json，代码里不写死任何职位关键字。
 
 /**
  * 编译一个 track 的 patterns：全部命中才算归属（AND）。

@@ -9,11 +9,15 @@
 import { filterJobs, sortJobs, paginate, isNew, readState, writeState, readApplied, writeApplied } from './jobs-core.mjs';
 
 const PAGE_SIZE = 50; // 归档页分页大小，保证千条量级不卡
+
+// 来源显示名的兜底值。正常走 feed.meta.sourceLabels（由 config.json 派生），
+// 这里只是 feed 缺字段时页面仍然能读。
 const SOURCE_LABELS = { jobsdb: 'JobsDB', linkedin: 'LinkedIn' };
 
 const view = document.body.dataset.view === 'archive' ? 'archive' : 'recent';
 
 const dom = {
+  title: document.getElementById('page-title'),
   banner: document.getElementById('banner'),
   q: document.getElementById('q'),
   tracks: document.getElementById('tracks'),
@@ -39,6 +43,11 @@ function el(tag, props = {}, ...children) {
     node.append(child instanceof Node ? child : document.createTextNode(String(child)));
   }
   return node;
+}
+
+/** 来源显示名：以 config 派生的 meta 为准，兜底才用前端映射。 */
+function sourceLabel(name) {
+  return feed.meta.sourceLabels?.[name] ?? SOURCE_LABELS[name] ?? name;
 }
 
 function syncUrl() {
@@ -98,7 +107,7 @@ function jobRow(job, now) {
     job.location,
     job.salary,
     job.postedAt ? `发布 ${job.postedAt}` : null,
-    SOURCE_LABELS[job.source] ?? job.source,
+    sourceLabel(job.source),
   ].filter(Boolean).join(' · ');
 
   const isApplied = applied.has(job.id);
@@ -136,7 +145,8 @@ function render() {
   }
 
   const appliedCount = sorted.filter((job) => applied.has(job.id)).length;
-  const scope = view === 'recent' ? '最近 7 天发布' : '全部历史';
+  const recentDays = feed.meta.windows?.recentDays ?? 7;
+  const scope = view === 'recent' ? `最近 ${recentDays} 天发布` : '全部历史';
   dom.status.textContent =
     `${scope} ${filtered.length} 条` +
     (filtered.length !== feed.jobs.length ? `（全库 ${feed.jobs.length} 条）` : '') +
@@ -154,6 +164,12 @@ function render() {
   } else {
     dom.pager.hidden = true;
     dom.pager.replaceChildren();
+  }
+
+  if (view === 'recent' && dom.title) {
+    const heading = `香港法律职位 · 最近 ${recentDays} 天`;
+    dom.title.textContent = heading;
+    document.title = heading;
   }
 
   syncUrl();

@@ -29,6 +29,14 @@ const FEED_FIELDS = [
   'salary', 'postedAt', 'firstSeenAt', 'url', 'excerpt', 'stillListed', 'suppressNew',
 ];
 
+/**
+ * 源状态是 `ok` / `partial: <原因>` / `failed: <原因>` 三种之一。
+ * 判定「跑完了没」只看前缀 —— 之前这个解析散在三处，加一种状态就容易漏改。
+ */
+function statusKind(status) {
+  return String(status ?? '').split(':')[0].trim();
+}
+
 export function parseArgs(argv = []) {
   const args = { dryRun: false, silentNew: undefined, help: false };
   for (const flag of argv) {
@@ -46,7 +54,7 @@ function toDate(value) {
 
 /**
  * 读 JSON。文件损坏时抛错而不是当作空库 —— 静默从零开始会把整库当成
- * 新岗位重新点亮 NEW，那是最坏的一种「看起来正常」。
+ * 新职位重新点亮 NEW，那是最坏的一种「看起来正常」。
  */
 function readJson(path) {
   if (!existsSync(path)) return undefined;
@@ -123,10 +131,11 @@ export async function runScan(options = {}) {
       for (const keyword of keywords) {
         const listings = await fetchFn(sourceConfig, {
           keywords: keyword,
-          keyword,
           http: httpFor(sourceConfig),
           log,
           onPartial: (reason) => { partial ??= reason; },
+          // 摘要在 site 段配置，源自己读不到，由编排层传下去
+          excerptLength: config.site?.excerptLength,
         });
         fetched += listings.length;
 
@@ -152,9 +161,9 @@ export async function runScan(options = {}) {
 
   const collected = [...byId.values()];
   const completeSources = new Set(
-    Object.entries(sourceStatus).filter(([, status]) => status === 'ok').map(([name]) => name),
+    Object.entries(sourceStatus).filter(([, status]) => statusKind(status) === 'ok').map(([name]) => name),
   );
-  const complete = enabled.every(([name]) => sourceStatus[name] === 'ok');
+  const complete = enabled.every(([name]) => statusKind(sourceStatus[name]) === 'ok');
 
   // 首次运行主库为空 → 自动进入静默期，否则第一天页面上全是 NEW 徽章
   const silentNew = options.silentNew ?? master.length === 0;
@@ -168,6 +177,8 @@ export async function runScan(options = {}) {
     added: added.length,
     updated: updated.length,
     delisted: delisted.length,
+    total: jobs.length,
+    active: jobs.filter((j) => j.stillListed !== false).length,
     byTrack: Object.fromEntries(
       Object.keys(config.tracks ?? {}).map((id) => [id, jobs.filter((j) => (j.tracks ?? []).includes(id)).length]),
     ),
@@ -176,7 +187,6 @@ export async function runScan(options = {}) {
   const feed = {
     meta: {
       ranAt: nowIso,
-      generatedAt: nowIso,
       complete,
       sources: sourceStatus,
       // 站点要按同一套窗口算 NEW 与「最近 7 天」，窗口值从 config 带过去，
@@ -185,14 +195,13 @@ export async function runScan(options = {}) {
         recentDays: config.site?.recentDays ?? 7,
         newBadgeDays: config.site?.newBadgeDays ?? 7,
       },
-      // 页面的筛选按钮由 config 驱动，不在前端写死 track 名单
+      // 页面的筛选按钮与来源显示名都由 config 驱动，不在前端写死名单
       tracks: Object.fromEntries(
         Object.entries(config.tracks ?? {}).map(([id, def]) => [id, def?.label ?? id]),
       ),
-      counts: {
-        total: jobs.length,
-        active: jobs.filter((j) => j.stillListed !== false).length,
-      },
+      sourceLabels: Object.fromEntries(
+        Object.entries(config.sources ?? {}).map(([id, def]) => [id, def?.label ?? id]),
+      ),
     },
     jobs: sortJobs(jobs).map(toFeedJob),
   };
@@ -216,7 +225,7 @@ export async function runScan(options = {}) {
   }
 
   // 全部源都失败才算整体失败；部分失败退 0，但 complete=false 会被页面显式暴露
-  const allFailed = enabled.every(([name]) => String(sourceStatus[name]).startsWith('failed'));
+  const allFailed = enabled.every(([name]) => statusKind(sourceStatus[name]) === 'failed');
 
   return { exitCode: allFailed ? 1 : 0, meta: feed.meta, stats, silentNew, dryRun };
 }
@@ -224,7 +233,7 @@ export async function runScan(options = {}) {
 function printSummary(result, log = console) {
   const { meta, stats } = result;
   log.log(`抓取 ${stats.fetched} 条 → 归属 ${stats.kept} 条 → 新增 ${stats.added} / 更新 ${stats.updated} / 下架 ${stats.delisted}`);
-  log.log(`主库 ${meta.counts.total} 条（在列 ${meta.counts.active}）`);
+  log.log(`主库 ${stats.total} 条（在列 ${stats.active}）`);
   log.log(`源：${Object.entries(meta.sources).map(([n, s]) => `${n}=${s}`).join('  ')}`);
   if (!meta.complete) log.log('本次数据不完整，站点会显示降级横幅');
   for (const [track, count] of Object.entries(stats.byTrack)) log.log(`  ${track}: ${count}`);

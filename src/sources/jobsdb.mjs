@@ -5,6 +5,7 @@
 // 单独的 provider，只需要 host 白名单里加上 hk.jobsdb.com（见 ADR 0002）。
 
 import { fetchJson as defaultFetchJson } from '../http.mjs';
+import { fetchPaged } from './paged.mjs';
 
 const DEFAULT_API = 'https://hk.jobsdb.com/api/jobsearch/v5/search';
 const DEFAULT_SITE_KEY = 'HK-Main';
@@ -127,49 +128,39 @@ export function parseJobsdbItem(item, origin, options = {}) {
  * 抓取一个关键词的全部页。
  *
  * 失败语义（T3 验收）：第 1 页失败必须抛错 —— 第 1 页挂了说明端点或网络有问题，
- * 返回空数组会被下游读成「今天没有新岗位」；第 2 页起失败只记一条 stderr，
+ * 返回空数组会被下游读成「今天没有新职位」；第 2 页起失败只记一条 stderr，
  * 返回已收集的部分。
  */
-export async function fetchJobsdb(config = {}, { keywords, http, sleep, log = console, onPartial } = {}) {
+export async function fetchJobsdb(config = {}, options = {}) {
+  const { keywords, http } = options;
   const apiUrl = assertAllowedHost(config.api ?? DEFAULT_API);
   const origin = deriveOrigin(apiUrl);
   const siteKey = config.siteKey ?? DEFAULT_SITE_KEY;
   const pageSize = Number(config.pageSize) || 30;
-  const maxPages = Number(config.maxPages) || 3;
-  const pageDelayMs = Number(config.pageDelayMs) || 0;
-  const wait = sleep ?? ((ms) => new Promise((r) => setTimeout(r, ms)));
   const fetchJson = http?.fetchJson ?? defaultFetchJson;
+  const excerptLength = options.excerptLength ?? config.excerptLength;
 
-  const collected = [];
-  const seenIds = new Set();
-
-  for (let page = 1; page <= maxPages; page++) {
-    let json;
-    try {
-      json = await fetchJson(buildSearchUrl(origin, { siteKey, keywords, pageSize, page }));
-    } catch (err) {
-      if (page === 1) throw err;
-      log.error(`jobsdb: 第 ${page} 页抓取失败（非致命，保留已收集的 ${collected.length} 条）—— ${err.message}`);
-      // 告知调用方这次是「抓了一半」：半程结果没有下架判定权
-      onPartial?.(`第 ${page} 页失败：${err.message}`);
-      break;
-    }
-
-    const data = Array.isArray(json?.data) ? json.data : [];
-    if (data.length === 0) break;
-
-    for (const item of data) {
-      const job = parseJobsdbItem(item, origin, config);
-      // 跨关键词、跨页的重复在这里先挡一道；主库层的去重是第二道
-      if (job && !seenIds.has(job.id)) {
-        seenIds.add(job.id);
-        collected.push(job);
-      }
-    }
-
-    if (data.length < pageSize) break;
-    if (page < maxPages && pageDelayMs > 0) await wait(pageDelayMs);
-  }
-
-  return collected;
+  return fetchPaged({
+    label: 'jobsdb',
+    maxPages: Number(config.maxPages) || 3,
+    pageSize,
+    pageDelayMs: Number(config.pageDelayMs) || 0,
+    sleep: options.sleep,
+    log: options.log,
+    onPartial: options.onPartial,
+    // 这两个关键词在香港有数百条结果，第 1 页零结果不是「今天没有职位」，
+    // 而是端点变了或被拦了。必须抛错：不抛的话，jobsdb 作为跑完的源会被
+    // 认为「今天一条都没有」，从而把整个 JobsDB 存量判成已下架。
+    zeroFirstPageThrows: true,
+    zeroFirstPageMessage: 'jobsdb: 第 1 页零结果（响应里没有 data 数组）—— 端点可能已变更，不当作「今天没有新职位」',
+    fetchPage: async (page) => {
+      const json = await fetchJson(buildSearchUrl(origin, { siteKey, keywords, pageSize, page }));
+      // 缺 data 数组与空 data 数组都归零；第 1 页出现即由上面的策略抛错
+      const data = Array.isArray(json?.data) ? json.data : [];
+      return {
+        rawCount: data.length,
+        items: data.map((item) => parseJobsdbItem(item, origin, { excerptLength })).filter(Boolean),
+      };
+    },
+  });
 }

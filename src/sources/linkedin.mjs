@@ -6,6 +6,7 @@
 // 用法限定：见 ADR 0001 —— 低频率、单一关键词、每日一次，个人使用量级。
 
 import { fetchText as defaultFetchText } from '../http.mjs';
+import { fetchPaged } from './paged.mjs';
 
 export const LINKEDIN_SEARCH_URL = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search';
 
@@ -50,7 +51,7 @@ function looksLikeSearchResults(html) {
  *   - 空响应体        → 没有更多结果，返回 []
  *   - 有卡片标记      → 正常解析
  *   - 非空但无标记    → 抛错。结构漂移或碰到登录墙时若静默返回 []，
- *                       会被下游读成「今天没有新岗位」，整个源挂掉而没人知道。
+ *                       会被下游读成「今天没有新职位」，整个源挂掉而没人知道。
  */
 export function parseLinkedinCards(html) {
   const source = String(html ?? '');
@@ -115,59 +116,32 @@ export function parseLinkedinCards(html) {
  * 抓取一个关键词的全部页。
  *
  * 第 1 页零卡片直接抛错（见 parseLinkedinCards 的注释）：这些关键词在香港
- * 有数百条结果，第 1 页什么都没有，是端点异常而不是「今天没有岗位」。
+ * 有数百条结果，第 1 页什么都没有，是端点异常而不是「今天没有职位」。
  * 第 2 页起零卡片是正常的翻页终点。
  */
-export async function fetchLinkedin(config = {}, { keywords, http, sleep, log = console, onPartial } = {}) {
+export async function fetchLinkedin(config = {}, options = {}) {
+  const { keywords, http } = options;
   const searchUrl = config.searchUrl ?? LINKEDIN_SEARCH_URL;
   const location = config.location ?? 'Hong Kong';
-  const maxPages = Number(config.maxPages) || 3;
-  const pageDelayMs = Number(config.pageDelayMs) || 0;
-  const wait = sleep ?? ((ms) => new Promise((r) => setTimeout(r, ms)));
   const fetchText = http?.fetchText ?? defaultFetchText;
 
-  const collected = [];
-  const seenIds = new Set();
-
-  for (let page = 1; page <= maxPages; page++) {
-    let html;
-    try {
-      html = await fetchText(buildSearchUrl(searchUrl, { keywords, location, page }));
-    } catch (err) {
-      if (page === 1) throw err;
-      log.error(`linkedin: 第 ${page} 页抓取失败（非致命，保留已收集的 ${collected.length} 条）—— ${err.message}`);
-      // 告知调用方这次是「抓了一半」：半程结果没有下架判定权
-      onPartial?.(`第 ${page} 页失败：${err.message}`);
-      break;
-    }
-
-    let cards;
-    try {
-      cards = parseLinkedinCards(html);
-    } catch (err) {
-      if (page === 1) throw err;
-      log.error(`linkedin: 第 ${page} 页解析失败（非致命，保留已收集的 ${collected.length} 条）—— ${err.message}`);
-      onPartial?.(`第 ${page} 页解析失败：${err.message}`);
-      break;
-    }
-
-    if (cards.length === 0) {
-      if (page === 1) {
-        throw new Error(`linkedin: 第 1 页零卡片 —— 端点异常或已变更，不当作「今天没有新岗位」`);
-      }
-      break;
-    }
-
-    for (const card of cards) {
-      if (!seenIds.has(card.id)) {
-        seenIds.add(card.id);
-        collected.push(card);
-      }
-    }
-
-    if (cards.length < PAGE_SIZE) break;
-    if (page < maxPages && pageDelayMs > 0) await wait(pageDelayMs);
-  }
-
-  return collected;
+  return fetchPaged({
+    label: 'linkedin',
+    maxPages: Number(config.maxPages) || 3,
+    // 每页条数由端点写死，config 里没有这个旋钮
+    pageSize: PAGE_SIZE,
+    pageDelayMs: Number(config.pageDelayMs) || 0,
+    sleep: options.sleep,
+    log: options.log,
+    onPartial: options.onPartial,
+    zeroFirstPageThrows: true,
+    zeroFirstPageMessage: 'linkedin: 第 1 页零卡片 —— 端点异常或已变更，不当作「今天没有新职位」',
+    fetchPage: async (page) => {
+      // 取数失败与解析失败在这里都变成「该页抛错」，由 paged 统一处理：
+      // 第 1 页抛出、第 2 页起记 partial 并保留已收集的部分。
+      const html = await fetchText(buildSearchUrl(searchUrl, { keywords, location, page }));
+      const cards = parseLinkedinCards(html);
+      return { rawCount: cards.length, items: cards };
+    },
+  });
 }
