@@ -1,0 +1,50 @@
+name: 定时抓取
+
+# 用户的原始诉求是「早上 8 点」。GitHub 的 scheduled workflow 在整点会排队，
+# 通常延迟 5–30 分钟，极端情况直接跳过，所以取 07:47 HKT 起跑、避开 :00。
+# Actions 侧一律按 UTC 理解，代码里不做任何时区假设。
+on:
+  schedule:
+    - cron: '47 23 * * *' # UTC 23:47 = 香港 07:47
+  workflow_dispatch:
+
+permissions:
+  contents: write # 提交数据与站点
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # 零依赖，所以没有 install 步骤，也没有 setup-bun。
+      # 测试挡在抓取前面：解析器悄悄坏掉的话，宁可不写库。
+      - name: 冒烟测试
+        run: node --test
+
+      - name: 抓取
+        run: node src/scan.mjs
+
+      # 即使上一步失败也要提交：全部源失败时退出码是 1，但 feed.json 已经带上
+      # complete:false，页面因此能显示降级横幅。workflow 失败本身会给仓库 owner
+      # 发邮件 —— 这个告警是特意保留的。
+      - name: 提交数据与站点
+        if: always()
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data docs
+          if git diff --staged --quiet; then
+            echo '无变更，跳过提交'
+            exit 0
+          fi
+          git commit -m "chore(data): $(date -u +%Y-%m-%d) 抓取快照"
+          git push

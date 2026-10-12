@@ -1,0 +1,51 @@
+{
+  "tracks": {
+    "trainee": {
+      "label": "Trainee Solicitor",
+      "searchKeywords": "trainee solicitor",
+      "titlePatterns": ["\\btrainee\\b", "solicitor"]
+    },
+    "paralegal": {
+      "label": "Paralegal",
+      "searchKeywords": "paralegal",
+      "titlePatterns": ["\\bparalegal\\b"]
+    }
+  },
+
+  "titleFilter": {
+    "requireTrack": true,
+    "negative": ["\\bsecretary\\b", "\\bsecretarial\\b", "\\bintern\\b", "\\binternship\\b", "\\breceptionist\\b"]
+  },
+
+  "sources": {
+    "jobsdb": {
+      "enabled": true,
+      "api": "https://hk.jobsdb.com/api/jobsearch/v5/search",
+      "siteKey": "HK-Main",
+      "pageSize": 100,
+      "maxPages": 4,
+      "pageDelayMs": 700
+    },
+    "linkedin": {
+      "enabled": true,
+      "searchUrl": "https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search",
+      "transport": "curl",
+      "location": "Hong Kong",
+      "pageSize": 10,
+      "maxPages": 5,
+      "pageDelayMs": 1200
+    }
+  },
+
+  "http": {
+    "timeoutMs": 15000,
+    "retries": 6,
+    "minIntervalMs": 400
+  },
+
+  "site": {
+    "recentDays": 7,
+    "newBadgeDays": 7,
+    "excerptLength": 300
+  }
+}

@@ -1,0 +1,238 @@
+{
+  "totalCount": 159,
+  "data": [
+    {
+      "advertiser": {
+        "id": "61281662",
+        "description": "Tsui & Co"
+      },
+      "bulletPoints": [],
+      "branding": {
+        "serpLogoUrl": "https://bx-branding-gateway.cloud.seek.com.au/6058f6bd-d2ea-4beb-ba33-c54108dd4219.2/jdpLogo"
+      },
+      "classifications": [
+        {
+          "classification": {
+            "id": "1216",
+            "description": "Legal"
+          },
+          "subclassification": {
+            "id": "6195",
+            "description": "Generalists - Law Firm"
+          }
+        }
+      ],
+      "companyName": "Tsui & Co",
+      "companyProfileStructuredDataId": 408942,
+      "displayType": "standard",
+      "employer": {
+        "id": "408942",
+        "name": "Tsui & Co"
+      },
+      "id": "95201118",
+      "isFeatured": false,
+      "listingDate": "2026-10-12T03:37:03Z",
+      "listingDateDisplay": "11h ago",
+      "locations": [
+        {
+          "label": "Wan Chai, Wan Chai District",
+          "countryCode": "HK",
+          "seoHierarchy": [
+            {
+              "contextualName": "Wan Chai Wan Chai District"
+            },
+            {
+              "contextualName": "Wan Chai District"
+            }
+          ]
+        }
+      ],
+      "roleId": "Trainee-Solicitor",
+      "salaryLabel": "",
+      "solMetadata": {
+        "searchRequestToken": "03ddbcd2-9cea-47af-b8d8-e8e71bb26615",
+        "token": "0~03ddbcd2-9cea-47af-b8d8-e8e71bb26615",
+        "jobId": "95201118",
+        "section": "MAIN",
+        "sectionRank": 1,
+        "jobAdType": "ORGANIC",
+        "tags": {
+          "mordor__flights": "mordor_1148",
+          "mordor__flight_retrieval_and_relevance_ranking": "mordor_1148",
+          "mordor__flight_performance_signal": "mordor_1149",
+          "mordor__flight_performance": "mordor_1150",
+          "mordor__flight_candidate_fit_plugin": "mordor_1159",
+          "mordor__s": "0"
+        }
+      },
+      "teaser": "Established in 2004, we specialize in insurance, personal injury and shipping areas, and are listed\r\n in the Legal 500. To cope with our ...",
+      "title": "Trainee Solicitor",
+      "tracking": "ewogICJ0b2tlbiI6ICI1Mzg0ZDFjZi04MzQ3LTQzMTktYjgyMC1kMTE5OGY3NzY4MGFfMSIKfQ==",
+      "workTypes": [
+        "Full time"
+      ],
+      "workArrangements": {
+        "data": [
+          {
+            "id": "1",
+            "label": {
+              "text": "On-site"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "advertiser": {
+        "id": "61357169",
+        "description": "鍾沛林律師行"
+      },
+      "bulletPoints": [],
+      "branding": {},
+      "classifications": [
+        {
+          "classification": {
+            "id": "1216",
+            "description": "Legal"
+          },
+          "subclassification": {
+            "id": "6200",
+            "description": "Litigation & Dispute Resolution"
+          }
+        }
+      ],
+      "companyProfileStructuredDataId": 0,
+      "displayType": "standard",
+      "id": "95089559",
+      "isFeatured": false,
+      "listingDate": "2026-10-06T08:29:28Z",
+      "listingDateDisplay": "6d ago",
+      "locations": [
+        {
+          "label": "Sheung Wan, Central and Western District",
+          "countryCode": "HK",
+          "seoHierarchy": [
+            {
+              "contextualName": "Sheung Wan Central and Western District"
+            },
+            {
+              "contextualName": "Central and Western District"
+            }
+          ]
+        }
+      ],
+      "roleId": "Trainee-Solicitor",
+      "salaryLabel": "",
+      "solMetadata": {
+        "searchRequestToken": "03ddbcd2-9cea-47af-b8d8-e8e71bb26615",
+        "token": "0~03ddbcd2-9cea-47af-b8d8-e8e71bb26615",
+        "jobId": "95089559",
+        "section": "MAIN",
+        "sectionRank": 2,
+        "jobAdType": "ORGANIC",
+        "tags": {
+          "mordor__flights": "mordor_1148",
+          "mordor__flight_retrieval_and_relevance_ranking": "mordor_1148",
+          "mordor__flight_performance_signal": "mordor_1149",
+          "mordor__flight_performance": "mordor_1150",
+          "mordor__flight_candidate_fit_plugin": "mordor_1159",
+          "mordor__s": "0"
+        }
+      },
+      "teaser": "Lunch box provided from Mondays to Fridays. We offer competitive remuneration package and a friendly supportive working environmnet.",
+      "title": "Associate - Civil Litigation & Trainee Solicitor",
+      "tracking": "ewogICJ0b2tlbiI6ICI1Mzg0ZDFjZi04MzQ3LTQzMTktYjgyMC1kMTE5OGY3NzY4MGFfMiIKfQ==",
+      "workTypes": [
+        "Full time"
+      ],
+      "workArrangements": {
+        "data": [
+          {
+            "id": "1",
+            "label": {
+              "text": "On-site"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "advertiser": {
+        "id": "61292140",
+        "description": "Tung, Ng, Tse & Lam, Solicitors"
+      },
+      "bulletPoints": [],
+      "branding": {
+        "serpLogoUrl": "https://bx-branding-gateway.cloud.seek.com.au/b7de2fad-8527-477f-98e5-f766e05d322b.2/jdpLogo"
+      },
+      "classifications": [
+        {
+          "classification": {
+            "id": "1216",
+            "description": "Legal"
+          },
+          "subclassification": {
+            "id": "6191",
+            "description": "Corporate & Commercial Law"
+          }
+        }
+      ],
+      "companyName": "Tung, Ng, Tse & Lam, Solicitors",
+      "companyProfileStructuredDataId": 683314,
+      "displayType": "standard",
+      "employer": {
+        "id": "683314",
+        "name": "Tung, Ng, Tse & Lam, Solicitors"
+      },
+      "id": "95163371",
+      "isFeatured": false,
+      "listingDate": "2026-10-09T03:44:34Z",
+      "listingDateDisplay": "3d ago",
+      "locations": [
+        {
+          "label": "Central and Western District",
+          "countryCode": "HK",
+          "seoHierarchy": [
+            {
+              "contextualName": "Central and Western District"
+            }
+          ]
+        }
+      ],
+      "roleId": "Trainee-Solicitor",
+      "salaryLabel": "",
+      "solMetadata": {
+        "searchRequestToken": "03ddbcd2-9cea-47af-b8d8-e8e71bb26615",
+        "token": "0~03ddbcd2-9cea-47af-b8d8-e8e71bb26615",
+        "jobId": "95163371",
+        "section": "MAIN",
+        "sectionRank": 3,
+        "jobAdType": "ORGANIC",
+        "tags": {
+          "mordor__flights": "mordor_1148",
+          "mordor__flight_retrieval_and_relevance_ranking": "mordor_1148",
+          "mordor__flight_performance_signal": "mordor_1149",
+          "mordor__flight_performance": "mordor_1150",
+          "mordor__flight_candidate_fit_plugin": "mordor_1159",
+          "mordor__s": "0"
+        }
+      },
+      "teaser": "Paralegal/trainee solicitor to provide legal support including document drafting, research and court preparation.",
+      "title": "Paralegal / Trainee solicitors",
+      "tracking": "ewogICJ0b2tlbiI6ICI1Mzg0ZDFjZi04MzQ3LTQzMTktYjgyMC1kMTE5OGY3NzY4MGFfMyIKfQ==",
+      "workTypes": [
+        "Full time"
+      ],
+      "workArrangements": {
+        "data": [
+          {
+            "id": "1",
+            "label": {
+              "text": "On-site"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

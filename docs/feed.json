@@ -1,0 +1,1456 @@
+{
+  "meta": {
+    "ranAt": "2026-10-12T15:53:34.866Z",
+    "generatedAt": "2026-10-12T15:53:34.866Z",
+    "complete": true,
+    "sources": {
+      "jobsdb": "ok",
+      "linkedin": "ok"
+    },
+    "windows": {
+      "recentDays": 7,
+      "newBadgeDays": 7
+    },
+    "tracks": {
+      "trainee": "Trainee Solicitor",
+      "paralegal": "Paralegal"
+    },
+    "counts": {
+      "total": 84,
+      "active": 84
+    }
+  },
+  "jobs": [
+    {
+      "id": "jobsdb:95201118",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Tsui & Co",
+      "location": "Wan Chai, Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-10-12",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95201118",
+      "excerpt": "Established in 2004, we specialize in insurance, personal injury and shipping areas, and are listed in the Legal 500. To cope with our ...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95201908",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Experienced Paralegal - Offshore Law Firm",
+      "company": "Michael Page International (HK) Ltd",
+      "location": "Central and Western District",
+      "salary": "$30k - $40k p.m.",
+      "postedAt": "2026-10-12",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95201908",
+      "excerpt": "We are looking for a Paralegal with relevant work experience, to join either the Corporate or Funds teams in Hong Kong.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95202522",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Corporate / Funds) - International Law Firm",
+      "company": "Aquis Search Limited",
+      "location": "Central, Central and Western District",
+      "salary": "$28,000 – $40,000 per month",
+      "postedAt": "2026-10-12",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95202522",
+      "excerpt": "Work on high-profile corporate transactions and funds. Professional growth in prestigious international law firm environment.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95204446",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Junior Paralegal",
+      "company": "Kim & Company, Solicitors",
+      "location": "Tsim Sha Tsui, Yau Tsim Mong District",
+      "salary": null,
+      "postedAt": "2026-10-12",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95204446",
+      "excerpt": "Five Days Work",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95160578",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Hong Kong Technology Venture Company Limited",
+      "location": "Tseung Kwan O, Sai Kung District",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95160578",
+      "excerpt": "A law degree holder with minimum 2-3 years work experience in a commercial environment",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95162674",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal / Paralegal Trainee",
+      "company": "Kao, Lee & Yip Solicitors",
+      "location": "Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95162674",
+      "excerpt": "FIRST HAND SALE PARALEGAL/TRAINEE PROGRAMME",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95163168",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive  / Paralegal / Junior Legal Clerk",
+      "company": "KWC & Associates",
+      "location": "Yuen Long, Yuen Long District",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95163168",
+      "excerpt": "Our civil litigation team as a Legal Executive/Pralegal. Work directly with solicitors and build courtroom experience through on-the-job training.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95163371",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee",
+        "paralegal"
+      ],
+      "title": "Paralegal / Trainee solicitors",
+      "company": "Tung, Ng, Tse & Lam, Solicitors",
+      "location": "Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95163371",
+      "excerpt": "Paralegal/trainee solicitor to provide legal support including document drafting, research and court preparation.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95170153",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Conveyancing/Probate Executive/Paralegal",
+      "company": "Wilkinson & Grist",
+      "location": "Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95170153",
+      "excerpt": "• Handling conveyancing/tenancy/wills/probate matters; • Drafting legal documents; • 5 day work week, medical benefits, discretionary year end bonus",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95172728",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "財務、法律及合規 (Finance, Legal & Compliance)",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95172728",
+      "excerpt": "What You will be Doing 1. Legal Research & Analysis Conduct legal research and prepare concise analysis to support business decisions. Monitor...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95177828",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (for law firm) (2+ years’ experience)",
+      "company": "WSLegal Limited",
+      "location": "Admiralty, Central and Western District",
+      "salary": "$18,000 – $22,000 per month",
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95177828",
+      "excerpt": "We are looking for an organised and reliable paralegal to support our solicitors on a mix of litigation and non‑litigation matters.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4476254210",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Hong Kong Technology Venture Career",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-at-hong-kong-technology-venture-career-4476254210",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4476290312",
+      "source": "linkedin",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Solicitor and Trainee Solicitor",
+      "company": "MUNG",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-09",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/solicitor-and-trainee-solicitor-at-mung-4476290312",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95136440",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor / Legal Executive",
+      "company": "YSYM Secretarial Company Limited",
+      "location": "Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-10-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95136440",
+      "excerpt": "*",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95143584",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Ogier",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95143584",
+      "excerpt": "Ogier is committed to creating an inclusive and diverse workplace where everyone feels valued and respected. We’re committed to making our...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95145083",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Henry Wai & Co.,Solicitors LLP",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95145083",
+      "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95145127",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Henry Wai & Co.,Solicitors LLP",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95145127",
+      "excerpt": "Our remuneration package is highly competitive with attractive incentives.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95147432",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive/ Paralegal",
+      "company": "Huawei International Co., Ltd",
+      "location": "Tsim Sha Tsui, Yau Tsim Mong District",
+      "salary": null,
+      "postedAt": "2026-10-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95147432",
+      "excerpt": "We are looking for junior-to-senior paralegals who are passionate about the Tech Industry and in-house legal counselling to join the team.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4476989064",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Ogier",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-at-ogier-4476989064",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94515924",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal Trainee",
+      "company": "Herbert Tsoi & Partners",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94515924",
+      "excerpt": "Clerical and administrative support to Senior Associate in a law firm.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95104149",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal/Legal Clerk /Legal Executive",
+      "company": "Ho & Associates",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95104149",
+      "excerpt": "2-3 years' experience in handling employees’ compensation/personal injuries files Good command of English and Chinese",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95104884",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "China Harbour Engineering Co Ltd",
+      "location": "North Point, Eastern District",
+      "salary": null,
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95104884",
+      "excerpt": "Assist legal counsel and commercial team with legal research, drafting and reviewing contracts, ensuring regulatory compliance .....",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95120324",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Junior Legal Counsel / Paralegal",
+      "company": "Hong Kong Microelectronics Research and Development Institute Company Limited",
+      "location": "Science Park, Tai Po District",
+      "salary": null,
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95120324",
+      "excerpt": "We are seeking a motivated and high-calibre legal professional to join our Legal Team as a Junior Legal Counsel or Senior Paralegal.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4476166384",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal - Debt Capital Markets",
+      "company": "Walker Lovell",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-walker-lovell-4476166384",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4476583265",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "ECM Paralegal",
+      "company": "King & Wood",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/ecm-paralegal-at-king-wood-4476583265",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95085258",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal - International Law Firm",
+      "company": "Michael Page International (HK) Ltd",
+      "location": "Central and Western District",
+      "salary": "$26k - $32k p.m.",
+      "postedAt": "2026-10-06",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95085258",
+      "excerpt": "We are looking for a Paralegal with 2+ years of work experience, to join a Shipping Finance practice in Hong Kong.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95089559",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Associate - Civil Litigation & Trainee Solicitor",
+      "company": "鍾沛林律師行",
+      "location": "Sheung Wan, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-06",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95089559",
+      "excerpt": "Lunch box provided from Mondays to Fridays. We offer competitive remuneration package and a friendly supportive working environmnet.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95093495",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Allen & Overy (Hong Kong) Limited",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-06",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95093495",
+      "excerpt": "Our Global Financial Markets team is seeking a Paralegal to provide high-quality legal and administrative support to fee earners on a broad range...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:91389722",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Commercial Litigation Paralegal",
+      "company": "Deacons",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/91389722",
+      "excerpt": "We are seeking a high calibre to join our Commercial Litigation Practice Group.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95052201",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "TRAINEE SOLICITOR (GENERAL PRACTICE)",
+      "company": "John M. Pickavant & Company",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95052201",
+      "excerpt": "Successful candidate must have strong academic qualification and good character; good command of both spoken and written English; aspire to become...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4475528659",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal Investment Funds – International Law firm",
+      "company": "Taylor Root",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-investment-funds-%E2%80%93-international-law-firm-at-taylor-root-4475528659",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95036791",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "John M. Pickavant & Co",
+      "location": "Mong Kok, Yau Tsim Mong District",
+      "salary": "$22,000 – $28,000 per month",
+      "postedAt": "2026-10-03",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95036791",
+      "excerpt": "A position has opened for Trainee Solicitor is required for a friendly firm of Solicitors established over 35 years in Kowloon.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95041099",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "versatile communication and paralegal consultant",
+      "company": "Eye co ltd",
+      "location": "Kennedy Town, Central and Western District",
+      "salary": "$120 – $150 per hour",
+      "postedAt": "2026-10-03",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95041099",
+      "excerpt": "Versatile consultant supporting communications, media liaison, and legal documentation with potential for growth.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95015733",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Tanner De Witt",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95015733",
+      "excerpt": "Join a leading disputes practice and gain hands-on experience in complex litigation, insolvency and restructuring matters.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95026999",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Family)",
+      "company": "Withersworldwide LLP",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95026999",
+      "excerpt": "We are looking to recruit an experienced paralegal to join the Withers Hong Kong's Family team. The role will at times be fast paced so you will...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95031747",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Junior Paralegal / Paralegal",
+      "company": "Cheung & Co.",
+      "location": "Wan Chai, Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95031747",
+      "excerpt": "2 yrs practical experience in legal firm Shall have experience in PROBATE and/or CIVIL LITIGATION and/or CRIMINAL LITIGATION and/or FAMILY MATTERS",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95036148",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Contract Paralegal (3 to 4-month contract)",
+      "company": "Christie's Hong Kong Ltd",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95036148",
+      "excerpt": "Based in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4464884736",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Speculative)",
+      "company": "Simpson Thacher & Bartlett LLP",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-speculative-at-simpson-thacher-bartlett-llp-4464884736",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4472885409",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Contract Paralegal (3 to 4-month contract)",
+      "company": "Christie's",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/contract-paralegal-3-to-4-month-contract-at-christie-s-4472885409",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4473126473",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Family)",
+      "company": "Withers",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-02",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-family-at-withers-4473126473",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94964603",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "S. K. Ng & Co.",
+      "location": "Wan Chai District",
+      "salary": "$20,000 – $25,000 per month",
+      "postedAt": "2026-09-30",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94964603",
+      "excerpt": "Launch your legal career with mentoring and exposure to diverse practice areas in a supportive firm.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94971796",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Assistant Solicitor / Trainee Solicitor",
+      "company": "Bond Ng Solicitors",
+      "location": "Wan Chai, Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-09-30",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94971796",
+      "excerpt": "Assistant Solicitor (Civil and Criminal litigation) (0-5 PQE) Experience in handling personal injuries, employees’ compensation, criminal...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94987373",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal - Finance",
+      "company": "Michael Page International (HK) Ltd",
+      "location": "Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-30",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94987373",
+      "excerpt": "The ideal candidate will be a law degree holder with some relevant paralegal experience in the banking and/or finance practice areas - whilst asset...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94945360",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal Intellectual Property - Global Law Firm",
+      "company": "Taylor Root",
+      "location": "Central, Central and Western District",
+      "salary": "$300k - $420k p.a. + Bonus",
+      "postedAt": "2026-09-29",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94945360",
+      "excerpt": "Paralegal Intellectual Property - International Law firm",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94950347",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "W K To & Co Solicitors",
+      "location": "Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-29",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94950347",
+      "excerpt": "Comprehensive training will be provided.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4473081933",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal Intellectual Property - International Law firm",
+      "company": "Taylor Root",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-29",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-intellectual-property-international-law-firm-at-taylor-root-4473081933",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94909416",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Leung, Leung & Co.",
+      "location": "Wan Chai District",
+      "salary": "$20,000 – $23,000 per month",
+      "postedAt": "2026-09-28",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94909416",
+      "excerpt": "Assist in drafting and preparing correspondences and documents under supervision; Providing comprehensive legal and administrative support to the team",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94925574",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "paralegal/ legal secretery",
+      "company": "Lo & Lawyers",
+      "location": "Admiralty, Central and Western District",
+      "salary": "$22,000 – $26,000 per month",
+      "postedAt": "2026-09-28",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94925574",
+      "excerpt": "Develop your legal career in a supportive, collaborative environment with professional growth opportunities.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4422424265",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal, Capital Markets",
+      "company": "Jones Day",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-28",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-capital-markets-at-jones-day-4422424265",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4444378192",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "IP Paralegal",
+      "company": "Simmons & Simmons",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-26",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/ip-paralegal-at-simmons-simmons-4444378192",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4451200195",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal/ Legal Manager - Corporate Transactions",
+      "company": "Ashurst Perkins Coie",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-26",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-legal-manager-corporate-transactions-at-ashurst-perkins-coie-4451200195",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94823531",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee",
+        "paralegal"
+      ],
+      "title": "Trainee Solicitor (1st or 2nd year trainee, 2026 intake), Paralegal/Legal Clerk",
+      "company": "Arthur Hong LLP",
+      "location": "Hong Kong Island",
+      "salary": null,
+      "postedAt": "2026-09-25",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94823531",
+      "excerpt": "We hereby present an excellent opportunity for a Trainee Solicitor (2026 intake) and Paralegal to work for our Central law firm in Hong Kong.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94882712",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Cross-border work)",
+      "company": "Shum Wong & Co., Solicitors",
+      "location": "Yuen Long District",
+      "salary": null,
+      "postedAt": "2026-09-25",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94882712",
+      "excerpt": "• Paralegal supporting cross-border legal work with focus on PRC law and China Attestation matters. • A solid academic background in PRC's law",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94863290",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Civil Litigation)",
+      "company": "Haldanes",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-24",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94863290",
+      "excerpt": "We offer competitive remuneration package to the right candidate and operate a 5-day work-week.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94820343",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Hon & Co",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-23",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94820343",
+      "excerpt": "Trainee Solicitor supporting legal document preparation and drafting.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94821618",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "CHENG & NG",
+      "location": "Yau Tsim Mong District",
+      "salary": null,
+      "postedAt": "2026-09-23",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94821618",
+      "excerpt": "..",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94830202",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Khoo & Co.",
+      "location": "Sheung Wan, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-23",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94830202",
+      "excerpt": "We are a Hong Kong law firm focusing on corporate finance practice.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94833194",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Part-Time Paralegal",
+      "company": "HONG KONG CHROMAELLE WINE INDUSTRIES LIMITED",
+      "location": "Tsim Sha Tsui, Yau Tsim Mong District",
+      "salary": null,
+      "postedAt": "2026-09-23",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94833194",
+      "excerpt": "Be the face of our wine business. Competitive salary, professional environment & growth opportunities await.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94794246",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "East IP Limited",
+      "location": "Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-09-22",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94794246",
+      "excerpt": "Paralegal to support intellectual property matters for Hong Kong, PRC, and multinational clients.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94795391",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal / Legal Specialist",
+      "company": "Dah Chong Hong Holdings Limited",
+      "location": "Kowloon Bay, Kwun Tong District",
+      "salary": null,
+      "postedAt": "2026-09-22",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94795391",
+      "excerpt": "Assist in drafting, reviewing, and proofreading legal documents and contracts, including NDAs, commercial agreements, and internal policies.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94803499",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal or PRC Legal Assistant",
+      "company": "Henry Wai & Co.,Solicitors LLP",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-22",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94803499",
+      "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4468522601",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Debt Capital Markets)",
+      "company": "Mayer Brown",
+      "location": "Central & Western District, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-22",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-mayer-brown-4468522601",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94762213",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive / Paralegal",
+      "company": "TransUnion Limited",
+      "location": "Tsim Sha Tsui, Yau Tsim Mong District",
+      "salary": null,
+      "postedAt": "2026-09-21",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94762213",
+      "excerpt": "Support efficient delivery of legal services through contract management, compliance, and legal operations.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4468490660",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive / Paralegal",
+      "company": "TransUnion",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-21",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/legal-executive-paralegal-at-transunion-4468490660",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94199416",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal / Legal Counsel",
+      "company": "Lein (H.K.) Network Technology Co., Limited",
+      "location": "Ngau Tau Kok, Kwun Tong District",
+      "salary": null,
+      "postedAt": "2026-09-18",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94199416",
+      "excerpt": "Global exposure in a software development industry.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94734664",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal/ Legal Executive",
+      "company": "Szwina Pang, Edward Li & Co",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-18",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94734664",
+      "excerpt": "To provide legal support to our solicitors in the practice of personal injuries and medical negligence litigation.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94690450",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Investments Paralegal - Law Firm",
+      "company": "Michael Page International (HK) Ltd",
+      "location": "Central and Western District",
+      "salary": "$28k - $35k p.m.",
+      "postedAt": "2026-09-17",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94690450",
+      "excerpt": "We are hiring a Paralegal to join a specialised investments practice in an international law firm in Hong Kong.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94697066",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Corporate & Securities Paralegal (DCM)",
+      "company": "Wings Recruitment Partners Limited",
+      "location": "Hong Kong Island",
+      "salary": "$35,000 – $45,000 per month",
+      "postedAt": "2026-09-17",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94697066",
+      "excerpt": "Our client is a top-tier international law firm looking for a highly motivated and detail-oriented Paralegal to join their Corporate & Securities team",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94704874",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive / Litigation Paralegal",
+      "company": "Hugill & Ip",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-17",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94704874",
+      "excerpt": "As a Paralegal and Legal Executive, you will be at the forefront of our legal operations, supporting a dynamic team of professionals.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4468398326",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (DCM focused) - Top Tier International Law Firm",
+      "company": "Ambition",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-17",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-dcm-focused-top-tier-international-law-firm-at-ambition-4468398326",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94666728",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "鄭陳律師事務所",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-16",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94666728",
+      "excerpt": "We are a Well-established and expanding law firm in Central and are looking for suitable candidate",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94671848",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (6-Month Contract), Global Hedge Fund",
+      "company": "Taylor Root",
+      "location": "Central and Western District",
+      "salary": "$40k - $50k p.m. + Bonus",
+      "postedAt": "2026-09-16",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94671848",
+      "excerpt": "Paralegal - Compliance (6-Month Contract), Global Hedge Fund",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94672236",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Choy & Tun",
+      "location": "Sheung Wan, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-16",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94672236",
+      "excerpt": "Trainees handle substantive work—drafting, case preparation and client correspondence—under close guidance from partners and senior solicitors.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94631874",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Senior Paralegal",
+      "company": "Gammon Construction Ltd",
+      "location": "Kwun Tong District",
+      "salary": null,
+      "postedAt": "2026-09-15",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94631874",
+      "excerpt": "Five-day work week | Competitive pay | Discretionary bonus | Medical insurance | Education subsidy | Training programme | MPF top-up plan",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94635175",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee",
+        "paralegal"
+      ],
+      "title": "Paralegal/Legal Executive/ Trainee Solicitor",
+      "company": "Chang & Co.",
+      "location": "Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-09-15",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94635175",
+      "excerpt": "Paralegal, Legal Executive, or Trainee Solicitor to support a dynamic law firm in Wan Chai.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94639850",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "CONVEYANCING PARALEGAL/LEGAL EXECUTIVE",
+      "company": "Gallant",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-15",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94639850",
+      "excerpt": "Form 6 or above 5 years or above solid experience in handling full set of conveyancing documents and transactions 5 days week",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94651457",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "One Recruitment Limited",
+      "location": "Hong Kong Island",
+      "salary": "$30,000 – $40,000 per month",
+      "postedAt": "2026-09-15",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94651457",
+      "excerpt": "Our client, an international law firm is urgently looking for a Paralegal to join their Corporate Team in Hong Kong.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4466161768",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Senior Paralegal",
+      "company": "Gammon Construction Limited",
+      "location": "Kwun Tong District, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-09-15",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/senior-paralegal-at-gammon-construction-limited-4466161768",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94603988",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Tang Lawyers",
+      "location": "Central, Central and Western District",
+      "salary": "$17,000 – $24,000 per month",
+      "postedAt": "2026-09-14",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94603988",
+      "excerpt": "a full range of clerical and administrative support to fee earners.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94606217",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor (Summer 2027)",
+      "company": "麥樂賢 周綽瑩 司徒悅 律師行",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-09-14",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94606217",
+      "excerpt": "n/a",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:94319470",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor 2029",
+      "company": "Norton Rose Fulbright (Services) Limited",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-08-31",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94319470",
+      "excerpt": "As well as the relevant skills and experience, we're looking for people who are innovative, commercial and value the work that they do. We...",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4461230616",
+      "source": "linkedin",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor 2029",
+      "company": "Norton Rose Fulbright",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-08-31",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/trainee-solicitor-2029-at-norton-rose-fulbright-4461230616",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4443252048",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Funds Paralegal",
+      "company": "King & Wood",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-07-28",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/funds-paralegal-at-king-wood-4443252048",
+      "excerpt": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:90167450",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Corporate Senior Paralegal",
+      "company": "K&L Gates",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-02-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/90167450",
+      "excerpt": "Our Hong Kong office is now seeking a Senior Paralegal. This role will support cross-border capital market transactions and ensure smooth deal...",
+      "stillListed": true,
+      "suppressNew": true
+    }
+  ]
+}

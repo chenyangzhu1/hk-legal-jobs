@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>香港法律职位 — 最近 7 天</title>
+<meta name="description" content="香港 Trainee Solicitor 与 Paralegal 职位，每日自动抓取。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-view="recent">
+<header>
+  <div class="wrap">
+    <h1>香港法律职位 · 最近 7 天</h1>
+    <nav>
+      <a href="index.html" aria-current="page">最近 7 天</a>
+      <a href="archive.html">全部历史</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+  <div id="banner" role="status" hidden></div>
+
+  <div class="controls">
+    <input id="q" type="search" placeholder="搜标题或公司…" autocomplete="off" aria-label="搜索标题或公司">
+    <div id="tracks" role="group" aria-label="按 track 筛选"></div>
+    <select id="sort" aria-label="排序方式">
+      <option value="new">最新发布在前</option>
+      <option value="old">最早发布在前</option>
+    </select>
+  </div>
+
+  <p id="status" role="status" aria-live="polite"></p>
+  <div id="list"></div>
+  <div id="pager" hidden></div>
+
+  <footer>
+    <p>只收录 Trainee Solicitor 与 Paralegal 两类岗位。「已投递」标记保存在本机浏览器里，换设备或清缓存会丢失。</p>
+    <p>数据来自 <a href="https://hk.jobsdb.com" target="_blank" rel="noopener noreferrer">JobsDB</a> 与 <a href="https://www.linkedin.com/jobs" target="_blank" rel="noopener noreferrer">LinkedIn</a> 的公开职位页，每日自动更新一次；版权归原站点，此处只做索引与跳转。</p>
+  </footer>
+</div>
+
+<script src="app.js" type="module"></script>
+</body>
+</html>
