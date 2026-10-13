@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-12T16:27:57.916Z",
+    "ranAt": "2026-10-13T03:53:39.822Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -17,6 +17,14 @@
     "sourceLabels": {
       "jobsdb": "JobsDB",
       "linkedin": "LinkedIn"
+    },
+    "descriptions": {
+      "fetched": 19,
+      "skipped": 68,
+      "failed": 1,
+      "blocked": [
+        "jobsdb"
+      ]
     }
   },
   "jobs": [
@@ -34,6 +42,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95201118",
       "excerpt": "Established in 2004, we specialize in insurance, personal injury and shipping areas, and are listed in the Legal 500. To cope with our ...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -51,6 +60,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95201908",
       "excerpt": "We are looking for a Paralegal with relevant work experience, to join either the Corporate or Funds teams in Hong Kong.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -68,6 +78,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95202522",
       "excerpt": "Work on high-profile corporate transactions and funds. Professional growth in prestigious international law firm environment.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -85,6 +96,25 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95204446",
       "excerpt": "Five Days Work",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4468490660",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive / Paralegal",
+      "company": "TransUnion",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-12",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/legal-executive-paralegal-at-transunion-4468490660",
+      "excerpt": "TransUnion's Job Applicant Privacy Notice Personal Information We Collect Your Privacy Choices Team Overview The Hong Kong Legal Team provides practical, business-focused legal support that enables sustainable growth, manages regulatory risk, and protects the company's interests across Hong Kong and…",
+      "description": "TransUnion's Job Applicant Privacy Notice\n\nPersonal Information We Collect\n\nYour Privacy Choices\n\nTeam Overview\n\nThe Hong Kong Legal Team provides practical, business-focused legal support that enables sustainable growth, manages regulatory risk, and protects the company's interests across Hong Kong and the broader APAC region. The team currently comprises two senior lawyers, including one lawyer supporting both Hong Kong and the Philippines, with additional operational support from a Legal Operations Associate based in the Philippines. Reporting to the Hong Kong Legal Team, this role offers the opportunity to work closely with senior legal professionals and cross-functional stakeholders, gaining broad exposure to commercial, corporate, compliance, and operational legal matters in a dynamic international environment. This is a hybrid position and involves regular performance of job responsibilities virtually as well as in-person at an assigned TU office location for a minimum of two days a week.\n\nRole Overview And Core Responsibilities\n\nRole Purpose\n\nThe Legal Executive / Paralegal supports the efficient delivery of legal services by managing legal operations, coordinating commercial contracting activities, supporting corporate governance and compliance initiatives, and maintaining effective legal processes. This role helps reduce legal and operational risk, improve business efficiency, and enable internal stakeholders to make informed business decisions while ensuring compliance with applicable legal and regulatory requirements.\n\nKey Responsibilities\n\n- Support the review, preparation, execution, and administration of commercial agreements, including non-disclosure agreements (NDAs), vendor agreements, customer contracts, and related legal documentation to facilitate business operations and growth.\n- Manage contract lifecycle activities, including document filing, version control, execution tracking, records management, and reporting to improve operational efficiency and legal oversight.\n- Conduct legal and regulatory research and prepare summaries, memos, and supporting materials to assist legal counsel in providing timely advice to business stakeholders.\n- Coordinate corporate governance and company secretarial matters, including maintaining statutory records, preparing corporate documentation, and supporting regulatory filings where required.\n- Assist with data privacy, compliance, and regulatory initiatives by organizing documentation, monitoring obligations, and supporting implementation of legal and policy requirements.\n- Review external-facing communications, marketing materials, and other business content to help ensure alignment with legal, regulatory, and brand requirements.\n- Maintain and update legal templates, knowledge resources, trackers, policies, and standard procedures to support consistency, efficiency, and risk management across the organization.\n- Coordinate with internal stakeholders, including business, product, compliance, finance, human resources, and regional legal teams, to facilitate efficient legal operations and timely resolution of legal matters.\n- Support the management of external counsel, legal vendors, invoices, and administrative processes to ensure effective utilization of legal resources and budget management.\n- Assist with special projects, strategic initiatives, and other legal matters as assigned by the legal team.\n\nRequired Knowledge And Experiences\n\nRequired Qualifications\n\n- Bachelor's degree in Law, Legal Studies, or a related discipline.\n- Minimum 1-3 years of relevant experience as a Legal Executive, Paralegal, Legal Assistant, or similar legal support professional.\n- Demonstrated experience supporting commercial contracting and legal document management in either an in-house legal department or law firm environment.\n- Strong organizational and project management skills, with the ability to manage multiple priorities, maintain accuracy, and meet deadlines in a fast-paced environm…",
       "stillListed": true,
       "suppressNew": true
     },
@@ -102,6 +132,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95160578",
       "excerpt": "A law degree holder with minimum 2-3 years work experience in a commercial environment",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -119,6 +150,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95162674",
       "excerpt": "FIRST HAND SALE PARALEGAL/TRAINEE PROGRAMME",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -136,6 +168,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95163168",
       "excerpt": "Our civil litigation team as a Legal Executive/Pralegal. Work directly with solicitors and build courtroom experience through on-the-job training.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -154,6 +187,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95163371",
       "excerpt": "Paralegal/trainee solicitor to provide legal support including document drafting, research and court preparation.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -171,6 +205,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95170153",
       "excerpt": "• Handling conveyancing/tenancy/wills/probate matters; • Drafting legal documents; • 5 day work week, medical benefits, discretionary year end bonus",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -188,6 +223,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95172728",
       "excerpt": "What You will be Doing 1. Legal Research & Analysis Conduct legal research and prepare concise analysis to support business decisions. Monitor...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -205,6 +241,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95177828",
       "excerpt": "We are looking for an organised and reliable paralegal to support our solicitors on a mix of litigation and non‑litigation matters.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -221,7 +258,8 @@
       "postedAt": "2026-10-09",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-at-hong-kong-technology-venture-career-4476254210",
-      "excerpt": null,
+      "excerpt": "What You will be Doing 1. Legal Research & Analysis - Conduct legal research and prepare concise analysis to support business decisions. - Monitor regulatory updates and summarize implications for the company. 2.Document Drafting & Review - Draft and review contracts, statutory records, and legal co…",
+      "description": "What You will be Doing\n\n1. Legal Research & Analysis\n\n- Conduct legal research and prepare concise analysis to support business decisions.\n- Monitor regulatory updates and summarize implications for the company.\n2.Document Drafting & Review\n\n- Draft and review contracts, statutory records, and legal correspondence.\n- Assist in preparing board papers, presentations, and other legal materials.\n3.Governance & Compliance Support\n\n- Help implement and update policies and procedures to strengthen corporate governance.\n- Maintain legal databases, folders, and statutory filings.\n4.Stakeholder & Case Management\n\n- Liaise with internal teams and external counsel on routine matters.\n- Support in handling disputes, intellectual property filings, and compliance checks.\n5.Operational & Administrative Duties\n\n- Input legal data into systems, generate reports, and manage assigned portfolio.\n- Handle general administrative tasks and ad‑hoc assignments as required.\n6.Ad-Hoc Assignments\n\n- Manage ad-hoc assignments as needed\n\nWho is Our Right Fit\n\n- A law degree holder with minimum 2-3 years work experience in a commercial environment\n- Candidate without legal qualification will be considered for paralegal role\n- Enjoy a fast-paced and agile corporate environment\n- Multi-tasker, self-starter, and team player\n- Logical, strong thirst for knowledge, comfortable with ambiguity and creative\n- Good communicati\n- on, problem-solving and people skills\n- Organised and detail-oriented\n- Proficient in written and spoken English, Cantonese and Mandarin",
       "stillListed": true,
       "suppressNew": true
     },
@@ -238,7 +276,8 @@
       "postedAt": "2026-10-09",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/solicitor-and-trainee-solicitor-at-mung-4476290312",
-      "excerpt": null,
+      "excerpt": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work. The firm has expanded its regional footprint with its MUNG network of l…",
+      "description": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work.\n\nThe firm has expanded its regional footprint with its MUNG network of law practices in Singapore and Tokyo.\n\nThus, MUNG covers a wide range of interesting corporate and commercial transactions as well as cross border arbitration and litigation work.\n\nRole Description\n\nWe invite a range of Consultants, Hong Kong qualified lawyers especially in dispute resolution and trainees to send in your CVs and reference letters to : mu@munglegal.com.\n\nQualifications\n\n- Strong academics in a LLB degree, with the ability to analyze complex legal issues and provide clear, practical advice.\n- Ability to multitask\n- Proficiency in English, with Chinese language skills (Cantonese and/or Mandarin) considered an advantage.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -256,6 +295,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95136440",
       "excerpt": "*",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -273,6 +313,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95143584",
       "excerpt": "Ogier is committed to creating an inclusive and diverse workplace where everyone feels valued and respected. We’re committed to making our...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -290,6 +331,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95145083",
       "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -307,6 +349,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95145127",
       "excerpt": "Our remuneration package is highly competitive with attractive incentives.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -324,6 +367,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95147432",
       "excerpt": "We are looking for junior-to-senior paralegals who are passionate about the Tech Industry and in-house legal counselling to join the team.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -340,7 +384,8 @@
       "postedAt": "2026-10-08",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-at-ogier-4476989064",
-      "excerpt": null,
+      "excerpt": "Department: Corporate Location: Hong Kong Description This role will provide a comprehensive paralegal service to Ogier Hong Kong's Corporate Team, ensuring that the fee earners within the team are fully supported. Key Responsibilities - Undertaking work in support of a team of fee earners, meeting …",
+      "description": "Department: Corporate\nLocation: Hong Kong\n\nDescription\n\nThis role will provide a comprehensive paralegal service to Ogier Hong Kong's Corporate Team, ensuring that the fee earners within the team are fully supported.\n\nKey Responsibilities\n\n- Undertaking work in support of a team of fee earners, meeting an agreed target chargeable hours\n- Undertaking various due diligence work and searches at the request of fee-earner\n- Drafting, amending and translating legal documents at the request of fee-earners\n- Primary line of communication between fee-earners and clients\n- Ensuring that all new client matters are accurately set up in the client accounting and database system\n- Maintaining and amending client records and contact names where appropriate\n- Ensuring files are kept up to date (including filing of documents, emails and correspondence) when active and that files are closed/archived once the matter is concluded following instruction from the relevant fee-earner\n- Delegating certain administration tasks received from the fee-earners as per the specific team workflow model\n- Providing complete assistance to all fee-earners and clients regarding various legal issues\n- Leading the way with innovation, technology and tools by supporting and trialling new initiatives\n- Primary contact for team-specific legal and business services queries as the embedded team support\n- Screen incoming telephone calls, taking and relaying accurate messages where necessary. Where appropriate, arrange and set up conference and outgoing calls for the team\n- Identifying and retrieving information necessary to support legal decision-making\n- Being a team player and assist others within the team / firm whenever possible\n- Taking up any urgent or ad-hoc tasks as may be allocated by the fee earners as well as working through various deadlines\n- Such other duties as the firm may reasonably require from time to time\n\nSkills, Knowledge and Expertise\n\n- Previous legal experience or relevant legal studies completed (LLB/GDL/LPC/PCLL or equivalent)\n- Prior experience in offshore sector and/or assisting with US IPOs and other corporate transactions will be highly regarded\n- Ability to pay attention to details and produce works with a good degree of accuracy\n- Have a great sense of responsibility and have the ability to work independently and proactively\n- Proficient in Word/Outlook and a working knowledge of Excel\n- Administrative and document management experience will be a plus\n- Have excellent organisation, administration and communication skills to undertake work at a high-level and of a confidential nature\n- Ability to efficiently manage own time and prioritise workflow with reference to key deadlines\n- Ability to adapt to the continual roll-out of innovative tools and processes\n- Supportive of and able to demonstrate agile and flexible working\n- Excellent communication skills in English, Cantonese and Mandarin (written and spoken)",
       "stillListed": true,
       "suppressNew": true
     },
@@ -358,6 +403,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94515924",
       "excerpt": "Clerical and administrative support to Senior Associate in a law firm.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -375,6 +421,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95104149",
       "excerpt": "2-3 years' experience in handling employees’ compensation/personal injuries files Good command of English and Chinese",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -392,6 +439,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95104884",
       "excerpt": "Assist legal counsel and commercial team with legal research, drafting and reviewing contracts, ensuring regulatory compliance .....",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -409,6 +457,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95120324",
       "excerpt": "We are seeking a motivated and high-calibre legal professional to join our Legal Team as a Junior Legal Counsel or Senior Paralegal.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -425,7 +474,8 @@
       "postedAt": "2026-10-07",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-walker-lovell-4476166384",
-      "excerpt": null,
+      "excerpt": "Build Your Career in Debt Capital Markets Gain hands-on exposure to sophisticated debt capital markets transactions within a globally respected legal environment. You’ll work alongside experienced lawyers on significant cross-border matters, developing valuable transactional experience at an early s…",
+      "description": "Build Your Career in Debt Capital Markets\nGain hands-on exposure to sophisticated debt capital markets transactions within a globally respected legal environment. You’ll work alongside experienced lawyers on significant cross-border matters, developing valuable transactional experience at an early stage in your legal career.\n\nPackage / Benefits\n\n- Strong package reflecting the role and market\n- First-rate training and professional development\n- Exposure to complex, high-profile DCM transactions\n- Supportive working practices with a focus on wellbeing and inclusion\n\nWhy This Business\nJoin a leading international law firm with a substantial presence across the world’s major financial centres. Its financial markets practice advises major financial institutions, corporates and other sophisticated market participants on complex, high-value transactions.\n\nIn Hong Kong, you’ll join an established Debt Capital Markets team handling significant domestic and cross-border matters, giving you direct exposure to the documentation, due diligence and execution behind major debt transactions.\n\nWhat You’ll Be Doing\n\n- Support due diligence exercises, including reviewing Chinese-language materials and transaction documents\n- Assist with preparing and reviewing disclosure documents and other legal documentation\n- Conduct legal and commercial research to support active client matters\n- Provide high-quality transaction support to lawyers throughout DCM matters\n\nWhat You’ll Bring\n\n- Excellent academic credentials and a clear interest in developing a legal career\n- Fluency in English and Mandarin, with strong written and verbal communication skills\n- Strong organisation and attention to detail, with the ability to manage multiple priorities accurately\n- A collaborative approach and the interpersonal skills to build effective relationships with colleagues and clients\n\nWho This Suits\nYou’re an ambitious early-career legal professional looking to build meaningful transactional experience within Debt Capital Markets. You enjoy detailed, high-quality legal work and want exposure to significant financial transactions while learning from experienced lawyers in an international practice.\n\nApply now for a confidential conversation with Walker Lovell.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -442,7 +492,8 @@
       "postedAt": "2026-10-07",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/ecm-paralegal-at-king-wood-4476583265",
-      "excerpt": null,
+      "excerpt": "Position Summary You may be working in a commercial law firm, and enjoy the challenge of taking on some matters autonomously, seeking guidance and support as required. Job Requirement You should have: - Relevant ECM internship/work experience; - Excellent interpersonal skills and can deliver excelle…",
+      "description": "Position Summary\n\nYou may be working in a commercial law firm, and enjoy the challenge of taking on some matters autonomously, seeking guidance and support as required.\n\nJob Requirement\n\nYou should have:\n\n- Relevant ECM internship/work experience;\n- Excellent interpersonal skills and can deliver excellent client service;\n- Good analytical skills and attention to details;\n- Fluency in English and Mandarin required (spoken and written);\n- Immediate availability is highly preferred\n\nNote: we do not accept agency referral for this",
       "stillListed": true,
       "suppressNew": true
     },
@@ -460,6 +511,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95085258",
       "excerpt": "We are looking for a Paralegal with 2+ years of work experience, to join a Shipping Finance practice in Hong Kong.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -477,6 +529,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95089559",
       "excerpt": "Lunch box provided from Mondays to Fridays. We offer competitive remuneration package and a friendly supportive working environmnet.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -494,6 +547,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95093495",
       "excerpt": "Our Global Financial Markets team is seeking a Paralegal to provide high-quality legal and administrative support to fee earners on a broad range...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -511,6 +565,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/91389722",
       "excerpt": "We are seeking a high calibre to join our Commercial Litigation Practice Group.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -528,6 +583,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95052201",
       "excerpt": "Successful candidate must have strong academic qualification and good character; good command of both spoken and written English; aspire to become...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -544,7 +600,8 @@
       "postedAt": "2026-10-05",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-investment-funds-%E2%80%93-international-law-firm-at-taylor-root-4475528659",
-      "excerpt": null,
+      "excerpt": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment. What you would be doing: - Conduct legal research for re…",
+      "description": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment.\n\nWhat you would be doing:\n\n- Conduct legal research for regulatory work and draft legal documents in accordance with the instructions of the lawyers\n- Undertake SFC licensing applications for asset management and other clients, including drafting applications, supporting documents and liaising with the SFC\n- Assist with SFC fund authorisation applications including helping with the drafting of application documents and coordinating in the process\n- Review Chinese translation of certain legal documents\n\nWhat you would have:\n\n- Atleast 1 year of experience gained within a reputable regional or international law firm doing funds work\n- Excellent language skills, including written and spoken English, Cantonese, and Mandarin\n- University degree in law or a business related discipline\n- Knowledge and experience in SFC licensing would be highly preferred",
       "stillListed": true,
       "suppressNew": true
     },
@@ -562,6 +619,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95036791",
       "excerpt": "A position has opened for Trainee Solicitor is required for a friendly firm of Solicitors established over 35 years in Kowloon.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -579,6 +637,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95041099",
       "excerpt": "Versatile consultant supporting communications, media liaison, and legal documentation with potential for growth.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -596,6 +655,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95015733",
       "excerpt": "Join a leading disputes practice and gain hands-on experience in complex litigation, insolvency and restructuring matters.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -613,6 +673,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95026999",
       "excerpt": "We are looking to recruit an experienced paralegal to join the Withers Hong Kong's Family team. The role will at times be fast paced so you will...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -630,6 +691,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95031747",
       "excerpt": "2 yrs practical experience in legal firm Shall have experience in PROBATE and/or CIVIL LITIGATION and/or CRIMINAL LITIGATION and/or FAMILY MATTERS",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -647,6 +709,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/95036148",
       "excerpt": "Based in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -663,7 +726,8 @@
       "postedAt": "2026-10-02",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-speculative-at-simpson-thacher-bartlett-llp-4464884736",
-      "excerpt": null,
+      "excerpt": "The firm Simpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction …",
+      "description": "The firm\n\nSimpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction of an experienced attorney.\n\nDescription/Job Summary\n\n- Assist attorneys with preparation of legal documents, due diligence review, subscription document review and tracking, and related tasks\n- Translation of documents\n- Complete forms required for the formation/dissolution/amendment and qualification of corporations, LLC’s and partnerships\n- Organize and maintain electronic files, and paper files where necessary\n- Organize and maintain due diligence and subscription documents\n- Perform due diligence searches\n- Utilize and manage electronic databases\n- Proofread, organize and track documents; prepare closing sets of necessary documents following completion of a transaction; organize and distribute post-closing documents\n- Assist with document/information gathering, logistics and coordination of items received\n- Maintain well organized files\n- Update document management platforms and databases and categorize documents for efficient accessibility\n- Liaise with internal departments and outside vendors\n- Perform other tasks as assigned by deal teams\n- Be flexible to adjust hours to meet departmental need\n\nRequired Skills\n\n- Fluency in both English and Chinese or additional languages such as Korean or Japanese\n- Detail oriented, with excellent organizational and communication skills\n- Able to work in a fast paced environment, both independently or on a team\n- Flexibility, time management and an ability to prioritize tasks and deadlines\n- Proficiency with legal terminology relevant to the industry\n- Critical thinking and solution oriented mindset\n- Present information clearly and concisely, both verbally and in writing\n- Self-starter who can organize, plan and complete multi-task work activities\n- Ability to proofread for contextual, grammatical and spelling errors\n\nPreferred Skills\n\n- Related experience in a law firm or other professional services firm\n- Knowledge of MS Office applications and Excel preferred\n\nRequired Education\n\nBachelor’s degree or Law degree required",
       "stillListed": true,
       "suppressNew": true
     },
@@ -680,7 +744,8 @@
       "postedAt": "2026-10-02",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/contract-paralegal-3-to-4-month-contract-at-christie-s-4472885409",
-      "excerpt": null,
+      "excerpt": "MAJOR RESPONSIBILITIES/TASKS (Duties include but are not limited to the following): Based in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General Counsel, APAC. - Conduct legal research into various topics concerning …",
+      "description": "MAJOR RESPONSIBILITIES/TASKS (Duties include but are not limited to the following):\n\nBased in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General Counsel, APAC.\n\n- Conduct legal research into various topics concerning art law, art finance, general commercial issues and compliance topics such as data privacy, AML, sanctions and labour law.\n- Draft non-disclosure agreements, demand letters to debtors and other commercial contracts based on global templates.\n- Support copyright clearance and other related intellectual property matters such as tackling online infringement.\n- Liaise with artist representative associations and other colleagues in the relevant departments.\n- Assist with translations and template management.\n\nQUALIFICATION REQUIREMENTS:\n\n- Final or penultimate year student or graduate from LLB or other LLB dual degree.\n- Prior experience in in-house legal teams, barristers’ chambers or law firms is preferred.\n- Diligent and reliable, with high integrity and a strong commitment to professional ethics and confidentiality.\n- Team player and ability to work independently.\n- Highly flexible and adaptive to rapid changes in the working environment.\n- Ability to work under pressure and meet deadlines.\n- Excellent interpersonal skills and organizational skills.\n- Detail-oriented and self-motivated.\n- Excellent command of both spoken and written English, Cantonese and Mandarin.\n- Proficiency in Microsoft Office (Word, Outlook, Excel, PowerPoint and Chinese Word Processing are pre-requisites).\n\nClosing Date\n\n31 January 2027\n\nSalary Range\n\nHKD20,000 to 22,000 per month",
       "stillListed": true,
       "suppressNew": true
     },
@@ -697,7 +762,8 @@
       "postedAt": "2026-10-02",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-family-at-withers-4473126473",
-      "excerpt": null,
+      "excerpt": "Withers Job title: Paralegal (Family) Location: Hong Kong About Withers A law firm focused on people, performance, and collaboration. For the past 130 years, we have supported some of the world’s most remarkable people and organizations at defining moments in their lives. We are united in our commit…",
+      "description": "Withers\n\nJob title: Paralegal (Family)\n\nLocation: Hong Kong\n\nAbout Withers\n\nA law firm focused on people, performance, and collaboration.\n\nFor the past 130 years, we have supported some of the world’s most remarkable people and organizations at defining moments in their lives.\n\nWe are united in our commitment to integrity, quality and collaboration. We have a culture of high performance and deliver excellent service consistently across the firm. We provide tailored solutions built on trust and partner with our clients to achieve their goals.\n\nMany of our clients are shaping the future and creating solutions to tackle many of the world’s problems. It makes for a fascinating and challenging practice.\n\nOur role is to get to know each individual client, find out where they want to be, and help them to get there – whether they are building a business, buying a home or protecting and defending their interests.\n\nTo meet their unique needs we are exceptionally collaborative, working together across teams and time zones. And we are agile – focusing on strategy rather than rigid ideas and traditional hierarchy.\n\nJoin us to be part of a team that is always looking to the future. Where initiative, big ideas and bold moves are always encouraged. Where you can truly be yourself.\n\nWhat are we looking for?\n\nWe are looking to recruit an experienced paralegal to join the Withers Hong Kong's Family team. The role will at times be fast paced so you will need to be an efficient worker who can prioritise tasks and have great organisational skills.\n\nThe ideal candidate will be technically capable, have a good working attitude and possess excellent communication skills. This position requires someone who is comfortable using their initiative, is a strong team player and is motivated to produce quality support to the Division.\n\nAreas Of Focus And Responsibilities\n\n- Preparing and drafting pleadings, affidavits, documents and correspondences\n- Performing legal research\n- Compiling bundles for court hearings\n- Simple translation tasks\n\nThis list of duties and responsibilities is not exhaustive. It is intended to describe the general content of, and requirements for the performance of this job, and as such, the role may also include the undertaking of additional tasks as required.\n\nTechnical Skills And Qualifications\n\n- Candidates with prior experience in a law firm will be preferred\n- Able to comply with deadlines and meticulous\n- Proficient in PC skills (e.g. Word, Excel & etc.)\n\nInformation for Recruitment Agencies\n\nWithers endeavours to recruit and fill vacancies directly. However, when we do need to engage with agencies, Withers operates a preferred supplier list and will not be accepting unsolicited applications from non-PSL agencies for this role.\n\nEqual Opportunities Employment Statement\n\nIt is the policy of Withers to provide equal opportunities for all employees in relation to recruitment, training and promotion. Decisions in these areas will be made only by reference to the requirements of the job and shall not be influenced by any consideration of ethnic origin, religion, sex, age, sexual orientation or disability.\n\nApply Now",
       "stillListed": true,
       "suppressNew": true
     },
@@ -715,6 +781,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94964603",
       "excerpt": "Launch your legal career with mentoring and exposure to diverse practice areas in a supportive firm.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -732,6 +799,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94971796",
       "excerpt": "Assistant Solicitor (Civil and Criminal litigation) (0-5 PQE) Experience in handling personal injuries, employees’ compensation, criminal...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -749,6 +817,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94987373",
       "excerpt": "The ideal candidate will be a law degree holder with some relevant paralegal experience in the banking and/or finance practice areas - whilst asset...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -766,6 +835,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94945360",
       "excerpt": "Paralegal Intellectual Property - International Law firm",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -783,6 +853,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94950347",
       "excerpt": "Comprehensive training will be provided.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -799,7 +870,8 @@
       "postedAt": "2026-09-29",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-intellectual-property-international-law-firm-at-taylor-root-4473081933",
-      "excerpt": null,
+      "excerpt": "We are partnering with a leading international law firm seeking to hire Intellectual Property, Trademark Paralegal / Legal Assistant who is keen to join a diverse, fast-paced global environment. You must have: - 1 to 3 years of experience working within Intellectual Property/ Trademark area of a Law…",
+      "description": "We are partnering with a leading international law firm seeking to hire Intellectual Property, Trademark Paralegal / Legal Assistant who is keen to join a diverse, fast-paced global environment.\n\nYou must have:\n\n- 1 to 3 years of experience working within Intellectual Property/ Trademark area of a Law firm, IP/ trademark consultancy or in-house\n- You will be experienced in handling a range of IP matters: portfolio management, IP protection, Enforcement, trademark, patent, brand protection, IP disputes and related matters.\n- You must be a team player, self-motivating, collaborative and energetic with high level of integrity.\n- You will have excellent communication and interpersonal skills - fluency in English, Cantonese and Mandarin is a prerequisite along with written Chinese",
       "stillListed": true,
       "suppressNew": true
     },
@@ -817,6 +889,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94909416",
       "excerpt": "Assist in drafting and preparing correspondences and documents under supervision; Providing comprehensive legal and administrative support to the team",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -834,6 +907,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94925574",
       "excerpt": "Develop your legal career in a supportive, collaborative environment with professional growth opportunities.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -850,7 +924,8 @@
       "postedAt": "2026-09-28",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-capital-markets-at-jones-day-4422424265",
-      "excerpt": null,
+      "excerpt": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client s…",
+      "description": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client service.\n\nJones Day seeks to employ the most qualified people, capable of delivering superior client service through professional excellence and teamwork, for every position in the Firm. We offer competitive compensation and benefits in a stimulating work environment.\n\nAre you interested in the opportunity to work for a global leading law firm that will give you the experience and exposure you need to build your knowledge and skills as well as advance your career? If you are, then Jones Day may be the firm for you.\n\nSummary of Essential Duties and Responsibilities:\nParalegals attend due diligence interviews; perform precedent and other ad-hoc legal research; conduct prospectus verification and other IPO-related tasks; assist in preparation of various documents (e.g. A1 documents, prospectuses, due diligence questionnaires etc.); prepare English-Chinese translation of legal documents; and organise client meetings and taking minutes.\n\nRequired Qualifications:\n\n- Law degree is an advantage but not a must.\n- Preferably with prior work experience in capital markets.\n- Excellent command of written and verbal English and Mandarin.\n- Strong communication skills and great attention to detail.\n- Ability to work independently and in a fast-paced and driven environment.\n- Sound knowledge in the use of computer and various IT programs.\n- Occasional travel to PRC may be required.\n- Immediate availability preferred.\n\nONLY RESUMES (C.V.s) IN .PDF FORMAT WILL BE ACCEPTED AND REVIEWED\n*Principals only – No search firms.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -867,7 +942,8 @@
       "postedAt": "2026-09-26",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/ip-paralegal-at-simmons-simmons-4444378192",
-      "excerpt": null,
+      "excerpt": "Main purpose of the role: To support the IP team on Hong Kong and China trade mark matters, and assist with international trade mark portfolio management Main duties and responsibilities: - Prepare and file documents for Hong Kong trade mark applications, registrations and related proceedings - Main…",
+      "description": "Main purpose of the role:\n\nTo support the IP team on Hong Kong and China trade mark matters, and assist with international trade mark portfolio management\n\nMain duties and responsibilities:\n\n- Prepare and file documents for Hong Kong trade mark applications, registrations and related proceedings\n- Maintain trade mark portfolios, including docketing, record updates and deadline monitoring\n- Liaise with clients, overseas associates and trade mark offices\n- Draft reports on office actions and assist with responses and submissions\n- Conduct trade mark clearance searches and prepare search reports\n- Conduct trade mark, company and online research\n- Support trade mark prosecution, portfolio management and related projects across multiple jurisdictions\n- Assist with investigations into potential trade mark infringements and preparation of cease-and-desist letters\n- Prepare fee estimates, portfolio summaries and status reports\n- Undertake other duties as assigned by fee earners\n\nPerson Specifications:\n\nEducation / Qualifications / Experience:\n\n- Post-secondary education; diploma or degree preferred\n- 3 to 4 years of trade mark experience\n- Experience handling national trade mark and Madrid Protocol matters\n- Exposure to regional or international trade mark portfolio management\n- Knowledge of registered designs and patent formalities is an advantage\n- Excellent written and spoken English and Cantonese and/or Mandarin\n\nKnowledge and Technical Skills:\n\n- Good understanding of trade mark prosecution and portfolio management\n- Familiarity with Hong Kong and regional trade mark practice and WIPO Madrid System procedures\n- Strong drafting, research and communication skills\n- Strong analytical and problem-solving abilities\n- Proficient in Microsoft Office and legal technology platforms; familiarity with AI tools is an advantage\n- Strong attention to detail and accuracy\n\nGeneral Skills:\n\n- Ability to work independently and meet deadlines\n- Strong organisational and prioritisation skills\n- Team-oriented with a collaborative approach\n- Strong client-service and interpersonal skills\n- Adaptable, reliable and proactive\n- Detail-oriented with good judgement and professionalism",
       "stillListed": true,
       "suppressNew": true
     },
@@ -884,7 +960,8 @@
       "postedAt": "2026-09-26",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-legal-manager-corporate-transactions-at-ashurst-perkins-coie-4451200195",
-      "excerpt": null,
+      "excerpt": "Description At Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, en…",
+      "description": "Description\n\nAt Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, energy & infrastructure, and financial services. Our people work on market-leading matters that drive innovation, growth, and transformation around the world. For Ashurst Perkins Coie, innovation is our tradition.\n\nDepartment / Role overview\n\nWe are currently looking for a paralegal / Legal Manager to join our Corporate Transactions group. The job holder will work closely with partners, counsel and associates in Hong Kong, Beijing and Shanghai to provide transactional support to ensure that our lawyers can focus on clients' needs and deliver quality and efficient service.\n\nMain Responsibilities\n\n- Draft, review and proofread documents.\n- Assist with legal due diligence exercises and prepare legal due diligence questionnaires and reports.\n- Attend on-site due diligence trips and meetings.\n- Conduct legal and company research and analysis.\n- Handle legal translations.\n- Assist with verification of disclosure documents.\n- Assist with the signing and completion of the transactions.\n\nRisk and Control: Ensure that all activities and duties are carried out in full compliance with our regulatory requirements and internal policies.\n\nEssential Skills And Experience\n\n- A university law degree/ Master of Law with excellent academic achievements.\n- Excellent verbal and written communication skills in English and native Mandarin speaker;\n- Willingness to travel frequently for due diligence trips and printer sessions;\n- Ability to demonstrate initiative, maturity and common sense with good judgment;\n- Good work ethic and ability to work to deadlines.\n- Good organisational skills and attention to detail.\n- Ideally with relevant 1-2 years' experience in IPO and M&A.\n\nBackground checks\n\nIn order to comply with regulatory and client requirements, the Firm will undertake appropriate vetting of staff. When applicants accept a job offer, the Firm, alongside a specialist provider, will undertake professional verification and background checks. These checks are only undertaken with consent, and in accordance with our legal and regulatory obligations.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -903,6 +980,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94823531",
       "excerpt": "We hereby present an excellent opportunity for a Trainee Solicitor (2026 intake) and Paralegal to work for our Central law firm in Hong Kong.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -920,6 +998,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94882712",
       "excerpt": "• Paralegal supporting cross-border legal work with focus on PRC law and China Attestation matters. • A solid academic background in PRC's law",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -937,6 +1016,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94863290",
       "excerpt": "We offer competitive remuneration package to the right candidate and operate a 5-day work-week.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -954,6 +1034,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94820343",
       "excerpt": "Trainee Solicitor supporting legal document preparation and drafting.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -971,6 +1052,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94821618",
       "excerpt": "..",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -988,6 +1070,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94830202",
       "excerpt": "We are a Hong Kong law firm focusing on corporate finance practice.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1005,6 +1088,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94833194",
       "excerpt": "Be the face of our wine business. Competitive salary, professional environment & growth opportunities await.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1022,6 +1106,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94794246",
       "excerpt": "Paralegal to support intellectual property matters for Hong Kong, PRC, and multinational clients.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1039,6 +1124,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94795391",
       "excerpt": "Assist in drafting, reviewing, and proofreading legal documents and contracts, including NDAs, commercial agreements, and internal policies.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1056,6 +1142,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94803499",
       "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1072,7 +1159,8 @@
       "postedAt": "2026-09-22",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-mayer-brown-4468522601",
-      "excerpt": null,
+      "excerpt": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to …",
+      "description": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to creatively anticipating their needs and delivering excellence in everything we do.\n\nWe are a collegial, collaborative and diverse firm where highly motivated individuals with an unwavering commitment to excellence receive the opportunity, support and development they need to grow, thrive and realise their greatest potential all while supporting the Firm’s client service principles of excellence, strategic partnership, commercial instinct, integrated strengths, innovation, and collaboration across our international firm.\n\nIf you are looking to build your career in a dynamic and supportive environment, and share our commitment to exceptional client service, professionalism, initiative, responsiveness and adaptability, we invite you to join our Hong Kong office.\n\nResponsibilities\n\nWe are looking for a highly motivated individual with an unwavering commitment to excellence. The team is busy and is looking for a candidate that has the ability to watch and learn, independently progress their skillset and learning and is able to effectively balance complex, high-stakes work and disruptive hours whilst delivering a high quality work product in a timely manner.\n\nThis is an excellent opportunity for a self-motivated and driven individual to work in a premier legal team and become well-versed in a large variety of debt capital markets with wide geographical exposure.\n\n- Provide support to Partners and Associates in Hong Kong.\n- Matter management (e.g.: reviewing initial and subsequent drafts and summarizing changes and highlighting changes relevant to the client), handling documentation relating to closings and completion and document checklist review and annotation.\n\nQualifications\n\nQualifications, Experience and Personal Attributes\n\n- Paralegal experience from leading U.S. or magic circle legal firms with 3 to 5 years of experience in the Debt Capital Markets practice.\n- Fluent in oral and written English.\n- The candidate will also need to be comfortable participating in conversations and written communications in Chinese (Mandarin and Cantonese) and able to review drafts in Chinese.\n\nExperience And Attributes\n\n- This is a permanent paralegal position in Mayer Brown’s Corporate & Securities practice.\n- Our clients are leading global banks and we are looking for a candidate that can perform routine tasks independently and to a high service quality that is expected from our clients.\n- The practice is high volume and day-to-day work will require a thorough understanding of documentation and timelines. The candidate will need excellent organizational skills and demonstrate the ability to manage multiple projects each with a different scope of work in an efficient, high quality and timely manner.\n- The debt capital markets practice often requires coverage outside of regular working hours and the candidate will be responsible for attending to and handling tasks during non-work hours and on weekends.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1090,23 +1178,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94762213",
       "excerpt": "Support efficient delivery of legal services through contract management, compliance, and legal operations.",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4468490660",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Legal Executive / Paralegal",
-      "company": "TransUnion",
-      "location": "Hong Kong, Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-09-21",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/legal-executive-paralegal-at-transunion-4468490660",
-      "excerpt": null,
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1124,6 +1196,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94199416",
       "excerpt": "Global exposure in a software development industry.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1141,6 +1214,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94734664",
       "excerpt": "To provide legal support to our solicitors in the practice of personal injuries and medical negligence litigation.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1158,6 +1232,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94690450",
       "excerpt": "We are hiring a Paralegal to join a specialised investments practice in an international law firm in Hong Kong.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1175,6 +1250,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94697066",
       "excerpt": "Our client is a top-tier international law firm looking for a highly motivated and detail-oriented Paralegal to join their Corporate & Securities team",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1192,6 +1268,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94704874",
       "excerpt": "As a Paralegal and Legal Executive, you will be at the forefront of our legal operations, supporting a dynamic team of professionals.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1208,7 +1285,8 @@
       "postedAt": "2026-09-17",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/paralegal-dcm-focused-top-tier-international-law-firm-at-ambition-4468398326",
-      "excerpt": null,
+      "excerpt": "Introduction: We are partnering with a top-tier international law firm to hire a Debt Capital Markets Paralegal for their growing Corporate & Securities practice in Hong Kong. The position provides direct exposure to market-leading DCM transactions across the APAC region, working alongside highly re…",
+      "description": "Introduction: We are partnering with a top-tier international law firm to hire a Debt Capital Markets Paralegal for their growing Corporate & Securities practice in Hong Kong. The position provides direct exposure to market-leading DCM transactions across the APAC region, working alongside highly regarded Partners.\n\nResponsibilities:\n\n- Supporting Partners and Senior Associates on high-volume, cross-border Debt Capital Markets transactions.\n- Assisting with matter management, including reviewing initial and subsequent draft documentation, summarizing key revisions, and highlighting critical changes for clients.\n- Managing closing and completion documentation, checklist reviews, and detailed annotations.\n- Executing routine legal tasks independently while maintaining high service delivery standards for global banking clients.\n- Coordinating transaction timelines and managing multiple concurrent projects efficiently under tight schedules.\n- Overseeing deal logistics and providing coverage outside standard working hours when required by transaction flows.\nRequirements:\n\n- Possess 3 to 5 years of solid DCM paralegal experience gained from leading US or Magic Circle law firms.\n- Strong background in Debt Capital Markets is preferred, though candidates with broader Corporate Finance experience covering a high proportion of DCM will be considered.\n- Professional fluency in written and spoken English, Cantonese, and Mandarin, including the ability to review Chinese draft legal documents.\n- Exceptional organizational skills with a proven track record of handling high-stakes, time-sensitive transactional work.\n- Ability to work independently, demonstrate strong learning agility, and manage demanding client expectations effectively.\nFor a more comprehensive list of current opportunities, please visit www.ambition.com.hk",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1226,6 +1304,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94666728",
       "excerpt": "We are a Well-established and expanding law firm in Central and are looking for suitable candidate",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1243,6 +1322,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94671848",
       "excerpt": "Paralegal - Compliance (6-Month Contract), Global Hedge Fund",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1260,6 +1340,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94672236",
       "excerpt": "Trainees handle substantive work—drafting, case preparation and client correspondence—under close guidance from partners and senior solicitors.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1277,6 +1358,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94631874",
       "excerpt": "Five-day work week | Competitive pay | Discretionary bonus | Medical insurance | Education subsidy | Training programme | MPF top-up plan",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1295,6 +1377,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94635175",
       "excerpt": "Paralegal, Legal Executive, or Trainee Solicitor to support a dynamic law firm in Wan Chai.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1312,6 +1395,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94639850",
       "excerpt": "Form 6 or above 5 years or above solid experience in handling full set of conveyancing documents and transactions 5 days week",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1329,6 +1413,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94651457",
       "excerpt": "Our client, an international law firm is urgently looking for a Paralegal to join their Corporate Team in Hong Kong.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1345,7 +1430,8 @@
       "postedAt": "2026-09-15",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/senior-paralegal-at-gammon-construction-limited-4466161768",
-      "excerpt": null,
+      "excerpt": "Responsibilities: - Draft and prepare correspondence, agreements and other legal documents; - Research legal issues and case law and / or examination of documentation and / or factual investigation; - Review tender documents and other contractual documents and advising on potential legal risks; - As…",
+      "description": "Responsibilities:\n\n- Draft and prepare correspondence, agreements and other legal documents;\n- Research legal issues and case law and / or examination of documentation and / or factual investigation;\n- Review tender documents and other contractual documents and advising on potential legal risks;\n- Assist with preparation of court bundles and other document management tasks;\n- Assist in preparing briefs to external counsel, attending court and assisting external counsel;\n- Liaise with government agencies; and\n- Assist with general legal matters.\n\nRequirements:\n\n- Degree in Law from a university in Hong Kong or another common law jurisdiction;\n- At least 3 years' experience working in a solicitors' firm or in-house team, ideally in construction;\n- Strong initiative, organizational and problem solving skills;\n- Strong personal, communication and teamwork skills;\n- Determination to produce top quality work within deadline and under pressure;\n- High commitment, including readiness to work late at short notice if needed;\n- Willingness to learn and adapt;\n- Excellent communication skills in both written and spoken English and Chinese.\n\nBenefits:\n\n- Competitive pay\n- Discretionary bonus\n- MPF top-up\n- Medical insurance\n- Life insurance\n\nWe are an equal opportunity employer. Information provided will be treated in strict confidence for recruitment purposes only. Candidates not being invited for interview within 6 weeks after submission date may assume their application unsuccessful. All personal data collected will be retained for a period of no more than 24 months, and destroyed afterwards. We are committed to comply with the Personal Data (Privacy) Ordinance of Hong Kong (the “Ordinance”) and a copy of our Personal Information Collection Statement can be accessed by visiting our Company website (www.gammonconstruction.com).",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1363,6 +1449,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94603988",
       "excerpt": "a full range of clerical and administrative support to fee earners.",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1380,6 +1467,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94606217",
       "excerpt": "n/a",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1397,6 +1485,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94319470",
       "excerpt": "As well as the relevant skills and experience, we're looking for people who are innovative, commercial and value the work that they do. We...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     },
@@ -1413,7 +1502,8 @@
       "postedAt": "2026-08-31",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/trainee-solicitor-2029-at-norton-rose-fulbright-4461230616",
-      "excerpt": null,
+      "excerpt": "Practice Group / Department: Business Partnering - Hong Kong Job Description We're Norton Rose Fulbright - a global law firm with over 50 offices and 7,000 employees worldwide. We provide the world’s preeminent corporations and financial institutions with a full business law service. As well as the …",
+      "description": "Practice Group / Department:\n\nBusiness Partnering - Hong Kong\n\nJob Description\n\nWe're Norton Rose Fulbright - a global law firm with over 50 offices and 7,000 employees worldwide. We provide the world’s preeminent corporations and financial institutions with a full business law service.\n\nAs well as the relevant skills and experience, we're looking for people who are innovative, commercial and value the work that they do. We celebrate multiple approaches and points of view and believe diversity drives innovation, so we're building a culture where difference is valued.\n\nTake the first step towards a career at Norton Rose Fulbright\n\nNorton Rose Fulbright Hong Kong is part of Norton Rose Fulbright, a global legal practice providing the world's pre-eminent corporations and financial institutions with a full business law service from offices across Europe, the United States, Canada, Latin America, Asia, Australia, Africa and the Middle East.\n\nWe currently have an opening for Trainee Solicitor (2029) position in our Hong Kong office.\n\nWe look for applications from candidates with law degree, who demonstrate a consistently strong academic record. You are expected to have or be expecting at least an upper second class degree or equivalent. We look for people who are team players, with excellent interpersonal and communication skills.\n\nRequirement\n\n- Strong academic record: at least 2:1 degree or equivalent\n- Good communication skills\n- Commercial awareness\n- Negotiation skills\n- Team playrer\n- Leadership qualities\n- Fluency in English (both written and spoken)\n- Knowledge of Chinese (both written and spoken)\n\nPlease ensure you include your resume, cover letter indicating the year you intend to commence a training contract in Hong Kong, and the final/latest transcripts of your high schoold and university in your application.\n\nYou can upload all supporting documents, including your resume, cover letter, and academic transcripts from both high school and university, to the Resume/Cover Letter Upload section.\n\nDiversity, Equity and Inclusion\n\nTo attract the best people, we strive to create a diverse and inclusive environment where everyone can bring their whole selves to work, have a sense of belonging, and realize their full career potential.\n\nOur new enabled work model allows our people to have more flexibility in the way they choose to work from both the office and a remote location, while continuing to deliver the highest standards of service. We offer a range of family friendly and inclusive employment policies and provide access to programmes and services aimed at nurturing our people’s health and overall wellbeing. Find more about Diversity, Equity and Inclusion here.\n\nWe are proud to be an equal opportunities employer and encourage applications from individuals who can complement our existing teams. We strive to create an inclusive and accessible recruitment process for all candidates. If you require any tailored adjustments or accommodations, please let us know via EMEARecruitment@nortonrosefulbright.com",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1430,7 +1520,8 @@
       "postedAt": "2026-07-28",
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.linkedin.com/jobs/view/funds-paralegal-at-king-wood-4443252048",
-      "excerpt": null,
+      "excerpt": "Position Summary You will be working in a commercial law firm, and enjoy the challenge of taking on some matters autonomously, seeking guidance and support as required. Job Requirement You should have: - Relevant general corporate/ funds internship/work experience; - Excellent interpersonal skills a…",
+      "description": "Position Summary\n\nYou will be working in a commercial law firm, and enjoy the challenge of taking on some matters autonomously, seeking guidance and support as required.\n\nJob Requirement\n\nYou should have:\n\n- Relevant general corporate/ funds internship/work experience;\n- Excellent interpersonal skills and can deliver excellent client service;\n- Good analytical skills and attention to details;\n- Fluency in English and Mandarin required (spoken and written);\n- Immediate availability is highly preferred\n\nNote: we do not accept agency referral for this",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1448,6 +1539,7 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/90167450",
       "excerpt": "Our Hong Kong office is now seeking a Senior Paralegal. This role will support cross-border capital market transactions and ensure smooth deal...",
+      "description": null,
       "stillListed": true,
       "suppressNew": true
     }
