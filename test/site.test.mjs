@@ -83,3 +83,27 @@ test('已提交的 feed.json 结构正确（防止把坏数据提交上去）', 
     assert.match(job.url, /^https:\/\//, `${job.id} 的 url 不是 https`);
   }
 });
+
+test('展开/收起按钮的 class 在渲染与事件委托里是同一个（改一边忘另一边的典型）', () => {
+  const app = read('docs/app.js');
+  for (const cls of ['expand-toggle', 'apply-toggle']) {
+    assert.match(app, new RegExp(`class: '${cls}'`), `渲染里没有 ${cls}`);
+    assert.match(app, new RegExp(`closest\\('button\\.${cls}'\\)`), `事件委托里没有 ${cls}`);
+  }
+});
+
+test('展开状态存在 DOM 之外 —— 整页重绘后不会自己收回去', () => {
+  const app = read('docs/app.js');
+  assert.match(app, /const expanded = new Set\(\)/, '展开状态必须是模块级的一份');
+  assert.match(app, /expanded\.has\(job\.id\)/, '渲染要读它');
+  assert.match(app, /expanded\.(add|delete)\(id\)/, '点击要写它');
+});
+
+test('全文用 pre-wrap 渲染，JD 里的换行不会被压成一坨', () => {
+  const block = read('docs/style.css').match(/\.job-description\s*\{[^}]*\}/)?.[0] ?? '';
+  assert.match(block, /white-space:\s*pre-wrap/);
+});
+
+test('搜索框提示语写明搜索覆盖全文', () => {
+  for (const page of PAGES) assert.match(read(page), /搜标题、公司或职位全文/, page);
+});

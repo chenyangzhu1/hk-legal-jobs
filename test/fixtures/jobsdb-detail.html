@@ -1,0 +1,24 @@
+<!-- 构造的 fixture，**不是**真实响应。见 test/jobsdb.test.mjs 顶部说明：
+     hk.jobsdb.com 的详情页被 Cloudflare 挡死（403），拿不到真实样本。
+     这里按 SEEK 系两处已知结构各造一份，用来钉住解析器的行为契约，
+     以及「取不到就返回 null」的降级路径。 -->
+<div class="job-details">
+  <h1 data-automation="job-detail-title">Paralegal (Corporate / Funds)</h1>
+  <span data-automation="job-detail-company">Aquis Search Limited</span>
+
+  <div data-automation="jobAdDetails">
+    <p>Our client, an international law firm, is looking for a Paralegal to join its
+      Corporate and Funds practice in Hong Kong.</p>
+    <p>The role involves:</p>
+    <ul>
+      <li>Drafting and reviewing transaction documents</li>
+      <li>Coordinating with offshore counsel on filings &amp; registrations</li>
+      <li>Maintaining closing bibles and precedent banks</li>
+    </ul>
+    <p>Candidates should have at least two years of paralegal experience in a law firm
+      and be fluent in English and Chinese.</p>
+    <div class="job-details__apply"><button>Apply</button></div>
+  </div>
+
+  <div data-automation="job-detail-footer">Report this job</div>
+</div>

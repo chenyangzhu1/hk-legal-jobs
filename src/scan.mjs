@@ -16,18 +16,27 @@ import { fileURLToPath } from 'node:url';
 import { createHttp, createCurlTransport } from './http.mjs';
 import { createClassifier } from './tracks.mjs';
 import { upsert } from './dedupe.mjs';
-import { fetchJobsdb } from './sources/jobsdb.mjs';
-import { fetchLinkedin } from './sources/linkedin.mjs';
+import { oneLine } from './text.mjs';
+import { fetchJobsdb, fetchDescription as fetchJobsdbDescription } from './sources/jobsdb.mjs';
+import { fetchLinkedin, fetchDescription as fetchLinkedinDescription } from './sources/linkedin.mjs';
 
 export const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
-const DEFAULT_SOURCES = { jobsdb: fetchJobsdb, linkedin: fetchLinkedin };
+/** 每个源两件事：搜索列表，以及按需取单条的 JD 全文。 */
+const DEFAULT_SOURCES = {
+  jobsdb: { search: fetchJobsdb, description: fetchJobsdbDescription },
+  linkedin: { search: fetchLinkedin, description: fetchLinkedinDescription },
+};
 
 /** 站点载荷只带页面用得上的字段（feed.json 由主库派生，见 SPEC §6.4）。 */
 const FEED_FIELDS = [
   'id', 'source', 'tracks', 'title', 'company', 'location',
-  'salary', 'postedAt', 'firstSeenAt', 'url', 'excerpt', 'stillListed', 'suppressNew',
+  'salary', 'postedAt', 'firstSeenAt', 'url', 'excerpt', 'description',
+  'stillListed', 'suppressNew',
 ];
+
+/** 详情页被按机器人挡掉时的状态码：403（Cloudflare 挑战）、451（法律原因）。 */
+const BOT_BLOCKED = new Set([403, 451]);
 
 /**
  * 源状态是 `ok` / `partial: <原因>` / `failed: <原因>` 三种之一。
@@ -109,6 +118,13 @@ export async function runScan(options = {}) {
     return httpCache.get(key);
   };
   const registry = { ...DEFAULT_SOURCES, ...(options.sources ?? {}) };
+  // 注入一个裸函数等于只接管搜索那一半（测试最常用的写法），详情抓取随之留空
+  // —— 这样测试不会因为没提供 description 就意外打到网络。
+  const sourceEntry = (name) => {
+    const raw = registry[name];
+    if (typeof raw === 'function') return { search: raw };
+    return raw ?? {};
+  };
   const classify = createClassifier(config);
 
   const enabled = Object.entries(config.sources ?? {}).filter(([, cfg]) => cfg?.enabled !== false);
@@ -120,8 +136,8 @@ export async function runScan(options = {}) {
   let fetched = 0;
 
   for (const [name, sourceConfig] of enabled) {
-    const fetchFn = registry[name];
-    if (typeof fetchFn !== 'function') {
+    const { search } = sourceEntry(name);
+    if (typeof search !== 'function') {
       sourceStatus[name] = `failed: 没有名为 ${name} 的源实现`;
       continue;
     }
@@ -129,7 +145,7 @@ export async function runScan(options = {}) {
     let partial = null;
     try {
       for (const keyword of keywords) {
-        const listings = await fetchFn(sourceConfig, {
+        const listings = await search(sourceConfig, {
           keywords: keyword,
           http: httpFor(sourceConfig),
           log,
@@ -159,6 +175,67 @@ export async function runScan(options = {}) {
     }
   }
 
+  // ---------------------------------------------------------------- 详情补全
+  //
+  // 搜索接口只给摘要（JobsDB 是 teaser，LinkedIn 干脆什么都没有）。全文要从各自的
+  // 职位详情页单独取，所以这里做一趟补全。
+  //
+  // 三条约束：
+  //   1. **只补主库里还没有全文的**。每天新增十几条，而不是把主库整个重抓一遍 ——
+  //      请求量不随主库增长，这是 ADR 0001「低频」承诺得以维持的前提。
+  //   2. **失败一律降级**。取不到全文只是页面上少一个展开按钮，绝不改变抓取本身的
+  //      成败、也不影响下架判定。
+  //   3. **403/451 立刻短路**。那是 Cloudflare / 法律拦截，同源后续每一条都必然
+  //      一样失败，继续试只是白白把对方惹毛。实测 JobsDB 详情页正是这种情况。
+  const descriptionLength = config.site?.descriptionLength ?? 4000;
+  const excerptLength = config.site?.excerptLength ?? 300;
+  const described = new Set(
+    master.filter((record) => record.description).flatMap((record) => [record.id, ...(record.repostIds ?? [])]),
+  );
+  const detailStats = { fetched: 0, skipped: 0, failed: 0, blocked: [] };
+
+  for (const [name, sourceConfig] of enabled) {
+    const { description } = sourceEntry(name);
+    if (typeof description !== 'function') continue;
+
+    const targets = [...byId.values()].filter(
+      (listing) => listing.source === name && !described.has(listing.id),
+    );
+
+    let blocked = false;
+    for (const listing of targets) {
+      if (blocked) {
+        detailStats.skipped += 1;
+        continue;
+      }
+      try {
+        const text = await description(listing, {
+          http: httpFor(sourceConfig),
+          descriptionLength,
+          log,
+        });
+        if (text) {
+          listing.description = text;
+          // 有的源（LinkedIn）搜索卡片不带任何摘要，卡片上会是一片空白。全文既然
+          // 已经在手，就用它开头几句当摘要 —— 比空着强，也让展开按钮有对照物。
+          if (!listing.excerpt) listing.excerpt = oneLine(text, excerptLength);
+          detailStats.fetched += 1;
+        } else {
+          detailStats.skipped += 1;
+        }
+      } catch (err) {
+        detailStats.failed += 1;
+        if (BOT_BLOCKED.has(err?.status)) {
+          blocked = true;
+          detailStats.blocked.push(name);
+          log.error(`scan: ${name} 详情页被拦截（HTTP ${err.status}），本次不再尝试取全文 —— 该源的行不会有展开按钮`);
+        } else {
+          log.error(`scan: ${name} 取详情失败（非致命）—— ${err?.message ?? err}`);
+        }
+      }
+    }
+  }
+
   const collected = [...byId.values()];
   const completeSources = new Set(
     Object.entries(sourceStatus).filter(([, status]) => statusKind(status) === 'ok').map(([name]) => name),
@@ -179,6 +256,7 @@ export async function runScan(options = {}) {
     delisted: delisted.length,
     total: jobs.length,
     active: jobs.filter((j) => j.stillListed !== false).length,
+    described: detailStats.fetched,
     byTrack: Object.fromEntries(
       Object.keys(config.tracks ?? {}).map((id) => [id, jobs.filter((j) => (j.tracks ?? []).includes(id)).length]),
     ),
@@ -202,6 +280,14 @@ export async function runScan(options = {}) {
       sourceLabels: Object.fromEntries(
         Object.entries(config.sources ?? {}).map(([id, def]) => [id, def?.label ?? id]),
       ),
+      // 全文补全的战果。某个源被机器人拦截在这里看得见 —— 页面上的表现是
+      // 「这个源的行都没有展开按钮」，不写下来就只能靠猜。
+      descriptions: {
+        fetched: detailStats.fetched,
+        skipped: detailStats.skipped,
+        failed: detailStats.failed,
+        blocked: detailStats.blocked,
+      },
     },
     jobs: sortJobs(jobs).map(toFeedJob),
   };
@@ -234,6 +320,11 @@ function printSummary(result, log = console) {
   const { meta, stats } = result;
   log.log(`抓取 ${stats.fetched} 条 → 归属 ${stats.kept} 条 → 新增 ${stats.added} / 更新 ${stats.updated} / 下架 ${stats.delisted}`);
   log.log(`主库 ${stats.total} 条（在列 ${stats.active}）`);
+  const d = meta.descriptions ?? {};
+  log.log(
+    `全文：新增 ${d.fetched ?? 0} / 拿不到 ${d.skipped ?? 0} / 失败 ${d.failed ?? 0}` +
+      (d.blocked?.length ? `（${d.blocked.join('、')} 的详情页被拦截）` : ''),
+  );
   log.log(`源：${Object.entries(meta.sources).map(([n, s]) => `${n}=${s}`).join('  ')}`);
   if (!meta.complete) log.log('本次数据不完整，站点会显示降级横幅');
   for (const [track, count] of Object.entries(stats.byTrack)) log.log(`  ${track}: ${count}`);

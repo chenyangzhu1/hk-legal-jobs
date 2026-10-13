@@ -62,6 +62,33 @@ test('多个词之间是 AND', () => {
   assert.equal(matchesQuery(j, 'paralegal kowloon'), false);
 });
 
+test('关键词也搜职位全文，不只是标题与公司', () => {
+  const j = job({ title: 'Paralegal', company: 'Example & Co', description: 'Drafting and reviewing ISDA documentation.' });
+
+  assert.equal(matchesQuery(j, 'isda'), true);
+  assert.equal(matchesQuery(j, 'documentation'), true);
+  assert.equal(matchesQuery(j, 'isda drafting'), true);
+  assert.equal(matchesQuery(j, 'isda arbitration'), false, 'AND 语义在全文里同样成立');
+});
+
+test('没有全文时不炸，只是搜不到', () => {
+  assert.equal(matchesQuery(job({ description: undefined }), 'isda'), false);
+  assert.equal(matchesQuery(job({ description: null }), 'paralegal'), true);
+});
+
+test('全文与标题都命中同一个词也只算命中一次', () => {
+  const j = job({ title: 'Paralegal', description: 'Paralegal role in a busy team.' });
+  assert.equal(matchesQuery(j, 'paralegal'), true);
+});
+
+test('同一批职位反复筛选结果稳定（干草堆缓存不改变语义）', () => {
+  const jobs = [job({ id: 'a', description: 'ISDA work' }), job({ id: 'b', company: 'Isda & Co' })];
+  const first = filterJobs(jobs, { q: 'isda', view: 'archive', now: NOW, windows: WINDOWS }).map((j) => j.id);
+  const second = filterJobs(jobs, { q: 'isda', view: 'archive', now: NOW, windows: WINDOWS }).map((j) => j.id);
+  assert.deepEqual(first, ['a', 'b']);
+  assert.deepEqual(second, first);
+});
+
 // ------------------------------------------------------------ 筛选与排序
 
 test('track 筛选：多标签职位在两个筛选下都出现', () => {

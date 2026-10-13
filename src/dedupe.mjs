@@ -124,6 +124,10 @@ function mergeInto(target, incoming, nowIso) {
   if (!target.location && incoming.location) target.location = incoming.location;
   if (!target.salary && incoming.salary) target.salary = incoming.salary;
   if (!target.excerpt && incoming.excerpt) target.excerpt = incoming.excerpt;
+  // 全文同理：第一次没抓到（详情页被拦、或那时还没有这个功能）时，后续某次抓到了
+  // 应该补上，而不是因为字段已存在就永远空着。两边都没有时显式写 null ——
+  // 老记录里这个字段整个不存在，统一成 null 之后「缺字段」与「没有正文」不再混淆。
+  if (!target.description) target.description = incoming.description ?? null;
 
   // 新的 id 追加到该记录（SPEC §6.3）；canonical id / url 不变
   if (incoming.id && incoming.id !== target.id) {
@@ -146,6 +150,7 @@ function createRecord(incoming, fingerprint, nowIso, silentNew) {
     lastSeenAt: nowIso,
     url: incoming.url,
     excerpt: incoming.excerpt ?? null,
+    description: incoming.description ?? null,
     fingerprint,
     stillListed: true,
   };

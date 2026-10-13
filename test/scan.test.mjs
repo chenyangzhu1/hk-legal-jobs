@@ -358,7 +358,7 @@ test('feed.json 裁剪掉站点不用的字段，并带上 meta', async () => {
     assert.equal(record.lastSeenAt, undefined);
     assert.equal(record.repostIds, undefined);
     // 站点要用的字段都在
-    for (const key of ['id', 'source', 'tracks', 'title', 'company', 'location', 'salary', 'postedAt', 'firstSeenAt', 'url', 'excerpt', 'stillListed']) {
+    for (const key of ['id', 'source', 'tracks', 'title', 'company', 'location', 'salary', 'postedAt', 'firstSeenAt', 'url', 'excerpt', 'description', 'stillListed']) {
       assert.ok(key in record, `feed 缺字段 ${key}`);
     }
 
@@ -393,6 +393,222 @@ test('统计按 track 计数', async () => {
     });
     assert.equal(res.stats.byTrack.paralegal, 2);
     assert.equal(res.stats.byTrack.trainee, 2);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+// ------------------------------------------------------------------ JD 全文补全
+
+const FULL = `这是一段足够长的职位正文，用来越过「太短就是解析失败」的下限。${'补充说明。'.repeat(20)}`;
+
+/** 一个源：搜索返回固定列表，详情按 id 脚本化作答。 */
+function withDescriptions(search, byId) {
+  return {
+    search: async () => search,
+    description: async (listing) => {
+      const v = byId[listing.id];
+      if (v instanceof Error) throw v;
+      return v ?? null;
+    },
+  };
+}
+
+test('新职位会去取全文，并写进主库与 feed.json', async () => {
+  const root = makeProject();
+  try {
+    await scan(root, {
+      sources: {
+        jobsdb: withDescriptions([job({ id: 'jobsdb:1' })], { 'jobsdb:1': FULL }),
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+
+    const [record] = read(root, 'data/jobs.json');
+    assert.equal(record.description, FULL);
+
+    const [feedJob] = read(root, 'docs/feed.json').jobs;
+    assert.equal(feedJob.description, FULL, '摘要之外，全文也要进站点载荷（搜索要用）');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('已经有全文的职位不再重复抓 —— 请求量不随主库增长', async () => {
+  const root = makeProject(CONFIG, {
+    'data/jobs.json': [job({ id: 'jobsdb:1', description: '上次抓到的全文', firstSeenAt: '2026-10-01T00:00:00Z' })],
+  });
+  try {
+    const asked = [];
+    await scan(root, {
+      sources: {
+        jobsdb: {
+          search: async () => [job({ id: 'jobsdb:1' })],
+          description: async (l) => { asked.push(l.id); return FULL; },
+        },
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+
+    assert.deepEqual(asked, [], '主库里已有全文 → 一条详情请求都不该发');
+    assert.equal(read(root, 'data/jobs.json')[0].description, '上次抓到的全文');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('主库里没全文的旧职位会被补上', async () => {
+  const root = makeProject(CONFIG, {
+    'data/jobs.json': [job({ id: 'jobsdb:1', description: null, firstSeenAt: '2026-10-01T00:00:00Z' })],
+  });
+  try {
+    await scan(root, {
+      sources: {
+        jobsdb: withDescriptions([job({ id: 'jobsdb:1' })], { 'jobsdb:1': FULL }),
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+    assert.equal(read(root, 'data/jobs.json')[0].description, FULL);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('取全文失败只是降级：抓取照常成功，源状态仍是 ok', async () => {
+  const root = makeProject();
+  try {
+    const res = await scan(root, {
+      sources: {
+        jobsdb: withDescriptions([job({ id: 'jobsdb:1' })], { 'jobsdb:1': new Error('boom') }),
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+
+    assert.equal(res.exitCode, 0);
+    assert.equal(res.meta.complete, true, '详情挂了不算源挂了 —— 列表数据是完整的');
+    assert.equal(res.meta.sources.jobsdb, 'ok');
+    assert.equal(res.meta.descriptions.failed, 1);
+
+    const [record] = read(root, 'data/jobs.json');
+    assert.equal(record.description ?? null, null, '没有全文就是 null，不编一段出来');
+    assert.equal(read(root, 'data/jobs.json').length, 1, '职位本身照常入库');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('403 立刻短路：同源后续职位不再逐条送死', async () => {
+  const root = makeProject();
+  try {
+    const asked = [];
+    const jobs = Array.from({ length: 5 }, (_, i) => job({ id: `jobsdb:${i}`, title: `Paralegal ${i}` }));
+    const res = await scan(root, {
+      sources: {
+        jobsdb: {
+          search: async () => jobs,
+          description: async (l) => {
+            asked.push(l.id);
+            const err = new Error('Cloudflare');
+            err.status = 403;
+            throw err;
+          },
+        },
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+
+    assert.equal(asked.length, 1, '第一条撞上 403 之后就停手');
+    assert.deepEqual(res.meta.descriptions.blocked, ['jobsdb']);
+    assert.equal(res.meta.descriptions.skipped, 4);
+    assert.equal(res.meta.complete, true, '被拦的是详情页，列表数据仍然完整');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('连续的成功/失败在 meta 里如实记账', async () => {
+  const root = makeProject();
+  try {
+    const res = await scan(root, {
+      sources: {
+        jobsdb: withDescriptions(
+          [job({ id: 'jobsdb:1', title: 'Paralegal A' }), job({ id: 'jobsdb:2', title: 'Paralegal B' })],
+          { 'jobsdb:1': FULL, 'jobsdb:2': null },
+        ),
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+
+    assert.deepEqual(res.meta.descriptions, { fetched: 1, skipped: 1, failed: 0, blocked: [] });
+    assert.equal(res.stats.described, 1);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('注入裸函数形式的源时不会去取全文（测试因此不会意外打网络）', async () => {
+  const root = makeProject();
+  try {
+    const res = await scan(root, { sources: sources({ jobsdb: [job()] }) });
+    assert.deepEqual(res.meta.descriptions, { fetched: 0, skipped: 0, failed: 0, blocked: [] });
+    assert.equal(read(root, 'data/jobs.json')[0].description, null);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('descriptionLength 来自 site 配置并传下去', async () => {
+  const root = makeProject({ ...CONFIG, site: { ...CONFIG.site, descriptionLength: 1234 } });
+  try {
+    let seen = null;
+    await scan(root, {
+      sources: {
+        jobsdb: {
+          search: async () => [job()],
+          description: async (l, opts) => { seen = opts.descriptionLength; return FULL; },
+        },
+        linkedin: { search: async () => [], description: async () => null },
+      },
+    });
+    assert.equal(seen, 1234);
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('抓到全文时给没有摘要的源补一条摘要（LinkedIn 的卡片本来是空白的）', async () => {
+  const root = makeProject();
+  try {
+    const long = FULL.repeat(5); // 越过 excerptLength，摘要才会真的被截断
+    await scan(root, {
+      sources: {
+        jobsdb: withDescriptions([], {}),
+        linkedin: withDescriptions(
+          [job({ id: 'linkedin:1', source: 'linkedin', url: 'https://hk.linkedin.com/jobs/view/1', excerpt: null })],
+          { 'linkedin:1': long },
+        ),
+      },
+    });
+
+    const [record] = read(root, 'data/jobs.json');
+    assert.equal(record.description, long);
+    assert.equal(record.excerpt.length, 301, 'excerptLength=300 + 省略号');
+    assert.ok(long.startsWith(record.excerpt.slice(0, 300)), '摘要取自全文开头');
+  } finally {
+    rmSync(root, { recursive: true, force: true });
+  }
+});
+
+test('源自带摘要时不覆盖它（JobsDB 的 teaser 比正文开头更贴题）', async () => {
+  const root = makeProject();
+  try {
+    await scan(root, {
+      sources: {
+        jobsdb: withDescriptions([job({ id: 'jobsdb:1', excerpt: '来源自带的 teaser' })], { 'jobsdb:1': FULL }),
+        linkedin: withDescriptions([], {}),
+      },
+    });
+    assert.equal(read(root, 'data/jobs.json')[0].excerpt, '来源自带的 teaser');
   } finally {
     rmSync(root, { recursive: true, force: true });
   }

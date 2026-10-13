@@ -31,6 +31,10 @@ let feed = { meta: {}, jobs: [] };
 let state = readState(location.search);
 let applied = readApplied(localStorage);
 
+// 哪些行被展开了。渲染是整页重绘的，所以这个状态必须留在 DOM 之外，
+// 否则筛选、翻页、标记已投递之后展开的行会自己收回去。
+const expanded = new Set();
+
 /** 建元素的小工具；children 里是字符串的一律走 textContent。 */
 function el(tag, props = {}, ...children) {
   const node = document.createElement(tag);
@@ -110,6 +114,26 @@ function jobRow(job, now) {
     sourceLabel(job.source),
   ].filter(Boolean).join(' · ');
 
+  // 全文比摘要长才值得给个展开按钮 —— 否则点开只是把同一段话又看一遍
+  const hasFullText =
+    typeof job.description === 'string' && job.description.length > (job.excerpt?.length ?? 0);
+  const isExpanded = hasFullText && expanded.has(job.id);
+
+  const text = isExpanded
+    ? el('p', { class: 'job-description' }, job.description)
+    : job.excerpt
+      ? el('p', { class: 'job-excerpt' }, job.excerpt)
+      : null;
+
+  const expand = hasFullText
+    ? el('button', {
+        type: 'button',
+        class: 'expand-toggle',
+        'data-id': job.id,
+        'aria-expanded': String(isExpanded),
+      }, isExpanded ? '收起' : '展开全文')
+    : null;
+
   const isApplied = applied.has(job.id);
   const toggle = el('button', {
     type: 'button',
@@ -122,7 +146,8 @@ function jobRow(job, now) {
     el('div', { class: 'job-body' },
       heading,
       el('p', { class: 'job-meta' }, meta),
-      job.excerpt ? el('p', { class: 'job-excerpt' }, job.excerpt) : null,
+      text,
+      expand,
     ),
     toggle,
   );
@@ -199,6 +224,15 @@ dom.sort.addEventListener('change', () => {
 });
 
 dom.list.addEventListener('click', (event) => {
+  const expand = event.target.closest('button.expand-toggle');
+  if (expand) {
+    const { id } = expand.dataset;
+    if (expanded.has(id)) expanded.delete(id);
+    else expanded.add(id);
+    render();
+    return;
+  }
+
   const button = event.target.closest('button.apply-toggle');
   if (!button) return;
   const { id } = button.dataset;

@@ -4,9 +4,10 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 
-import { fetchJobsdb, parseJobsdbItem, buildSearchUrl, assertAllowedHost, ALLOWED_JOBSTREET_HOSTS } from '../src/sources/jobsdb.mjs';
+import { fetchJobsdb, parseJobsdbItem, buildSearchUrl, assertAllowedHost, ALLOWED_JOBSTREET_HOSTS, parseJobsdbDetail, fetchDescription } from '../src/sources/jobsdb.mjs';
 
 const PAGE = JSON.parse(readFileSync(new URL('./fixtures/jobsdb-page.json', import.meta.url), 'utf8'));
+const DETAIL = readFileSync(new URL('./fixtures/jobsdb-detail.html', import.meta.url), 'utf8');
 const CFG = { api: 'https://hk.jobsdb.com/api/jobsearch/v5/search', siteKey: 'HK-Main', pageSize: 30, maxPages: 3, pageDelayMs: 0 };
 
 /** 收集 fetchJson 收到的 URL，并按给定响应脚本作答。 */
@@ -159,4 +160,68 @@ test('返回的 URL 全部通过白名单校验（防配置写错把请求打到
   const { http } = stubHttp([PAGE, { data: [] }]);
   const jobs = await fetchJobsdb(CFG, { keywords: 'x', http });
   for (const j of jobs) assert.equal(new URL(j.url).hostname, 'hk.jobsdb.com');
+});
+
+// ---------------------------------------------------------------- 详情（JD 全文）
+//
+// ⚠️ 这一段用的 fixture 是**构造的**，不是真实响应 —— hk.jobsdb.com 的详情页
+// 对所有脚本请求都回 Cloudflare 403，拿不到真实样本（见 parseJobsdbDetail 的注释）。
+// 所以这些测试钉的是「解析器的行为契约」，不是「线上确实长这样」。
+// 真正的保障是降级路径：认不出来就返回 null，绝不会写半截噪声进主库。
+
+test('详情页解析出正文块：段落与列表都在', () => {
+  const text = parseJobsdbDetail(DETAIL, 4000);
+
+  assert.ok(text, '构造的响应应当能解析出正文');
+  assert.match(text, /^Our client, an international law firm/);
+  assert.match(text, /\n- Drafting and reviewing transaction documents/);
+  assert.match(text, /filings & registrations/, '实体要解出来');
+  assert.ok(!text.includes('<'), '标签没去干净');
+});
+
+test('正文块里的嵌套 div 不会让解析提前收尾', () => {
+  const text = parseJobsdbDetail(DETAIL, 4000);
+  assert.match(text, /fluent in English and Chinese/, '正文块里嵌套的 apply 区域之后仍有内容');
+  assert.ok(!text.includes('Report this job'), '正文块之外的内容不该混进来');
+});
+
+test('没有正文块时退回 JSON-LD 的 description', () => {
+  const ld = `<html><head><script type="application/ld+json">
+    {"@type":"JobPosting","description":"<p>来自 JSON-LD 的正文，长度需要越过下限才作数。</p><p>${'补充内容。'.repeat(30)}</p>"}
+  </script></head><body></body></html>`;
+  const text = parseJobsdbDetail(ld, 4000);
+  assert.match(text, /来自 JSON-LD 的正文/);
+});
+
+test('JSON-LD 坏掉不影响其余块，也仍然返回 null 而不是抛错', () => {
+  const broken = '<script type="application/ld+json">{不是 JSON</script>';
+  assert.equal(parseJobsdbDetail(broken, 4000), null);
+});
+
+test('两种结构都没有 → null（这正是 Cloudflare 挡下来时的现实结果）', () => {
+  assert.equal(parseJobsdbDetail('', 4000), null);
+  assert.equal(parseJobsdbDetail('<html><body><h1>Just a moment...</h1></body></html>', 4000), null);
+});
+
+test('正文按 descriptionLength 截断', () => {
+  assert.equal(parseJobsdbDetail(DETAIL, 150).length, 151);
+  // 截到低于长度下限就是「拿不到」—— 半截噪声不如没有
+  assert.equal(parseJobsdbDetail(DETAIL, 80), null);
+});
+
+test('fetchDescription 只抓白名单内的 URL', async () => {
+  const urls = [];
+  const http = { fetchText: async (url) => { urls.push(url); return DETAIL; } };
+
+  const text = await fetchDescription({ url: 'https://hk.jobsdb.com/job/95201908' }, { http });
+  assert.match(text, /Our client, an international law firm/);
+  assert.deepEqual(urls, ['https://hk.jobsdb.com/job/95201908']);
+
+  assert.equal(await fetchDescription({ url: 'https://evil.example.com/job/1' }, { http }), null);
+  assert.deepEqual(urls.length, 1, '不合规的 URL 不该发出去');
+});
+
+test('403 向上抛，让编排层短路（这条路径目前是常态，不是异常）', async () => {
+  const blocked = async () => { const err = new Error('403'); err.status = 403; throw err; };
+  await assert.rejects(() => fetchDescription({ url: 'https://hk.jobsdb.com/job/1' }, { http: { fetchText: blocked } }), /403/);
 });

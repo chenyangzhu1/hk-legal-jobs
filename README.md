@@ -39,6 +39,7 @@ cd docs && python3 -m http.server 8000   # 然后打开 http://localhost:8000
 | 抓多少页 | `sources.<源>.maxPages` / `pageSize` |
 | 请求节奏 | `sources.<源>.pageDelayMs`、`http.minIntervalMs` |
 | NEW 徽章 / 最近列表的天数 | `site.newBadgeDays` / `site.recentDays` |
+| 卡片摘要长度 / 全文上限 | `site.excerptLength` / `site.descriptionLength` |
 
 `titlePatterns` 与 `titleFilter.negative` 都是**正则**（大小写不敏感），所以
 `\\bsecretary\\b` 只匹配独立单词，不会误伤 `Internal`。
@@ -106,6 +107,10 @@ LinkedIn 的公开 `jobs-guest` 端点是**无鉴权**的，但它的服务条�
 **curl 不是 npm 依赖**，"零依赖"依然成立。详见
 [adr/0003](adr/0003-curl-transport-for-linkedin.md)。
 
+JD 全文也走同一个端点族（`jobPosting/<id>`）。它让首次运行多出约 20 个请求、
+此后每天十来个（只补新职位），量级仍是个人使用 —— 取舍见
+[adr/0004](adr/0004-store-job-descriptions.md)。
+
 如果哪天 LinkedIn 从 CI 里也被挡死，把它 `enabled: false` 即可 —— JobsDB 是主力源
 （实测约占七成职位），单独跑完全可用。
 
@@ -114,24 +119,43 @@ LinkedIn 的公开 `jobs-guest` 端点是**无鉴权**的，但它的服务条�
 - ❌ 不做匹配度评分、不做简历/求职信定制、不做投递 —— 只做「看见」
 - ❌ 不覆盖香港以外地区
 - ❌ 不做后端、不做账号系统
-- ❌ 不存 JD 全文（只存 ~300 字符摘要，页面提供跳转原始职位页的链接）
 - ❌ 「已投递」标记只存浏览器 `localStorage`，换设备或清缓存会丢失。这是明确接受的
   取舍：为它引入后端会让复杂度跳一个量级
+- ❌ 不为抓全文上浏览器渲染 / 第三方渲染代理（见 [adr/0004](adr/0004-store-job-descriptions.md)）
 
 页面**只含原始职位数据**，不含任何个人意向 / 备注 / 短名单。
+
+## 关于 JD 全文
+
+卡片上先给两行摘要，有全文的行多一个「展开全文」按钮。全文在**抓取时**就已经写进
+`feed.json`，点击不发请求；搜索也覆盖全文，不只是标题与公司。
+
+全文上限 `site.descriptionLength`（默认 4000 字符）。抓取只对**主库里还没有全文**的
+职位发起，所以每天只补新增的那十几条，请求量不随主库增长。
+
+**两个源的现实不一样**（详见 [adr/0004](adr/0004-store-job-descriptions.md)）：
+
+| 源 | 全文 |
+|---|---|
+| LinkedIn | ✅ 抓得到。搜索卡片不带 JD，全文来自 `jobPosting/<id>` 详情页 |
+| JobsDB | ❌ 抓不到。详情页 `/job/<id>` 被 Cloudflare 挡下（curl、undici、代理都是 403），搜索接口只给 ~150 字符的 teaser |
+
+JobsDB 的行因此**没有展开按钮** —— 这是现状，不是解析器写错了。撞上 403 后同源
+立刻短路，一次扫描只浪费一个请求；`feed.json` 的 `meta.descriptions.blocked` 会写明
+是哪个源被拦了。
 
 ## 已知限制
 
 | 限制 | 说明 |
 |---|---|
-| LinkedIn 职位没有摘要 | 搜索结果卡片不带 JD 文本。逐条取详情页会把请求量翻十倍，与 ADR 0001 的低频承诺冲突，所以留空 |
+| JobsDB 没有 JD 全文 | 详情页被 Cloudflare 挡下（403），只有 ~150 字符的 teaser。两条 track 的搜索与去重不受影响，只是少了展开按钮 |
 | 中文职位标题可能漏掉 | 两条 track 的模式是英文 (`trainee`+`solicitor` / `paralegal`)，纯中文标题如「法务专员」本就不属于这两类 |
-| `data/jobs.json` 会持续增长 | 预估每年数千条；到 ~1 万条时按年分片 |
-| 目标站改结构就断 | 解析失败会显式抛错而不是静默返回空，`meta.sources` 里会看到 |
+| `data/jobs.json` 会持续增长 | 存全文之后增长更快（约 4KB/条）；`site.descriptionLength` 可收紧，到 ~1 万条时按年分片 |
+| 目标站改结构就断 | 解析失败会显式抛错而不是静默返回空，`meta.sources` 里会看到。**详情页是例外**：它是可选增强，解析不出来只降级不报错，看 `meta.descriptions` |
 
 ## 文档
 
-- [SPEC.md](SPEC.md) —— 规格说明（含落成时对设计的修正）
+- [SPEC.md](SPEC.md) —— 规格说明（含落成时对设计的修正、以及 §13 的需求变更）
 - [TICKETS.md](TICKETS.md) —— 实施工作项与验收
 - [CONTEXT.md](CONTEXT.md) —— 术语表
 - [adr/](adr/) —— 决策记录

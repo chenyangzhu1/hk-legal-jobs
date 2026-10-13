@@ -4,7 +4,8 @@
 // 集团的 JobsDB 品牌，与 JobStreet / SEEK 共用同一个 v5 端点，所以不需要
 // 单独的 provider，只需要 host 白名单里加上 hk.jobsdb.com（见 ADR 0002）。
 
-import { fetchJson as defaultFetchJson } from '../http.mjs';
+import { fetchJson as defaultFetchJson, fetchText as defaultFetchText } from '../http.mjs';
+import { htmlToText, oneLine, usableDescription } from '../text.mjs';
 import { fetchPaged } from './paged.mjs';
 
 const DEFAULT_API = 'https://hk.jobsdb.com/api/jobsearch/v5/search';
@@ -73,13 +74,6 @@ export function buildSearchUrl(origin, params) {
   return url.href;
 }
 
-/** 折叠空白，截断到 max 字符，只在真的截断时补省略号。 */
-function excerptOf(text, max) {
-  const flat = String(text ?? '').replace(/\s+/g, ' ').trim();
-  if (!flat) return null;
-  return flat.length <= max ? flat : `${flat.slice(0, max)}…`;
-}
-
 /** SEEK 的 listingDate 是 ISO 时间戳；记录里只要日期部分（SPEC §6.1）。 */
 function dateOnly(value) {
   const parsed = Date.parse(value ?? '');
@@ -119,7 +113,7 @@ export function parseJobsdbItem(item, origin, options = {}) {
     salary: salaryLabel || null,
     postedAt,
     url,
-    excerpt: excerptOf(item.teaser, options.excerptLength ?? 300),
+    excerpt: oneLine(item.teaser, options.excerptLength ?? 300),
     stillListed: true,
   };
 }
@@ -163,4 +157,82 @@ export async function fetchJobsdb(config = {}, options = {}) {
       };
     },
   });
+}
+
+/** 详情页的正文块：SEEK 系全站统一的 data-automation 钩子。 */
+const JOB_AD_OPEN = /<div\b[^>]*data-automation="jobAdDetails"[^>]*>/i;
+
+/**
+ * 从职位详情页 HTML 里取出 JD 正文。
+ *
+ * ⚠️ **未在真实响应上验证过。** hk.jobsdb.com 的 `/job/<id>` 对所有脚本请求都回
+ * Cloudflare 挑战（403）—— curl、undici、第三方代理都试过；GraphQL 网关里的
+ * `jobDetails` 类型也不暴露任何正文字段。所以这条路径目前**预期会降级**，
+ * 页面上表现为 JobsDB 的行没有展开按钮。
+ *
+ * 但降级是安全的：这里只认两种明确的结构（正文块、JobPosting 的 JSON-LD），
+ * 都取不到就返回 null，绝不写半截噪声进主库。哪天 Cloudflare 放行、或换个出口 IP
+ * 能通，这段就能直接工作。
+ */
+export function parseJobsdbDetail(html, maxLength) {
+  const source = String(html ?? '');
+  const body = extractJobAd(source) ?? extractJsonLdDescription(source);
+  if (body === null) return null;
+  return usableDescription(htmlToText(body), maxLength);
+}
+
+/** 按 div 深度取正文块 —— 正文里可能有嵌套 div，惰性正则会静默截断。 */
+function extractJobAd(html) {
+  const open = html.match(JOB_AD_OPEN);
+  if (!open) return null;
+
+  const from = open.index + open[0].length;
+  const tags = /<div\b[^>]*>|<\/div\s*>/gi;
+  tags.lastIndex = from;
+
+  let depth = 1;
+  let match;
+  while ((match = tags.exec(html))) {
+    if (match[0].startsWith('</')) {
+      depth -= 1;
+      if (depth === 0) return html.slice(from, match.index);
+    } else {
+      depth += 1;
+    }
+  }
+  return null;
+}
+
+/** 兜底：JobPosting 的 JSON-LD 里带 description（本身是 HTML 片段）。 */
+function extractJsonLdDescription(html) {
+  const blocks = html.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi);
+  for (const [, json] of blocks) {
+    try {
+      const data = JSON.parse(json);
+      for (const node of Array.isArray(data) ? data : [data]) {
+        if (typeof node?.description === 'string' && node.description.trim()) return node.description;
+      }
+    } catch {
+      // 单个 JSON-LD 块坏了不影响其余；继续找下一个
+    }
+  }
+  return null;
+}
+
+/**
+ * 抓一条职位的完整 JD。拿不到返回 null；网络与 HTTP 错误向上抛，由编排层降级 ——
+ * 403 是同源全局性的，编排层据此短路（见 scan.mjs）。
+ */
+export async function fetchDescription(listing, options = {}) {
+  const fetchText = options.http?.fetchText ?? defaultFetchText;
+
+  let url;
+  try {
+    url = assertAllowedHost(listing?.url ?? '');
+  } catch {
+    return null; // 记录里的 URL 不合规就当作拿不到，不把配置问题伪装成抓取失败
+  }
+
+  const html = await fetchText(url);
+  return parseJobsdbDetail(html, options.descriptionLength);
 }

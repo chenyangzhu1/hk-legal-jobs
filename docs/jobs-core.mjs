@@ -29,11 +29,28 @@ export function isRecent(job, now, windows) {
   return now - posted <= windowDays(windows, 'recentDays', 7) * DAY_MS;
 }
 
-/** 关键词搜标题 + 公司，大小写与多余空格不敏感。 */
+/**
+ * 搜索用的干草堆：标题 + 公司 + 全文。
+ *
+ * 缓存起来是因为全文动辄几千字符，一页几十条、每次按键都要重算的话，
+ * 打字会开始发涩。WeakMap 挂在 job 对象上，feed 换一版就自然失效。
+ */
+const haystacks = new WeakMap();
+
+function haystackOf(job) {
+  let text = haystacks.get(job);
+  if (text === undefined) {
+    text = `${job?.title ?? ''} ${job?.company ?? ''} ${job?.description ?? ''}`.toLowerCase();
+    haystacks.set(job, text);
+  }
+  return text;
+}
+
+/** 关键词搜标题 + 公司 + 职位全文，大小写与多余空格不敏感。 */
 export function matchesQuery(job, query) {
   const q = String(query ?? '').trim().toLowerCase();
   if (!q) return true;
-  const haystack = `${job?.title ?? ''} ${job?.company ?? ''}`.toLowerCase();
+  const haystack = haystackOf(job);
   // 空格分隔的多个词是 AND：搜「paralegal central」不该被 OR 放大成噪声
   return q.split(/\s+/).every((term) => haystack.includes(term));
 }

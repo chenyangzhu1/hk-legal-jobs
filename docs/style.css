@@ -108,7 +108,7 @@ header nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
 }
 
 #q:focus-visible, .chip:focus-visible, .apply-toggle:focus-visible,
-.page-btn:focus-visible, #sort:focus-visible {
+.expand-toggle:focus-visible, .page-btn:focus-visible, #sort:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 1px;
 }
@@ -193,6 +193,27 @@ header nav a[aria-current="page"] { color: var(--accent); font-weight: 600; }
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* 展开后的全文。pre-wrap 是必需的：抓来的 JD 里段落与列表靠换行分隔，
+   压成一行读起来是一坨。overflow-wrap 兜住 JD 里偶尔出现的超长链接。 */
+.job-description {
+  margin: 0.45rem 0 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.expand-toggle {
+  margin-top: 0.4rem;
+  padding: 0;
+  font-size: 0.78rem;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .job.is-gone { opacity: 0.62; }

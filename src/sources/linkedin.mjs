@@ -6,9 +6,13 @@
 // 用法限定：见 ADR 0001 —— 低频率、单一关键词、每日一次，个人使用量级。
 
 import { fetchText as defaultFetchText } from '../http.mjs';
+import { decodeEntities, htmlToText, stripTags, usableDescription } from '../text.mjs';
 import { fetchPaged } from './paged.mjs';
 
 export const LINKEDIN_SEARCH_URL = 'https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search';
+
+/** 职位详情页：与搜索端点同域同鉴权等级，同样走 curl 传输（ADR 0003）。 */
+export const LINKEDIN_DETAIL_URL = 'https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/';
 
 /** 每页条数由端点写死，不能调。 */
 const PAGE_SIZE = 10;
@@ -21,21 +25,13 @@ export function buildSearchUrl(searchUrl, { keywords, location, page = 1 }) {
   return url.href;
 }
 
-function decodeEntities(text) {
-  return text
-    .replace(/&amp;/g, '&')
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&apos;/g, "'")
-    .replace(/&#(\d+);/g, (_, dec) => String.fromCodePoint(Number(dec)))
-    .replace(/&#[xX]([0-9a-fA-F]+);/g, (_, hex) => String.fromCodePoint(parseInt(hex, 16)))
-    .replace(/&nbsp;/g, ' ');
+export function buildDetailUrl(sourceId) {
+  return `${LINKEDIN_DETAIL_URL}${sourceId}`;
 }
 
+/** 卡片上的标题/公司/地点是单行字段，标签折成空格。 */
 function clean(html) {
-  return decodeEntities(String(html).replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
+  return stripTags(html);
 }
 
 /** 判定响应体究竟长什么样 —— 解析失败要显式报错还是「本来就没有」。 */
@@ -99,8 +95,9 @@ export function parseLinkedinCards(html) {
       title,
       company,
       location,
-      // 搜索卡片不带薪资，也不带任何 JD 文本。摘要留 null，不额外请求详情页
-      // —— ADR 0001 承诺的是低频，逐条取详情会把请求量翻十倍。
+      // 搜索卡片本身不带薪资也不带 JD 文本。摘要与全文都在**详情页**，
+      // 由 fetchDescription 单独取（只对主库里还没有全文的职位取，见 scan.mjs），
+      // 这里留 null 而不是现编一个。
       salary: null,
       postedAt,
       url: href || `https://www.linkedin.com/jobs/view/${sourceId}`,
@@ -144,4 +141,54 @@ export async function fetchLinkedin(config = {}, options = {}) {
       return { rawCount: cards.length, items: cards };
     },
   });
+}
+
+/**
+ * 从详情页 HTML 里取出 JD 正文。取不到返回 null。
+ *
+ * 正文在一个 <div class="show-more-less-html__markup …"> 里。**按 div 深度找配对的
+ * 闭合标签**，不用惰性正则去够第一个 </div> —— 有些 JD 正文里带嵌套 div，那样会被
+ * 截断，而且截断是静默的（页面上只是文字变少，看不出来）。
+ */
+export function parseLinkedinDetail(html, maxLength) {
+  const body = extractMarkupDiv(String(html ?? ''));
+  if (body === null) return null;
+  return usableDescription(htmlToText(body), maxLength);
+}
+
+function extractMarkupDiv(html) {
+  const open = html.match(/<div\b[^>]*class="[^"]*show-more-less-html__markup[^"]*"[^>]*>/i);
+  if (!open) return null;
+
+  const from = open.index + open[0].length;
+  const tags = /<div\b[^>]*>|<\/div\s*>/gi;
+  tags.lastIndex = from;
+
+  let depth = 1;
+  let match;
+  while ((match = tags.exec(html))) {
+    if (match[0].startsWith('</')) {
+      depth -= 1;
+      if (depth === 0) return html.slice(from, match.index);
+    } else {
+      depth += 1;
+    }
+  }
+  return null; // 没有配对的闭合标签 —— 页面结构变了，宁可当作没抓到
+}
+
+/**
+ * 抓一条职位的完整 JD。
+ *
+ * 拿不到返回 null（404、没有正文块、正文太短都算拿不到）；网络与 HTTP 错误**向上
+ * 抛**，由编排层决定降级与「还要不要继续试」—— 403/451 是同源全局性的，不是这一
+ * 条特殊，编排层据此短路（见 scan.mjs）。
+ */
+export async function fetchDescription(listing, options = {}) {
+  const fetchText = options.http?.fetchText ?? defaultFetchText;
+  const sourceId = String(listing?.id ?? '').replace(/^linkedin:/, '');
+  if (!/^\d+$/.test(sourceId)) return null;
+
+  const html = await fetchText(buildDetailUrl(sourceId));
+  return parseLinkedinDetail(html, options.descriptionLength);
 }

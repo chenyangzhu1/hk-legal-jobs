@@ -47,6 +47,7 @@
   "site": {
     "recentDays": 7,
     "newBadgeDays": 7,
-    "excerptLength": 300
+    "excerptLength": 300,
+    "descriptionLength": 4000
   }
 }

@@ -244,9 +244,45 @@ test('新记录带上新增的字段（薪资/摘要）', () => {
   assert.equal(jobs[0].excerpt, 'abc');
 });
 
+// ---------------------------------------------------------------- JD 全文
+
+test('新记录的全文入库；没有全文时字段是 null 而不是 undefined', () => {
+  const withText = upsert([], [incoming({ description: '职责若干。' })], { now: NOW }).jobs[0];
+  assert.equal(withText.description, '职责若干。');
+
+  const without = upsert([], [incoming()], { now: NOW }).jobs[0];
+  assert.equal(without.description, null, '字段要在，值可以是 null —— 缺字段和「没有正文」是两回事');
+});
+
+test('已有全文的记录不被后来的 null 覆盖', () => {
+  const before = stored({ description: '第一次抓到的全文' });
+  const { jobs } = upsert([before], [incoming({ description: null })], { now: NOW });
+  assert.equal(jobs[0].description, '第一次抓到的全文');
+});
+
+test('原先没抓到全文的记录，后续某次抓到了要补上', () => {
+  const before = stored({ description: null });
+  const { jobs } = upsert([before], [incoming({ description: '后来补上的全文' })], { now: NOW });
+  assert.equal(jobs[0].description, '后来补上的全文');
+});
+
+test('repost 合进来时也按「空着才补」处理全文', () => {
+  const before = stored({ description: '原记录的全文' });
+  const { jobs } = upsert([before], [incoming({ id: 'jobsdb:999', description: 'repost 带来的全文' })], { now: NOW });
+  assert.equal(jobs.length, 1, '指纹命中 → 仍是同一条记录');
+  assert.equal(jobs[0].description, '原记录的全文');
+});
+
 test('upsert 不改写入参本身', () => {
   const before = [stored()];
   const snapshot = JSON.stringify(before);
   upsert(before, [incoming({ id: 'jobsdb:2' })], { now: NOW });
   assert.equal(JSON.stringify(before), snapshot);
+});
+
+test('老记录里缺失的 description 字段被归一成 null', () => {
+  const before = stored();
+  delete before.description;
+  const { jobs } = upsert([before], [incoming({ description: null })], { now: NOW });
+  assert.equal(jobs[0].description, null, '缺字段与「没有正文」不该是两种状态');
 });
