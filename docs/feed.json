@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-15T01:51:50.691Z",
+    "ranAt": "2026-10-16T01:40:11.142Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 1,
-      "skipped": 68,
+      "fetched": 0,
+      "skipped": 65,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,23 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95277791",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Litigation Assistant / Trainee Solicitor",
+      "company": "CCW Lawyers",
+      "location": "Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-15",
+      "firstSeenAt": "2026-10-16T01:40:11.142Z",
+      "url": "https://hk.jobsdb.com/job/95277791",
+      "excerpt": "To assist lawyers in handling litigation /divorce/ probate / commercial Managing case files and updating case progress",
+      "description": null,
+      "stillListed": true
+    },
     {
       "id": "jobsdb:95093692",
       "source": "jobsdb",
@@ -128,7 +145,7 @@
       "url": "https://hk.linkedin.com/jobs/view/conveyancing-clerk-conveyancing-paralegal-legal-firm-admiralty-5-days-work-at-jpc-corporation-4478477747",
       "excerpt": "Company Description Hong Kong - Shenzhen - Guangzhou - Shanghai - Beijing JPC Texson Ltd, established since 1990, is a Hong Kong and China licensed Employment Consulting firm, specializes in Headhunting and Recruiting Services for companies in Hong Kong and China. We have offices in Hong Kong, Shenz…",
       "description": "Company Description\n\nHong Kong - Shenzhen - Guangzhou - Shanghai - Beijing\n\nJPC Texson Ltd, established since 1990, is a Hong Kong and China licensed Employment Consulting firm, specializes in Headhunting and Recruiting Services for companies in Hong Kong and China. We have offices in Hong Kong, Shenzhen, Guangzhou, Shanghai and Beijing.\n\nCompany Overview\n\n- We are a well-established Hong Kong legal firm with over 30 years of history, providing trusted legal services to a wide range of clients.\n- Our Conveyancing team comprises around 30 members, and we handle both project conveyancing work for property developers and conveyancing matters for private and corporate clients.\n- We offer a professional yet supportive working environment where team members can develop their expertise and build a long-term career.\n\nRole Mission\n\n- To provide efficient and accurate support to the Conveyancing team in handling a diverse portfolio of property transactions, ensuring smooth workflow, timely completion of matters, and excellent client service.\n\nRole Summary\n\n- The Conveyancing Clerk / Conveyancing Paralegal will work as part of a sizeable and experienced Conveyancing team of 30 members.\n- This role involves handling both project conveyancing work for property developers and conveyancing matters for private and corporate clients, making it an excellent opportunity for a candidate with solid conveyancing experience and strong file management skills.\n\nJob Description\n\nJob Description\n\n- Handle all aspects of conveyancing matters, including preparation and follow-up of documents.\n- Assist with project conveyancing work for property developers as well as conveyancing matters for private and corporate clients.\n- Support sales and purchase transactions, mortgage-related matters, and post-completion work.\n- Liaise with clients, solicitors, banks, developers, government departments, and other relevant parties.\n- Conduct searches, stamping, registration, and related conveyancing procedures.\n- Maintain proper filing, record keeping, and case status updates.\n- Support the Conveyancing team with ad hoc tasks as required.\n- Ensure all matters are handled accurately, efficiently, and within deadlines.\n\nIdeal Candidate\n\n- Over 5 years of solid conveyancing experience.\n- Able to handle conveyancing files independently with minimal supervision.\n- Good command of English, Chinese & Cantonese; Mandarin is a plus\n- Strong sense of responsibility, accuracy, and confidentiality.\n- Good interpersonal and communication skills.\n- Team player with a proactive and professional working attitude.\n\nWhy Join Us\n\n- Join a reputable Hong Kong legal firm with over 30 years of history.\n- Be part of a stable and well-structured Conveyancing team of 30 members.\n- Gain exposure to both property developer projects and private and corporate client conveyancing matters.\n- Enjoy a 5-day work week and a healthy work-life balance.\n- Work in a supportive and friendly work culture.\n- Build your career in a professional environment with long-term growth potential.\n\nTO APPLY For This Job Or Similar Jobs\n\nPlease email your CV with salary expected to resume@jpc.hk\n\nJPC Recruiting Services was established in 1990 and is a Hong Kong–based recruitment firm providing general recruitment and executive search services.\n\nJPC Recruiting Services 於 1990 年成立，是一家總部設於香港的專業招聘公司，提供招聘及獵頭服務。\n\nAll personal data collected from job applicants will be used strictly for recruitment purposes only. Your privacy is fully protected, and your personal information will not be disclosed, leased, or sold to any third party.\n\n本公司所收集的求職者個人資料僅作招聘用途。閣下的私隱將獲得嚴格保障，個人資料絕不會被披露、出租或出售予任何第三方。",
-      "stillListed": true
+      "stillListed": false
     },
     {
       "id": "jobsdb:95230370",
@@ -1478,7 +1495,7 @@
       "url": "https://hk.jobsdb.com/job/94631874",
       "excerpt": "Five-day work week | Competitive pay | Discretionary bonus | Medical insurance | Education subsidy | Training programme | MPF top-up plan",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1497,7 +1514,7 @@
       "url": "https://hk.jobsdb.com/job/94635175",
       "excerpt": "Paralegal, Legal Executive, or Trainee Solicitor to support a dynamic law firm in Wan Chai.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1515,7 +1532,7 @@
       "url": "https://hk.jobsdb.com/job/94639850",
       "excerpt": "Form 6 or above 5 years or above solid experience in handling full set of conveyancing documents and transactions 5 days week",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1533,7 +1550,7 @@
       "url": "https://hk.jobsdb.com/job/94651457",
       "excerpt": "Our client, an international law firm is urgently looking for a Paralegal to join their Corporate Team in Hong Kong.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1551,7 +1568,7 @@
       "url": "https://hk.linkedin.com/jobs/view/senior-paralegal-at-gammon-construction-limited-4466161768",
       "excerpt": "Responsibilities: - Draft and prepare correspondence, agreements and other legal documents; - Research legal issues and case law and / or examination of documentation and / or factual investigation; - Review tender documents and other contractual documents and advising on potential legal risks; - As…",
       "description": "Responsibilities:\n\n- Draft and prepare correspondence, agreements and other legal documents;\n- Research legal issues and case law and / or examination of documentation and / or factual investigation;\n- Review tender documents and other contractual documents and advising on potential legal risks;\n- Assist with preparation of court bundles and other document management tasks;\n- Assist in preparing briefs to external counsel, attending court and assisting external counsel;\n- Liaise with government agencies; and\n- Assist with general legal matters.\n\nRequirements:\n\n- Degree in Law from a university in Hong Kong or another common law jurisdiction;\n- At least 3 years' experience working in a solicitors' firm or in-house team, ideally in construction;\n- Strong initiative, organizational and problem solving skills;\n- Strong personal, communication and teamwork skills;\n- Determination to produce top quality work within deadline and under pressure;\n- High commitment, including readiness to work late at short notice if needed;\n- Willingness to learn and adapt;\n- Excellent communication skills in both written and spoken English and Chinese.\n\nBenefits:\n\n- Competitive pay\n- Discretionary bonus\n- MPF top-up\n- Medical insurance\n- Life insurance\n\nWe are an equal opportunity employer. Information provided will be treated in strict confidence for recruitment purposes only. Candidates not being invited for interview within 6 weeks after submission date may assume their application unsuccessful. All personal data collected will be retained for a period of no more than 24 months, and destroyed afterwards. We are committed to comply with the Personal Data (Privacy) Ordinance of Hong Kong (the “Ordinance”) and a copy of our Personal Information Collection Statement can be accessed by visiting our Company website (www.gammonconstruction.com).",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
