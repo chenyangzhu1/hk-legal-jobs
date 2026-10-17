@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-16T01:40:11.142Z",
+    "ranAt": "2026-10-17T01:33:54.033Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -28,6 +28,58 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95320111",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Benny Kong & Tsai",
+      "location": "Tsim Sha Tsui, Yau Tsim Mong District",
+      "salary": "$20,000 – $30,000 per month",
+      "postedAt": "2026-10-16",
+      "firstSeenAt": "2026-10-17T01:33:54.033Z",
+      "url": "https://hk.jobsdb.com/job/95320111",
+      "excerpt": "Conducting legal research and drafting legal documents",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95321275",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Matrimonial & Family Law)",
+      "company": "Haldanes",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-16",
+      "firstSeenAt": "2026-10-17T01:33:54.033Z",
+      "url": "https://hk.jobsdb.com/job/95321275",
+      "excerpt": "Join a matrimonial law team providing legal and administrative support in matrimonial litigation.",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:94882712",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Cross-border work)",
+      "company": "Shum Wong & Co., Solicitors",
+      "location": "Yuen Long District",
+      "salary": null,
+      "postedAt": "2026-10-16",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94882712",
+      "excerpt": "• Paralegal supporting cross-border legal work with focus on PRC law and China Attestation matters. • A solid academic background in PRC's law",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95277791",
       "source": "jobsdb",
@@ -450,7 +502,7 @@
       "url": "https://hk.linkedin.com/jobs/view/solicitor-and-trainee-solicitor-at-mung-4476290312",
       "excerpt": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work. The firm has expanded its regional footprint with its MUNG network of l…",
       "description": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work.\n\nThe firm has expanded its regional footprint with its MUNG network of law practices in Singapore and Tokyo.\n\nThus, MUNG covers a wide range of interesting corporate and commercial transactions as well as cross border arbitration and litigation work.\n\nRole Description\n\nWe invite a range of Consultants, Hong Kong qualified lawyers especially in dispute resolution and trainees to send in your CVs and reference letters to : mu@munglegal.com.\n\nQualifications\n\n- Strong academics in a LLB degree, with the ability to analyze complex legal issues and provide clear, practical advice.\n- Ability to multitask\n- Proficiency in English, with Chinese language skills (Cantonese and/or Mandarin) considered an advantage.",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1157,24 +1209,6 @@
       "suppressNew": true
     },
     {
-      "id": "jobsdb:94882712",
-      "source": "jobsdb",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal (Cross-border work)",
-      "company": "Shum Wong & Co., Solicitors",
-      "location": "Yuen Long District",
-      "salary": null,
-      "postedAt": "2026-09-25",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/94882712",
-      "excerpt": "• Paralegal supporting cross-border legal work with focus on PRC law and China Attestation matters. • A solid academic background in PRC's law",
-      "description": null,
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "jobsdb:94863290",
       "source": "jobsdb",
       "tracks": [
@@ -1441,7 +1475,7 @@
       "url": "https://hk.jobsdb.com/job/94666728",
       "excerpt": "We are a Well-established and expanding law firm in Central and are looking for suitable candidate",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1459,7 +1493,7 @@
       "url": "https://hk.jobsdb.com/job/94671848",
       "excerpt": "Paralegal - Compliance (6-Month Contract), Global Hedge Fund",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1477,7 +1511,7 @@
       "url": "https://hk.jobsdb.com/job/94672236",
       "excerpt": "Trainees handle substantive work—drafting, case preparation and client correspondence—under close guidance from partners and senior solicitors.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
