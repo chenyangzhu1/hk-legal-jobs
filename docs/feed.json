@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-17T01:33:54.033Z",
+    "ranAt": "2026-10-18T01:33:03.625Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -20,7 +20,7 @@
     },
     "descriptions": {
       "fetched": 0,
-      "skipped": 65,
+      "skipped": 62,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,24 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4451200195",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal/ Legal Manager - Corporate Transactions",
+      "company": "Ashurst Perkins Coie",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-17",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-legal-manager-corporate-transactions-at-ashurst-perkins-coie-4451200195",
+      "excerpt": "Description At Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, en…",
+      "description": "Description\n\nAt Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, energy & infrastructure, and financial services. Our people work on market-leading matters that drive innovation, growth, and transformation around the world. For Ashurst Perkins Coie, innovation is our tradition.\n\nDepartment / Role overview\n\nWe are currently looking for a paralegal / Legal Manager to join our Corporate Transactions group. The job holder will work closely with partners, counsel and associates in Hong Kong, Beijing and Shanghai to provide transactional support to ensure that our lawyers can focus on clients' needs and deliver quality and efficient service.\n\nMain Responsibilities\n\n- Draft, review and proofread documents.\n- Assist with legal due diligence exercises and prepare legal due diligence questionnaires and reports.\n- Attend on-site due diligence trips and meetings.\n- Conduct legal and company research and analysis.\n- Handle legal translations.\n- Assist with verification of disclosure documents.\n- Assist with the signing and completion of the transactions.\n\nRisk and Control: Ensure that all activities and duties are carried out in full compliance with our regulatory requirements and internal policies.\n\nEssential Skills And Experience\n\n- A university law degree/ Master of Law with excellent academic achievements.\n- Excellent verbal and written communication skills in English and native Mandarin speaker;\n- Willingness to travel frequently for due diligence trips and printer sessions;\n- Ability to demonstrate initiative, maturity and common sense with good judgment;\n- Good work ethic and ability to work to deadlines.\n- Good organisational skills and attention to detail.\n- Ideally with relevant 1-2 years' experience in IPO and M&A.\n\nBackground checks\n\nIn order to comply with regulatory and client requirements, the Firm will undertake appropriate vetting of staff. When applicants accept a job offer, the Firm, alongside a specialist provider, will undertake professional verification and background checks. These checks are only undertaken with consent, and in accordance with our legal and regulatory obligations.",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95320111",
       "source": "jobsdb",
@@ -1172,24 +1190,6 @@
       "suppressNew": true
     },
     {
-      "id": "linkedin:4451200195",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal/ Legal Manager - Corporate Transactions",
-      "company": "Ashurst Perkins Coie",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-09-26",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-legal-manager-corporate-transactions-at-ashurst-perkins-coie-4451200195",
-      "excerpt": "Description At Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, en…",
-      "description": "Description\n\nAt Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, energy & infrastructure, and financial services. Our people work on market-leading matters that drive innovation, growth, and transformation around the world. For Ashurst Perkins Coie, innovation is our tradition.\n\nDepartment / Role overview\n\nWe are currently looking for a paralegal / Legal Manager to join our Corporate Transactions group. The job holder will work closely with partners, counsel and associates in Hong Kong, Beijing and Shanghai to provide transactional support to ensure that our lawyers can focus on clients' needs and deliver quality and efficient service.\n\nMain Responsibilities\n\n- Draft, review and proofread documents.\n- Assist with legal due diligence exercises and prepare legal due diligence questionnaires and reports.\n- Attend on-site due diligence trips and meetings.\n- Conduct legal and company research and analysis.\n- Handle legal translations.\n- Assist with verification of disclosure documents.\n- Assist with the signing and completion of the transactions.\n\nRisk and Control: Ensure that all activities and duties are carried out in full compliance with our regulatory requirements and internal policies.\n\nEssential Skills And Experience\n\n- A university law degree/ Master of Law with excellent academic achievements.\n- Excellent verbal and written communication skills in English and native Mandarin speaker;\n- Willingness to travel frequently for due diligence trips and printer sessions;\n- Ability to demonstrate initiative, maturity and common sense with good judgment;\n- Good work ethic and ability to work to deadlines.\n- Good organisational skills and attention to detail.\n- Ideally with relevant 1-2 years' experience in IPO and M&A.\n\nBackground checks\n\nIn order to comply with regulatory and client requirements, the Firm will undertake appropriate vetting of staff. When applicants accept a job offer, the Firm, alongside a specialist provider, will undertake professional verification and background checks. These checks are only undertaken with consent, and in accordance with our legal and regulatory obligations.",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "jobsdb:94823531",
       "source": "jobsdb",
       "tracks": [
@@ -1403,7 +1403,7 @@
       "url": "https://hk.jobsdb.com/job/94690450",
       "excerpt": "We are hiring a Paralegal to join a specialised investments practice in an international law firm in Hong Kong.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1421,7 +1421,7 @@
       "url": "https://hk.jobsdb.com/job/94697066",
       "excerpt": "Our client is a top-tier international law firm looking for a highly motivated and detail-oriented Paralegal to join their Corporate & Securities team",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1439,7 +1439,7 @@
       "url": "https://hk.jobsdb.com/job/94704874",
       "excerpt": "As a Paralegal and Legal Executive, you will be at the forefront of our legal operations, supporting a dynamic team of professionals.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1457,7 +1457,7 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-dcm-focused-top-tier-international-law-firm-at-ambition-4468398326",
       "excerpt": "Introduction: We are partnering with a top-tier international law firm to hire a Debt Capital Markets Paralegal for their growing Corporate & Securities practice in Hong Kong. The position provides direct exposure to market-leading DCM transactions across the APAC region, working alongside highly re…",
       "description": "Introduction: We are partnering with a top-tier international law firm to hire a Debt Capital Markets Paralegal for their growing Corporate & Securities practice in Hong Kong. The position provides direct exposure to market-leading DCM transactions across the APAC region, working alongside highly regarded Partners.\n\nResponsibilities:\n\n- Supporting Partners and Senior Associates on high-volume, cross-border Debt Capital Markets transactions.\n- Assisting with matter management, including reviewing initial and subsequent draft documentation, summarizing key revisions, and highlighting critical changes for clients.\n- Managing closing and completion documentation, checklist reviews, and detailed annotations.\n- Executing routine legal tasks independently while maintaining high service delivery standards for global banking clients.\n- Coordinating transaction timelines and managing multiple concurrent projects efficiently under tight schedules.\n- Overseeing deal logistics and providing coverage outside standard working hours when required by transaction flows.\nRequirements:\n\n- Possess 3 to 5 years of solid DCM paralegal experience gained from leading US or Magic Circle law firms.\n- Strong background in Debt Capital Markets is preferred, though candidates with broader Corporate Finance experience covering a high proportion of DCM will be considered.\n- Professional fluency in written and spoken English, Cantonese, and Mandarin, including the ability to review Chinese draft legal documents.\n- Exceptional organizational skills with a proven track record of handling high-stakes, time-sensitive transactional work.\n- Ability to work independently, demonstrate strong learning agility, and manage demanding client expectations effectively.\nFor a more comprehensive list of current opportunities, please visit www.ambition.com.hk",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
