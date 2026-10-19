@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-18T01:33:03.625Z",
+    "ranAt": "2026-10-19T01:44:00.297Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -20,7 +20,7 @@
     },
     "descriptions": {
       "fetched": 0,
-      "skipped": 62,
+      "skipped": 61,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,24 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4444378192",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "IP Paralegal",
+      "company": "Simmons & Simmons",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-18",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/ip-paralegal-at-simmons-simmons-4444378192",
+      "excerpt": "Main purpose of the role: To support the IP team on Hong Kong and China trade mark matters, and assist with international trade mark portfolio management Main duties and responsibilities: - Prepare and file documents for Hong Kong trade mark applications, registrations and related proceedings - Main…",
+      "description": "Main purpose of the role:\n\nTo support the IP team on Hong Kong and China trade mark matters, and assist with international trade mark portfolio management\n\nMain duties and responsibilities:\n\n- Prepare and file documents for Hong Kong trade mark applications, registrations and related proceedings\n- Maintain trade mark portfolios, including docketing, record updates and deadline monitoring\n- Liaise with clients, overseas associates and trade mark offices\n- Draft reports on office actions and assist with responses and submissions\n- Conduct trade mark clearance searches and prepare search reports\n- Conduct trade mark, company and online research\n- Support trade mark prosecution, portfolio management and related projects across multiple jurisdictions\n- Assist with investigations into potential trade mark infringements and preparation of cease-and-desist letters\n- Prepare fee estimates, portfolio summaries and status reports\n- Undertake other duties as assigned by fee earners\n\nPerson Specifications:\n\nEducation / Qualifications / Experience:\n\n- Post-secondary education; diploma or degree preferred\n- 3 to 4 years of trade mark experience\n- Experience handling national trade mark and Madrid Protocol matters\n- Exposure to regional or international trade mark portfolio management\n- Knowledge of registered designs and patent formalities is an advantage\n- Excellent written and spoken English and Cantonese and/or Mandarin\n\nKnowledge and Technical Skills:\n\n- Good understanding of trade mark prosecution and portfolio management\n- Familiarity with Hong Kong and regional trade mark practice and WIPO Madrid System procedures\n- Strong drafting, research and communication skills\n- Strong analytical and problem-solving abilities\n- Proficient in Microsoft Office and legal technology platforms; familiarity with AI tools is an advantage\n- Strong attention to detail and accuracy\n\nGeneral Skills:\n\n- Ability to work independently and meet deadlines\n- Strong organisational and prioritisation skills\n- Team-oriented with a collaborative approach\n- Strong client-service and interpersonal skills\n- Adaptable, reliable and proactive\n- Detail-oriented with good judgement and professionalism",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "linkedin:4451200195",
       "source": "linkedin",
@@ -1168,24 +1186,6 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-capital-markets-at-jones-day-4422424265",
       "excerpt": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client s…",
       "description": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client service.\n\nJones Day seeks to employ the most qualified people, capable of delivering superior client service through professional excellence and teamwork, for every position in the Firm. We offer competitive compensation and benefits in a stimulating work environment.\n\nAre you interested in the opportunity to work for a global leading law firm that will give you the experience and exposure you need to build your knowledge and skills as well as advance your career? If you are, then Jones Day may be the firm for you.\n\nSummary of Essential Duties and Responsibilities:\nParalegals attend due diligence interviews; perform precedent and other ad-hoc legal research; conduct prospectus verification and other IPO-related tasks; assist in preparation of various documents (e.g. A1 documents, prospectuses, due diligence questionnaires etc.); prepare English-Chinese translation of legal documents; and organise client meetings and taking minutes.\n\nRequired Qualifications:\n\n- Law degree is an advantage but not a must.\n- Preferably with prior work experience in capital markets.\n- Excellent command of written and verbal English and Mandarin.\n- Strong communication skills and great attention to detail.\n- Ability to work independently and in a fast-paced and driven environment.\n- Sound knowledge in the use of computer and various IT programs.\n- Occasional travel to PRC may be required.\n- Immediate availability preferred.\n\nONLY RESUMES (C.V.s) IN .PDF FORMAT WILL BE ACCEPTED AND REVIEWED\n*Principals only – No search firms.",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4444378192",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "IP Paralegal",
-      "company": "Simmons & Simmons",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-09-26",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/ip-paralegal-at-simmons-simmons-4444378192",
-      "excerpt": "Main purpose of the role: To support the IP team on Hong Kong and China trade mark matters, and assist with international trade mark portfolio management Main duties and responsibilities: - Prepare and file documents for Hong Kong trade mark applications, registrations and related proceedings - Main…",
-      "description": "Main purpose of the role:\n\nTo support the IP team on Hong Kong and China trade mark matters, and assist with international trade mark portfolio management\n\nMain duties and responsibilities:\n\n- Prepare and file documents for Hong Kong trade mark applications, registrations and related proceedings\n- Maintain trade mark portfolios, including docketing, record updates and deadline monitoring\n- Liaise with clients, overseas associates and trade mark offices\n- Draft reports on office actions and assist with responses and submissions\n- Conduct trade mark clearance searches and prepare search reports\n- Conduct trade mark, company and online research\n- Support trade mark prosecution, portfolio management and related projects across multiple jurisdictions\n- Assist with investigations into potential trade mark infringements and preparation of cease-and-desist letters\n- Prepare fee estimates, portfolio summaries and status reports\n- Undertake other duties as assigned by fee earners\n\nPerson Specifications:\n\nEducation / Qualifications / Experience:\n\n- Post-secondary education; diploma or degree preferred\n- 3 to 4 years of trade mark experience\n- Experience handling national trade mark and Madrid Protocol matters\n- Exposure to regional or international trade mark portfolio management\n- Knowledge of registered designs and patent formalities is an advantage\n- Excellent written and spoken English and Cantonese and/or Mandarin\n\nKnowledge and Technical Skills:\n\n- Good understanding of trade mark prosecution and portfolio management\n- Familiarity with Hong Kong and regional trade mark practice and WIPO Madrid System procedures\n- Strong drafting, research and communication skills\n- Strong analytical and problem-solving abilities\n- Proficient in Microsoft Office and legal technology platforms; familiarity with AI tools is an advantage\n- Strong attention to detail and accuracy\n\nGeneral Skills:\n\n- Ability to work independently and meet deadlines\n- Strong organisational and prioritisation skills\n- Team-oriented with a collaborative approach\n- Strong client-service and interpersonal skills\n- Adaptable, reliable and proactive\n- Detail-oriented with good judgement and professionalism",
       "stillListed": true,
       "suppressNew": true
     },
