@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-19T01:44:00.297Z",
+    "ranAt": "2026-10-20T02:06:09.596Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 0,
-      "skipped": 61,
+      "fetched": 1,
+      "skipped": 60,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,23 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4480947895",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Walker Lovell",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-19",
+      "firstSeenAt": "2026-10-20T02:06:09.596Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-at-walker-lovell-4480947895",
+      "excerpt": "Looking for a long-term career as a Paralegal? Or currently working as a Legal PA or Legal Secretary and ready for something more hands-on? This could be an excellent opportunity to take that next step. We're working with a leading international law firm in Hong Kong looking for someone to join its …",
+      "description": "Looking for a long-term career as a Paralegal? Or currently working as a Legal PA or Legal Secretary and ready for something more hands-on?\n\nThis could be an excellent opportunity to take that next step.\n\nWe're working with a leading international law firm in Hong Kong looking for someone to join its established Debt Capital Markets team.\n\nYou don't necessarily need previous DCM experience. What's important is your attention to detail, strong Mandarin and English language skills, and genuine interest in building a career as a specialist Paralegal.\n\nWhat's On Offer?\n\n- The opportunity to build a long-term career as a Paralegal\n- Hands-on involvement in major domestic and cross-border debt transactions\n- Training and support from experienced lawyers\n- A competitive package and an internationally recognised firm\n\nWhat You'll Be Doing\n\n- Assisting with due diligence and reviewing Chinese-language documents\n- Preparing and reviewing transaction and disclosure documentation\n- Conducting legal and commercial research\n- Supporting lawyers throughout live DCM transactions\n\nWho We're Looking For\nWe're open to candidates currently working as Paralegals, Legal PAs or Legal Secretaries who want to develop their careers in a more transaction-focused role.\n\nYou'll need fluent Mandarin and English, excellent organisational skills and the confidence to work with detailed documentation in a busy legal environment.\n\nImportantly, this opportunity is aimed at someone who wants to grow and progress as a Paralegal, rather than using the role simply as a stepping stone towards qualification.\n\nInterested? Apply now or contact Walker Lovell for a confidential conversation.",
+      "stillListed": true
+    },
     {
       "id": "linkedin:4444378192",
       "source": "linkedin",
@@ -736,7 +753,7 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-walker-lovell-4476166384",
       "excerpt": "Build Your Career in Debt Capital Markets Gain hands-on exposure to sophisticated debt capital markets transactions within a globally respected legal environment. You’ll work alongside experienced lawyers on significant cross-border matters, developing valuable transactional experience at an early s…",
       "description": "Build Your Career in Debt Capital Markets\nGain hands-on exposure to sophisticated debt capital markets transactions within a globally respected legal environment. You’ll work alongside experienced lawyers on significant cross-border matters, developing valuable transactional experience at an early stage in your legal career.\n\nPackage / Benefits\n\n- Strong package reflecting the role and market\n- First-rate training and professional development\n- Exposure to complex, high-profile DCM transactions\n- Supportive working practices with a focus on wellbeing and inclusion\n\nWhy This Business\nJoin a leading international law firm with a substantial presence across the world’s major financial centres. Its financial markets practice advises major financial institutions, corporates and other sophisticated market participants on complex, high-value transactions.\n\nIn Hong Kong, you’ll join an established Debt Capital Markets team handling significant domestic and cross-border matters, giving you direct exposure to the documentation, due diligence and execution behind major debt transactions.\n\nWhat You’ll Be Doing\n\n- Support due diligence exercises, including reviewing Chinese-language materials and transaction documents\n- Assist with preparing and reviewing disclosure documents and other legal documentation\n- Conduct legal and commercial research to support active client matters\n- Provide high-quality transaction support to lawyers throughout DCM matters\n\nWhat You’ll Bring\n\n- Excellent academic credentials and a clear interest in developing a legal career\n- Fluency in English and Mandarin, with strong written and verbal communication skills\n- Strong organisation and attention to detail, with the ability to manage multiple priorities accurately\n- A collaborative approach and the interpersonal skills to build effective relationships with colleagues and clients\n\nWho This Suits\nYou’re an ambitious early-career legal professional looking to build meaningful transactional experience within Debt Capital Markets. You enjoy detailed, high-quality legal work and want exposure to significant financial transactions while learning from experienced lawyers in an international practice.\n\nApply now for a confidential conversation with Walker Lovell.",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1385,7 +1402,7 @@
       "url": "https://hk.jobsdb.com/job/94734664",
       "excerpt": "To provide legal support to our solicitors in the practice of personal injuries and medical negligence litigation.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
