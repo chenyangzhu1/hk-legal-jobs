@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-20T02:06:09.596Z",
+    "ranAt": "2026-10-21T02:03:03.367Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 1,
-      "skipped": 60,
+      "fetched": 0,
+      "skipped": 62,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,40 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95384143",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Fresh Graduates are welcome)",
+      "company": "W K To & Co Solicitors",
+      "location": "Central, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-20",
+      "firstSeenAt": "2026-10-21T02:03:03.367Z",
+      "url": "https://hk.jobsdb.com/job/95384143",
+      "excerpt": "on the job training will be provided",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95386567",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Corporate Paralegal - International Law Firm (25k)",
+      "company": "Aquis Search Limited",
+      "location": "Central, Central and Western District",
+      "salary": "$20,000 – $25,000 per month",
+      "postedAt": "2026-10-20",
+      "firstSeenAt": "2026-10-21T02:03:03.367Z",
+      "url": "https://hk.jobsdb.com/job/95386567",
+      "excerpt": "Build your corporate law career with a prestigious international firm. Competitive salary, professional development & dynamic team.",
+      "description": null,
+      "stillListed": true
+    },
     {
       "id": "linkedin:4480947895",
       "source": "linkedin",
