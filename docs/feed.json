@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-21T02:03:03.367Z",
+    "ranAt": "2026-10-22T01:52:47.792Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 0,
-      "skipped": 62,
+      "fetched": 1,
+      "skipped": 63,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,57 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95329794",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Roger Yung & Co.",
+      "location": "Central and Western District",
+      "salary": null,
+      "postedAt": "2026-10-21",
+      "firstSeenAt": "2026-10-22T01:52:47.792Z",
+      "url": "https://hk.jobsdb.com/job/95329794",
+      "excerpt": "Excellent opportunity to gain valuable experience toward the career as a solicitor",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95401972",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "M&A/PE Paralegal - French & Mandarin Speaking Role",
+      "company": "Michael Page International (HK) Ltd",
+      "location": "Central and Western District",
+      "salary": "$30k - $40k p.m.",
+      "postedAt": "2026-10-21",
+      "firstSeenAt": "2026-10-22T01:52:47.792Z",
+      "url": "https://hk.jobsdb.com/job/95401972",
+      "excerpt": "We are looking for a law graduate who is fluent in French, Mandarin and English, to join a team specialising in M&A and investments.",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "linkedin:4482048031",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal, Finance",
+      "company": "Stephenson Harwood LLP",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-21",
+      "firstSeenAt": "2026-10-22T01:52:47.792Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-finance-at-stephenson-harwood-llp-4482048031",
+      "excerpt": "What We Will Offer We will offer you a place where you can be yourself and where there are no limits on what you can achieve. With us, you can take ownership of your career and have honest conversations throughout. You would join an ambitious firm with a clear strategy for profitable growth where yo…",
+      "description": "What We Will Offer\n\nWe will offer you a place where you can be yourself and where there are no limits on what you can achieve. With us, you can take ownership of your career and have honest conversations throughout. You would join an ambitious firm with a clear strategy for profitable growth where you can gain early responsibility and early involvement in growing the business. Here you can expect a competitive and fair reward as well as recognition based on all round performance. This forms part of our internal promise to you, The Deal, between the firm and its employees.\n\nYou can expect\n\n- A competitive salary and a host of family friendly policies\n- Life assurance, private health and dental care for you\n- We support the causes you care about, by giving you one day per year off to volunteer with any charity that you are involved with outside of work.\n- A wellbeing strategy that focuses on preventative measures to maintain overall health, and tools and support for when our people experience physical or mental difficulties. The strategy focuses on four pillars: physical, emotional, financial and social aspects.\n- We are an equal opportunity organisation, committed to having a diverse workforce. We do not discriminate on the basis of age, sex, race, disability, sexual orientation, culture, or any other protected characteristic. We aim to create a culture where everyone can be themselves and is valued for their strengths and unique perspectives\n\nTeam Structure\n\nThe Debt Finance team currently consists of 3 Partners and 9 other fee earners, including 7 Associates and 2 Trainees.\n\nThe team focuses on Financial Regulatory, General Banking and Securitisation, advising clients on a wide range of financing transactions and regulatory matters. Supported by a strong associate and trainee cohort, the team works closely with other practice groups to deliver practical and commercially focused solutions across a variety of sectors.\n\nMain Responsibilities\n\n- Supporting the Finance team on a broad range of transactions and matters across the practice.\n- Preparing engagement letters and undertaking related client onboarding and matter inception tasks.\n- Managing and coordinating conditions precedent (CP) documentation and assisting with the satisfaction of CP requirements.\n- Preparing execution versions of documents and organising transaction bibles.\n- Preparing and filing company registration documents and other statutory filings.\n- Preparing and filing regulatory submissions with regulators such as the Securities and Futures Commission (SFC).\n- Assisting with transaction management, including liaising with clients, counterparties, external advisers and internal teams to progress matters.\n- Performing legal and factual research and preparing reports, summaries and other supporting documents.\n- Assisting in drafting corporate authorities, conducting company searches, regulatory searches and other due diligence tasks as required.\n- Providing administrative and project support to fee earners and other transactional teams on an ad hoc basis as required.\n\nAttributes/Skills Required\n\n- Strong organisational skills and excellent attention to detail.\n- Strong written and verbal communication skills.\n- Ability to work independently while also contributing positively as part of a team.\n- Proactive approach to problem-solving and willingness to take ownership of tasks.\n- Good project management and transaction coordination skills.\n- Competent in Microsoft Office applications, particularly Word, Excel and Outlook.\n- Ability to handle confidential information with professionalism and discretion.\n- An interest in finance law and developing technical knowledge across Financial Regulatory, General Banking and Securitisation.\n\nThis job description is indicative only and does not represent an exhaustive list of responsibilities. The firm reserves the right to alter or change the responsibilities at any time, in line with the firm’s strategy and business needs.\n…",
+      "stillListed": true
+    },
     {
       "id": "jobsdb:95384143",
       "source": "jobsdb",
@@ -1418,7 +1469,7 @@
       "url": "https://hk.jobsdb.com/job/94762213",
       "excerpt": "Support efficient delivery of legal services through contract management, compliance, and legal operations.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
