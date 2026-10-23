@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-22T01:52:47.792Z",
+    "ranAt": "2026-10-23T01:59:21.340Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -20,7 +20,7 @@
     },
     "descriptions": {
       "fetched": 1,
-      "skipped": 63,
+      "skipped": 61,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,75 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95431289",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "UBS AG",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-22",
+      "firstSeenAt": "2026-10-23T01:59:21.340Z",
+      "url": "https://hk.jobsdb.com/job/95431289",
+      "excerpt": "Do you have a keen interest in working in a legal department? Do you have a background or desire to learn more about preparing, drafting, reviewing...",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95440374",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Litigation Paralegal - International Law Firm (up to 36k)",
+      "company": "Aquis Search Limited",
+      "location": "Central, Central and Western District",
+      "salary": "$25,000 – $36,000 per month",
+      "postedAt": "2026-10-22",
+      "firstSeenAt": "2026-10-23T01:59:21.340Z",
+      "url": "https://hk.jobsdb.com/job/95440374",
+      "excerpt": "Support complex litigation matters. Competitive salary, flexible working, and professional development in a collaborative international law firm.",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "linkedin:4481300013",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "UBS",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-22",
+      "firstSeenAt": "2026-10-23T01:59:21.340Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-at-ubs-4481300013",
+      "excerpt": "Job Type Full Time Job Reference # 343583BR City Hong Kong SAR, Singapore Key Responsibilities Do you have a keen interest in working in a legal department? Do you have a background or desire to learn more about preparing, drafting, reviewing and negotiating simple contracts such as engagement lette…",
+      "description": "Job Type\n\nFull Time\n\nJob Reference #\n\n343583BR\n\nCity\n\nHong Kong SAR, Singapore\n\nKey Responsibilities\n\nDo you have a keen interest in working in a legal department? Do you have a background or desire to learn more about preparing, drafting, reviewing and negotiating simple contracts such as engagement letters or non-disclosure agreements? We are looking for someone to:\n\n- Review and negotiate or assist with the negotiation of engagement letters and non-disclosure agreements in English and Chinese\n- Prepare, review and assist with documentation relating to equity capital markets transactions, such as IPO ancillary documents, placing agreements, investor representation letters, disclaimers and case studies\n- Prepare, review and assist with documentation relating to MTN (Medium Term Note) programmes or other securitized products\n- Review Chinese versions of legal documentation\n- Participate in internal special projects\n\nThe team\n\nYou’ll be part of the Legal Execution and Corporate Secretary team (“LECS”) in Singapore or Hong Kong, that provides high quality, timely, independent and cost-effective support for Group Legal. You will mainly assist the lawyers in the Global Banking legal team in Asia, who are responsible for advising our Global Banking colleagues on legal and regulatory matters related to the equity and debt capital markets services they offer to our clients across Asia. You will also be expected to work with other members of LECS and Group Legal in relation to a wide variety of legal and regulatory issues when required.\n\nYour Skills And Experience\n\nYou have:\n\n- a law degree\n- ideally worked 2 years’ in a similar position before, either at a law firm or in an investment bank or wealth management environment\n- the ability to multi-task\n- a strong attention to details coupled with a solution orientated approach\n- a willingness to learn and work a team player\n\nYou are:\n\n- able to read and write in English and Chinese. Fluency in reading and writing Chinese is essential due to high volume of North Asia work.\n- persistent in reaching defined objectives with stamina, initiative and drive\n- able to handle pressure and used to working to deadlines\n- comfortable in working in a dynamic and varied legal environment\n- an excellent team player and as such an expert at building networks and connections and in communicating across rank and cultures\n- you’re curious to explore how AI can improve how we build, deliver, and optimize workflows. You do this with sound judgment – validating outputs and aligning with policies, risk standards, and ethical use\n\nAbout Us\nUBS is a leading and truly global wealth manager and the leading universal bank in Switzerland. We also provide diversified asset management solutions and focused investment banking capabilities. Headquartered in Zurich, Switzerland, UBS is present in more than 50 markets around the globe.\n\nWe know that great work is never done alone. That’s why we place collaboration at the heart of everything we do. Because together, we’re more than ourselves. Want to find out more? Visit ubs.com/careers.\n\nJoin us\n\nAt UBS, we know that it's our people, with their diverse skills, experiences and backgrounds, who drive our ongoing success. We’re dedicated to our craft and passionate about putting our people first, with new challenges, a supportive team, opportunities to grow and flexible working options when possible. Our inclusive culture brings out the best in our employees, wherever they are on their career journey. And we use artificial intelligence (AI) to work smarter and more efficiently. We also recognize that great work is never done alone. That’s why collaboration is at the heart of everything we do. Because together, we’re more than ourselves.\n\nWe’re committed to disability inclusion and if you need reasonable accommodation/adjustments throughout our recruitment process, you can always contact us.\n\nContact Details\n\nUBS Business Solutions SA\n\nUBS Recruiting\n\nDisclaimer / Policy stat…",
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:94603988",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Tang Lawyers",
+      "location": "Central, Central and Western District",
+      "salary": "$17,000 – $24,000 per month",
+      "postedAt": "2026-10-22",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94603988",
+      "excerpt": "a full range of clerical and administrative support to fee earners.",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95329794",
       "source": "jobsdb",
@@ -752,6 +821,23 @@
       "suppressNew": true
     },
     {
+      "id": "jobsdb:95114388",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Senior Paralegal / Legal Officer – Document Review (Banking, Max 40K)",
+      "company": "PERSOL",
+      "location": "Wan Chai District",
+      "salary": "$30,000 – $40,000 per month",
+      "postedAt": "2026-10-07",
+      "firstSeenAt": "2026-10-23T01:59:21.340Z",
+      "url": "https://hk.jobsdb.com/job/95114388",
+      "excerpt": "Our client is a reputable leading China-based bank. They are seeking for a Senior Paralegal / Legal Officer to support their team.",
+      "description": null,
+      "stillListed": true
+    },
+    {
       "id": "jobsdb:94515924",
       "source": "jobsdb",
       "tracks": [
@@ -1036,7 +1122,7 @@
       "url": "https://hk.jobsdb.com/job/95026999",
       "excerpt": "We are looking to recruit an experienced paralegal to join the Withers Hong Kong's Family team. The role will at times be fast paced so you will...",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1126,7 +1212,7 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-family-at-withers-4473126473",
       "excerpt": "Withers Job title: Paralegal (Family) Location: Hong Kong About Withers A law firm focused on people, performance, and collaboration. For the past 130 years, we have supported some of the world’s most remarkable people and organizations at defining moments in their lives. We are united in our commit…",
       "description": "Withers\n\nJob title: Paralegal (Family)\n\nLocation: Hong Kong\n\nAbout Withers\n\nA law firm focused on people, performance, and collaboration.\n\nFor the past 130 years, we have supported some of the world’s most remarkable people and organizations at defining moments in their lives.\n\nWe are united in our commitment to integrity, quality and collaboration. We have a culture of high performance and deliver excellent service consistently across the firm. We provide tailored solutions built on trust and partner with our clients to achieve their goals.\n\nMany of our clients are shaping the future and creating solutions to tackle many of the world’s problems. It makes for a fascinating and challenging practice.\n\nOur role is to get to know each individual client, find out where they want to be, and help them to get there – whether they are building a business, buying a home or protecting and defending their interests.\n\nTo meet their unique needs we are exceptionally collaborative, working together across teams and time zones. And we are agile – focusing on strategy rather than rigid ideas and traditional hierarchy.\n\nJoin us to be part of a team that is always looking to the future. Where initiative, big ideas and bold moves are always encouraged. Where you can truly be yourself.\n\nWhat are we looking for?\n\nWe are looking to recruit an experienced paralegal to join the Withers Hong Kong's Family team. The role will at times be fast paced so you will need to be an efficient worker who can prioritise tasks and have great organisational skills.\n\nThe ideal candidate will be technically capable, have a good working attitude and possess excellent communication skills. This position requires someone who is comfortable using their initiative, is a strong team player and is motivated to produce quality support to the Division.\n\nAreas Of Focus And Responsibilities\n\n- Preparing and drafting pleadings, affidavits, documents and correspondences\n- Performing legal research\n- Compiling bundles for court hearings\n- Simple translation tasks\n\nThis list of duties and responsibilities is not exhaustive. It is intended to describe the general content of, and requirements for the performance of this job, and as such, the role may also include the undertaking of additional tasks as required.\n\nTechnical Skills And Qualifications\n\n- Candidates with prior experience in a law firm will be preferred\n- Able to comply with deadlines and meticulous\n- Proficient in PC skills (e.g. Word, Excel & etc.)\n\nInformation for Recruitment Agencies\n\nWithers endeavours to recruit and fill vacancies directly. However, when we do need to engage with agencies, Withers operates a preferred supplier list and will not be accepting unsolicited applications from non-PSL agencies for this role.\n\nEqual Opportunities Employment Statement\n\nIt is the policy of Withers to provide equal opportunities for all employees in relation to recruitment, training and promotion. Decisions in these areas will be made only by reference to the requirements of the job and shall not be influenced by any consideration of ethnic origin, religion, sex, age, sexual orientation or disability.\n\nApply Now",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1415,7 +1501,7 @@
       "url": "https://hk.jobsdb.com/job/94794246",
       "excerpt": "Paralegal to support intellectual property matters for Hong Kong, PRC, and multinational clients.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1433,7 +1519,7 @@
       "url": "https://hk.jobsdb.com/job/94795391",
       "excerpt": "Assist in drafting, reviewing, and proofreading legal documents and contracts, including NDAs, commercial agreements, and internal policies.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1451,7 +1537,7 @@
       "url": "https://hk.jobsdb.com/job/94803499",
       "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1704,24 +1790,6 @@
       "url": "https://hk.linkedin.com/jobs/view/senior-paralegal-at-gammon-construction-limited-4466161768",
       "excerpt": "Responsibilities: - Draft and prepare correspondence, agreements and other legal documents; - Research legal issues and case law and / or examination of documentation and / or factual investigation; - Review tender documents and other contractual documents and advising on potential legal risks; - As…",
       "description": "Responsibilities:\n\n- Draft and prepare correspondence, agreements and other legal documents;\n- Research legal issues and case law and / or examination of documentation and / or factual investigation;\n- Review tender documents and other contractual documents and advising on potential legal risks;\n- Assist with preparation of court bundles and other document management tasks;\n- Assist in preparing briefs to external counsel, attending court and assisting external counsel;\n- Liaise with government agencies; and\n- Assist with general legal matters.\n\nRequirements:\n\n- Degree in Law from a university in Hong Kong or another common law jurisdiction;\n- At least 3 years' experience working in a solicitors' firm or in-house team, ideally in construction;\n- Strong initiative, organizational and problem solving skills;\n- Strong personal, communication and teamwork skills;\n- Determination to produce top quality work within deadline and under pressure;\n- High commitment, including readiness to work late at short notice if needed;\n- Willingness to learn and adapt;\n- Excellent communication skills in both written and spoken English and Chinese.\n\nBenefits:\n\n- Competitive pay\n- Discretionary bonus\n- MPF top-up\n- Medical insurance\n- Life insurance\n\nWe are an equal opportunity employer. Information provided will be treated in strict confidence for recruitment purposes only. Candidates not being invited for interview within 6 weeks after submission date may assume their application unsuccessful. All personal data collected will be retained for a period of no more than 24 months, and destroyed afterwards. We are committed to comply with the Personal Data (Privacy) Ordinance of Hong Kong (the “Ordinance”) and a copy of our Personal Information Collection Statement can be accessed by visiting our Company website (www.gammonconstruction.com).",
-      "stillListed": false,
-      "suppressNew": true
-    },
-    {
-      "id": "jobsdb:94603988",
-      "source": "jobsdb",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal",
-      "company": "Tang Lawyers",
-      "location": "Central, Central and Western District",
-      "salary": "$17,000 – $24,000 per month",
-      "postedAt": "2026-09-14",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/94603988",
-      "excerpt": "a full range of clerical and administrative support to fee earners.",
-      "description": null,
       "stillListed": false,
       "suppressNew": true
     },
