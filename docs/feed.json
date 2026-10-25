@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-24T02:00:07.117Z",
+    "ranAt": "2026-10-25T01:40:22.091Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 1,
-      "skipped": 61,
+      "fetched": 0,
+      "skipped": 60,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,24 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4464884736",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Speculative)",
+      "company": "Simpson Thacher & Bartlett LLP",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-24",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-speculative-at-simpson-thacher-bartlett-llp-4464884736",
+      "excerpt": "The firm Simpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction …",
+      "description": "The firm\n\nSimpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction of an experienced attorney.\n\nDescription/Job Summary\n\n- Assist attorneys with preparation of legal documents, due diligence review, subscription document review and tracking, and related tasks\n- Translation of documents\n- Complete forms required for the formation/dissolution/amendment and qualification of corporations, LLC’s and partnerships\n- Organize and maintain electronic files, and paper files where necessary\n- Organize and maintain due diligence and subscription documents\n- Perform due diligence searches\n- Utilize and manage electronic databases\n- Proofread, organize and track documents; prepare closing sets of necessary documents following completion of a transaction; organize and distribute post-closing documents\n- Assist with document/information gathering, logistics and coordination of items received\n- Maintain well organized files\n- Update document management platforms and databases and categorize documents for efficient accessibility\n- Liaise with internal departments and outside vendors\n- Perform other tasks as assigned by deal teams\n- Be flexible to adjust hours to meet departmental need\n\nRequired Skills\n\n- Fluency in both English and Chinese or additional languages such as Korean or Japanese\n- Detail oriented, with excellent organizational and communication skills\n- Able to work in a fast paced environment, both independently or on a team\n- Flexibility, time management and an ability to prioritize tasks and deadlines\n- Proficiency with legal terminology relevant to the industry\n- Critical thinking and solution oriented mindset\n- Present information clearly and concisely, both verbally and in writing\n- Self-starter who can organize, plan and complete multi-task work activities\n- Ability to proofread for contextual, grammatical and spelling errors\n\nPreferred Skills\n\n- Related experience in a law firm or other professional services firm\n- Knowledge of MS Office applications and Excel preferred\n\nRequired Education\n\nBachelor’s degree or Law degree required",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95451450",
       "source": "jobsdb",
@@ -1231,24 +1249,6 @@
       "suppressNew": true
     },
     {
-      "id": "linkedin:4464884736",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal (Speculative)",
-      "company": "Simpson Thacher & Bartlett LLP",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-02",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-speculative-at-simpson-thacher-bartlett-llp-4464884736",
-      "excerpt": "The firm Simpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction …",
-      "description": "The firm\n\nSimpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction of an experienced attorney.\n\nDescription/Job Summary\n\n- Assist attorneys with preparation of legal documents, due diligence review, subscription document review and tracking, and related tasks\n- Translation of documents\n- Complete forms required for the formation/dissolution/amendment and qualification of corporations, LLC’s and partnerships\n- Organize and maintain electronic files, and paper files where necessary\n- Organize and maintain due diligence and subscription documents\n- Perform due diligence searches\n- Utilize and manage electronic databases\n- Proofread, organize and track documents; prepare closing sets of necessary documents following completion of a transaction; organize and distribute post-closing documents\n- Assist with document/information gathering, logistics and coordination of items received\n- Maintain well organized files\n- Update document management platforms and databases and categorize documents for efficient accessibility\n- Liaise with internal departments and outside vendors\n- Perform other tasks as assigned by deal teams\n- Be flexible to adjust hours to meet departmental need\n\nRequired Skills\n\n- Fluency in both English and Chinese or additional languages such as Korean or Japanese\n- Detail oriented, with excellent organizational and communication skills\n- Able to work in a fast paced environment, both independently or on a team\n- Flexibility, time management and an ability to prioritize tasks and deadlines\n- Proficiency with legal terminology relevant to the industry\n- Critical thinking and solution oriented mindset\n- Present information clearly and concisely, both verbally and in writing\n- Self-starter who can organize, plan and complete multi-task work activities\n- Ability to proofread for contextual, grammatical and spelling errors\n\nPreferred Skills\n\n- Related experience in a law firm or other professional services firm\n- Knowledge of MS Office applications and Excel preferred\n\nRequired Education\n\nBachelor’s degree or Law degree required",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "linkedin:4473126473",
       "source": "linkedin",
       "tracks": [
@@ -1462,7 +1462,7 @@
       "url": "https://hk.jobsdb.com/job/94863290",
       "excerpt": "We offer competitive remuneration package to the right candidate and operate a 5-day work-week.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
