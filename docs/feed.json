@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-25T01:40:22.091Z",
+    "ranAt": "2026-10-26T01:44:40.909Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -20,7 +20,7 @@
     },
     "descriptions": {
       "fetched": 0,
-      "skipped": 60,
+      "skipped": 58,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -1444,7 +1444,7 @@
       "url": "https://hk.jobsdb.com/job/94823531",
       "excerpt": "We hereby present an excellent opportunity for a Trainee Solicitor (2026 intake) and Paralegal to work for our Central law firm in Hong Kong.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
