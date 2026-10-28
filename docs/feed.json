@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-27T02:26:16.819Z",
+    "ranAt": "2026-10-28T02:35:15.809Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,7 +19,7 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 1,
+      "fetched": 0,
       "skipped": 60,
       "failed": 1,
       "blocked": [
