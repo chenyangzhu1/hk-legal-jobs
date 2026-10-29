@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-10-28T02:35:15.809Z",
+    "ranAt": "2026-10-29T02:54:29.476Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 0,
-      "skipped": 60,
+      "fetched": 1,
+      "skipped": 58,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,58 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4483856110",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal – Family Law",
+      "company": "TITUS",
+      "location": "Central & Western District, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-28",
+      "firstSeenAt": "2026-10-29T02:54:29.476Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-%E2%80%93-family-law-at-titus-4483856110",
+      "excerpt": "1–3 years’ relevant experience; recent law graduates with relevant internship experience also considered Full-time | On-site | Admiralty, Hong Kong About TITUS TITUS is a modern, independent Hong Kong law firm based in Lippo Centre, Admiralty, acting for clients ranging from individuals to multinati…",
+      "description": "1–3 years’ relevant experience; recent law graduates with relevant internship experience also considered\n\nFull-time | On-site | Admiralty, Hong Kong\n\nAbout TITUS\n\nTITUS is a modern, independent Hong Kong law firm based in Lippo Centre, Admiralty, acting for clients ranging from individuals to multinational corporations.\n\nOur Family Law team advises on divorce and separation, financial arrangements, children matters and pre- and post-nuptial agreements, often for high-net-worth clients and frequently involving cross-border issues.\n\nThe opportunity\n\nWe are looking for a motivated Paralegal to support our Family Law team on matrimonial and family matters, with occasional assistance to other teams as workload requires.\n\nYou will work closely with experienced solicitors and develop your drafting, document management and case-management skills.\n\nKey responsibilities\n\nWorking under the supervision of solicitors, your responsibilities will include:\n\n• Supporting solicitors on matrimonial and family proceedings, including divorce, financial and ancillary relief applications, children matters and, where applicable, cross-border issues.\n\n• Preparing first drafts of affidavits, court documents and correspondence, and collating disclosure and hearing bundles.\n\n• Attending court hearings, counsel conferences and mediations, and taking attendance notes.\n\n• Assisting with pre- and post-nuptial agreements and settlement documentation.\n\n• Assisting with client communications and liaising with counsel, experts, court registries and other professionals.\n\n• Conducting legal research for solicitors’ review.\n\n• Managing files, diarising deadlines, and filing and serving documents.\n\n• Assisting with occasional civil litigation matters and general administration, including billing and time recording.\n\nWhat we are looking for\n\n• A law degree, PCLL or recognised paralegal qualification, with 1–3 years’ paralegal experience in family law or litigation (recent graduates with relevant internship experience considered).\n\n• Working knowledge of Hong Kong family and civil court procedure; cross-border experience an advantage.\n\n• Strong research and drafting skills and close attention to detail.\n\n• Excellent written and spoken English; Chinese preferred, but not essential.\n\n• Discretion and empathy in handling sensitive personal and financial matters.\n\n• Strong organisational skills and the ability to manage deadlines, working both independently and as part of a team.\n\n• A genuine interest in family law.\n\nHow to apply\n\nPlease apply through LinkedIn, or send your CV and a brief covering letter to hr@titus.com.hk, indicating your relevant experience, availability and salary expectations.\n\nTITUS welcomes applications from suitable candidates from all backgrounds. Applications will be assessed on relevant qualifications, experience and suitability for the role.\n\nPersonal information provided will be used for recruitment purposes only.\n\nApplications remain open until the position is filled.",
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95252707",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Legal Executive/ Paralegal/Clerk",
+      "company": "LKC Lawyers",
+      "location": "Mong Kok, Yau Tsim Mong District",
+      "salary": null,
+      "postedAt": "2026-10-28",
+      "firstSeenAt": "2026-10-15T01:51:50.691Z",
+      "url": "https://hk.jobsdb.com/job/95252707",
+      "excerpt": "Assist the work of solicitors for the preparation of legal documents;",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95052201",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "TRAINEE SOLICITOR (GENERAL PRACTICE)",
+      "company": "John M. Pickavant & Company",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-10-28",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95052201",
+      "excerpt": "Successful candidate must have strong academic qualification and good character; good command of both spoken and written English; aspire to become...",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95513677",
       "source": "jobsdb",
@@ -562,23 +614,6 @@
       "firstSeenAt": "2026-10-15T01:51:50.691Z",
       "url": "https://hk.jobsdb.com/job/95093692",
       "excerpt": "Gain valuable legal experience and advance your career as a Trainee Solicitor at Raymond Chan Solicitors' in Central Hong Kong.",
-      "description": null,
-      "stillListed": true
-    },
-    {
-      "id": "jobsdb:95252707",
-      "source": "jobsdb",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Legal Executive/ Paralegal/Clerk",
-      "company": "LKC Lawyers",
-      "location": "Mong Kok, Yau Tsim Mong District",
-      "salary": null,
-      "postedAt": "2026-10-14",
-      "firstSeenAt": "2026-10-15T01:51:50.691Z",
-      "url": "https://hk.jobsdb.com/job/95252707",
-      "excerpt": "Assist the work of solicitors for the preparation of legal documents;",
       "description": null,
       "stillListed": true
     },
@@ -1191,24 +1226,6 @@
       "suppressNew": true
     },
     {
-      "id": "jobsdb:95052201",
-      "source": "jobsdb",
-      "tracks": [
-        "trainee"
-      ],
-      "title": "TRAINEE SOLICITOR (GENERAL PRACTICE)",
-      "company": "John M. Pickavant & Company",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-05",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/95052201",
-      "excerpt": "Successful candidate must have strong academic qualification and good character; good command of both spoken and written English; aspire to become...",
-      "description": null,
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "linkedin:4475528659",
       "source": "linkedin",
       "tracks": [
@@ -1475,7 +1492,7 @@
       "url": "https://hk.jobsdb.com/job/94909416",
       "excerpt": "Assist in drafting and preparing correspondences and documents under supervision; Providing comprehensive legal and administrative support to the team",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1493,7 +1510,7 @@
       "url": "https://hk.jobsdb.com/job/94925574",
       "excerpt": "Develop your legal career in a supportive, collaborative environment with professional growth opportunities.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
