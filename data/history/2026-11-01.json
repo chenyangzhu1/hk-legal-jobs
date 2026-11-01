@@ -1,0 +1,21 @@
+[
+  {
+    "id": "jobsdb:95619243",
+    "source": "jobsdb",
+    "tracks": [
+      "trainee"
+    ],
+    "title": "Trainee Solicitor",
+    "company": "MUNG",
+    "location": "Hong Kong Island",
+    "salary": null,
+    "postedAt": "2026-10-31",
+    "firstSeenAt": "2026-11-01T02:35:56.885Z",
+    "lastSeenAt": "2026-11-01T02:35:56.885Z",
+    "url": "https://hk.jobsdb.com/job/95619243",
+    "excerpt": "Why join MUNG The law is being rewritten in real time with new concepts such as DAO, Onchain Finance, RWAs and ever increasing innovative ideas.",
+    "description": null,
+    "fingerprint": "5c7aaf3b9fc485284da9f1a2e753f193e231acb2",
+    "stillListed": true
+  }
+]
