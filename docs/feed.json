@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-01T02:35:56.885Z",
+    "ranAt": "2026-11-02T02:44:45.990Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -20,7 +20,7 @@
     },
     "descriptions": {
       "fetched": 0,
-      "skipped": 60,
+      "skipped": 58,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -1416,7 +1416,7 @@
       "url": "https://hk.jobsdb.com/job/95015733",
       "excerpt": "Join a leading disputes practice and gain hands-on experience in complex litigation, insolvency and restructuring matters.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1452,7 +1452,7 @@
       "url": "https://hk.jobsdb.com/job/95031747",
       "excerpt": "2 yrs practical experience in legal firm Shall have experience in PROBATE and/or CIVIL LITIGATION and/or CRIMINAL LITIGATION and/or FAMILY MATTERS",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
