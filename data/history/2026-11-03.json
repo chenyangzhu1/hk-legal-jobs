@@ -1,0 +1,40 @@
+[
+  {
+    "id": "jobsdb:95630401",
+    "source": "jobsdb",
+    "tracks": [
+      "trainee"
+    ],
+    "title": "Trainee Solicitor(s)",
+    "company": "Vitus Lawyers",
+    "location": "Central and Western District",
+    "salary": null,
+    "postedAt": "2026-11-02",
+    "firstSeenAt": "2026-11-03T04:02:15.871Z",
+    "lastSeenAt": "2026-11-03T04:02:15.871Z",
+    "url": "https://hk.jobsdb.com/job/95630401",
+    "excerpt": "PCLL Proficiency in spoken and written Chinese and English, Putonghua an advantage Interested in civil &amp; criminal litigation...",
+    "description": null,
+    "fingerprint": "95fd79c687386ab2fbeb42a7a0937311bb1c386f",
+    "stillListed": true
+  },
+  {
+    "id": "jobsdb:95632914",
+    "source": "jobsdb",
+    "tracks": [
+      "paralegal"
+    ],
+    "title": "Paralegal",
+    "company": "Cheung & Co.",
+    "location": "Wan Chai, Wan Chai District",
+    "salary": null,
+    "postedAt": "2026-11-02",
+    "firstSeenAt": "2026-11-03T04:02:15.871Z",
+    "lastSeenAt": "2026-11-03T04:02:15.871Z",
+    "url": "https://hk.jobsdb.com/job/95632914",
+    "excerpt": "2 yrs practical experience in legal firm Shall have experience in PROBATE and/or CIVIL LITIGATION and/or CRIMINAL LITIGATION and/or FAMILY MATTERS",
+    "description": null,
+    "fingerprint": "b3eca7e79f67bf64dd26b57cb328d651403c4869",
+    "stillListed": true
+  }
+]
