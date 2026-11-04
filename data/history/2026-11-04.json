@@ -1,0 +1,40 @@
+[
+  {
+    "id": "jobsdb:95678656",
+    "source": "jobsdb",
+    "tracks": [
+      "paralegal"
+    ],
+    "title": "Legal Executive  / Paralegal",
+    "company": "KWC & Associates",
+    "location": "Yuen Long, Yuen Long District",
+    "salary": null,
+    "postedAt": "2026-11-04",
+    "firstSeenAt": "2026-11-04T03:19:08.913Z",
+    "lastSeenAt": "2026-11-04T03:19:08.913Z",
+    "url": "https://hk.jobsdb.com/job/95678656",
+    "excerpt": "Our civil litigation team as a Legal Executive/Paralegal. Work directly with solicitors and build courtroom experience through on-the-job training.",
+    "description": null,
+    "fingerprint": "6194b29ef8fa6783357264d8213b9e9e3648d8bb",
+    "stillListed": true
+  },
+  {
+    "id": "jobsdb:95663107",
+    "source": "jobsdb",
+    "tracks": [
+      "trainee"
+    ],
+    "title": "Trainee Solicitor / Legal Executive",
+    "company": "Edwin So & Co., Solicitors",
+    "location": "Central, Central and Western District",
+    "salary": null,
+    "postedAt": "2026-11-03",
+    "firstSeenAt": "2026-11-04T03:19:08.913Z",
+    "lastSeenAt": "2026-11-04T03:19:08.913Z",
+    "url": "https://hk.jobsdb.com/job/95663107",
+    "excerpt": "We are a law firm is specialized in work and traffic injuries claims, matrimonial matters, criminal litigation as well as general practice.",
+    "description": null,
+    "fingerprint": "ceba5df3a55419b7226ede516b52870f4bac276b",
+    "stillListed": true
+  }
+]
