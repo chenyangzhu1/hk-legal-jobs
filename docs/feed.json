@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-04T03:19:08.913Z",
+    "ranAt": "2026-11-05T03:44:27.380Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,7 +19,7 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 0,
+      "fetched": 1,
       "skipped": 61,
       "failed": 1,
       "blocked": [
@@ -28,6 +28,23 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4486348504",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "CATL",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-04",
+      "firstSeenAt": "2026-11-05T03:44:27.380Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-at-catl-4486348504",
+      "excerpt": "About us: BESS Broadway develops grid-scale battery energy storage (BESS) projects in the UK, Europe, Australia, Japan and Latin America. We co-invest with developers in projects at an early or mid stage of development, take them to ready-to-build, and sell them. Job Description (BESS Broadway): 1. …",
+      "description": "About us: BESS Broadway develops grid-scale battery energy storage (BESS) projects in the UK, Europe, Australia, Japan and Latin America. We co-invest with developers in projects at an early or mid stage of development, take them to ready-to-build, and sell them.\nJob Description (BESS Broadway):\n1. Review routine NDAs, service agreements, and other standard/low-risk contracts against company templates and escalate non-standard terms to legal counsel.\n2. Maintain contract trackers and support approval, signature, and filing workflows.\n3. Maintain legal files and records, schedule corporate governance meetings, prepare meeting materials, track action items, and handle day-to-day legal administrative tasks such as document circulation, expense/payment requests, and cross-functional coordination.\n4. Helping to build our standard documents (term sheets, investment agreements, NDAs, checklists) and the processes our deal team uses.\nKey Qualifications and Skills:\n1. Must hold a valid visa or other legal authorization to work in Hong Kong.\n2. Around 1-2 years' in-house legal, paralegal, or legal administrative experience.\n3. Clear, precise written and spoken English. Chinese is a must.\n4. Basic contract knowledge, strong attention to detail, confidentiality awareness, and proficiency in Word, Excel, PowerPoint, Outlook, and document management systems.\nWhat else to know:\n– Three months in China Mainland to work with group team and regularly catch-up with group team going forward.\n– Travel. Occasional travel to China mainland or overseas project sites.",
+      "stillListed": true
+    },
     {
       "id": "jobsdb:95678656",
       "source": "jobsdb",
@@ -44,6 +61,42 @@
       "excerpt": "Our civil litigation team as a Legal Executive/Paralegal. Work directly with solicitors and build courtroom experience through on-the-job training.",
       "description": null,
       "stillListed": true
+    },
+    {
+      "id": "jobsdb:94690450",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Investments Paralegal - Law Firm",
+      "company": "Michael Page International (HK) Ltd",
+      "location": "Central and Western District",
+      "salary": "$28k - $35k p.m.",
+      "postedAt": "2026-11-04",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94690450",
+      "excerpt": "We are hiring a Paralegal to join a specialised investments practice in an international law firm in Hong Kong.",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "jobsdb:95145083",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal",
+      "company": "Henry Wai & Co.,Solicitors LLP",
+      "location": "Admiralty, Central and Western District",
+      "salary": null,
+      "postedAt": "2026-11-04",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95145083",
+      "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
     },
     {
       "id": "jobsdb:95663107",
@@ -912,7 +965,7 @@
       "url": "https://hk.jobsdb.com/job/95254690",
       "excerpt": "We are looking for an experienced corporate Paralegal to join a top tier law firm, offering a platform for long-term career progression.",
       "description": null,
-      "stillListed": true
+      "stillListed": false
     },
     {
       "id": "jobsdb:95258518",
@@ -1237,24 +1290,6 @@
       "suppressNew": true
     },
     {
-      "id": "jobsdb:95145083",
-      "source": "jobsdb",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal",
-      "company": "Henry Wai & Co.,Solicitors LLP",
-      "location": "Admiralty, Central and Western District",
-      "salary": null,
-      "postedAt": "2026-10-08",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/95145083",
-      "excerpt": "We are a firm specializing in cross-border (i) commercial and corporate litigation and arbitration and (ii) commercial and corporate transactions...",
-      "description": null,
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "jobsdb:95145127",
       "source": "jobsdb",
       "tracks": [
@@ -1449,7 +1484,7 @@
       "url": "https://hk.linkedin.com/jobs/view/hk-ipo-paralegal-international-law-firm-at-taylor-root-4475536307",
       "excerpt": "Top-Tier HK IPO teams at UK, Magic Circle and Red Circle Law firms are looking for junior Paralegals/ Legal Assistants for their growing Capital Markets team in Hong Kong. If you are a Paralegal with experience in ECM, IPOs and proficient in Mandarin, this could be an excellent career move for you. …",
       "description": "Top-Tier HK IPO teams at UK, Magic Circle and Red Circle Law firms are looking for junior Paralegals/ Legal Assistants for their growing Capital Markets team in Hong Kong. If you are a Paralegal with experience in ECM, IPOs and proficient in Mandarin, this could be an excellent career move for you.\nWorking alongside experienced Partners and Associates you will be actively involved on a range of Hong Kong IPO transactions.\nYou will have:\n\n- 1-3 years of experience in ECM/ IPO transactions gained within a well-recognized law firm (International or Local). Expertise in drafting for HK and US IPOs and due diligence would be a plus.\n- Bachelor's degree from a recognised law school\n- Strong candidates with varied qualification can be considered for a future track and the opportunity for future promotion\nThe position comes with an enticing salary package, inclusive medical benefits, and a fantastic working environment with growth opportunities.",
-      "stillListed": true
+      "stillListed": false
     },
     {
       "id": "linkedin:4475528659",
@@ -1466,7 +1501,7 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-investment-funds-%E2%80%93-international-law-firm-at-taylor-root-4475528659",
       "excerpt": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment. What you would be doing: - Conduct legal research for re…",
       "description": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment.\n\nWhat you would be doing:\n\n- Conduct legal research for regulatory work and draft legal documents in accordance with the instructions of the lawyers\n- Undertake SFC licensing applications for asset management and other clients, including drafting applications, supporting documents and liaising with the SFC\n- Assist with SFC fund authorisation applications including helping with the drafting of application documents and coordinating in the process\n- Review Chinese translation of certain legal documents\n\nWhat you would have:\n\n- Atleast 1 year of experience gained within a reputable regional or international law firm doing funds work\n- Excellent language skills, including written and spoken English, Cantonese, and Mandarin\n- University degree in law or a business related discipline\n- Knowledge and experience in SFC licensing would be highly preferred",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1900,24 +1935,6 @@
       "excerpt": "To provide legal support to our solicitors in the practice of personal injuries and medical negligence litigation.",
       "description": null,
       "stillListed": false,
-      "suppressNew": true
-    },
-    {
-      "id": "jobsdb:94690450",
-      "source": "jobsdb",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Investments Paralegal - Law Firm",
-      "company": "Michael Page International (HK) Ltd",
-      "location": "Central and Western District",
-      "salary": "$28k - $35k p.m.",
-      "postedAt": "2026-09-17",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/94690450",
-      "excerpt": "We are hiring a Paralegal to join a specialised investments practice in an international law firm in Hong Kong.",
-      "description": null,
-      "stillListed": true,
       "suppressNew": true
     },
     {
