@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-05T03:44:27.380Z",
+    "ranAt": "2026-11-06T03:40:01.876Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 1,
-      "skipped": 61,
+      "fetched": 2,
+      "skipped": 64,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,128 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95718088",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "M&A, Corporate Paralegal - International Law firm",
+      "company": "Taylor Root",
+      "location": "Central and Western District",
+      "salary": "$384k - $480k p.a. + Bonus",
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-11-06T03:40:01.876Z",
+      "url": "https://hk.jobsdb.com/job/95718088",
+      "excerpt": "M&A, Corporate Paralegal - International Law firm",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95718222",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "IPO Paralegal/ Legal Manager - HK / US",
+      "company": "Taylor Root",
+      "location": "Central and Western District",
+      "salary": "$480k - $540k p.a. + BONUS",
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-11-06T03:40:01.876Z",
+      "url": "https://hk.jobsdb.com/job/95718222",
+      "excerpt": "Top-Tier IPO teams at US, UK, Magic Circle and Red Circle Law firms are looking for junior-mid level Paralegals/ Legal Managers - HK and or US IPOs",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95718464",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Banking & Finance Paralegal, Global Law firms",
+      "company": "Taylor Root",
+      "location": "Central and Western District",
+      "salary": "$360k - $480k p.a. + OT Pay, Bonus",
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-11-06T03:40:01.876Z",
+      "url": "https://hk.jobsdb.com/job/95718464",
+      "excerpt": "Banking & Finance experience is essential",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "linkedin:4487709935",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "M&A, Corporate Paralegal – International Law firm",
+      "company": "Taylor Root",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-11-06T03:40:01.876Z",
+      "url": "https://hk.linkedin.com/jobs/view/m-a-corporate-paralegal-%E2%80%93-international-law-firm-at-taylor-root-4487709935",
+      "excerpt": "The well-established and growing Corporate & Commercial practice of this top-tier international law firm is seeking Paralegals to join their busy team in Hong Kong. The experienced Partners in the team have strong track record in public takeovers, mergers and acquisitions, TMT and general corporate …",
+      "description": "The well-established and growing Corporate & Commercial practice of this top-tier international law firm is seeking Paralegals to join their busy team in Hong Kong. The experienced Partners in the team have strong track record in public takeovers, mergers and acquisitions, TMT and general corporate work acting for a broad array of Chinese and international clients.\n\nExperience and Skills\n\n- Conduct legal research and assist in drafting, reviewing and proofreading legal documents\n- Assisting with legal due diligence exercises and preparing legal due diligence questionnaires and reports.\n- Conducting legal and company research and analysis and assisting with verification of disclosure documents\n- 1-4 years of experience in IPO, Private Equity, Capital Markets, M&A and TMT matters gained within a reputable international or regional law firm\n- Strong language skills in English, Cantonese, and Mandarin (written and spoken) are essential\n- Degree in Law or a related discipline\n\nThis is an excellent opportunity for Capital Markets Paralegals who are eager to move to a broader Corporate & Commercial practice with better work life balance",
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95120324",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Junior Legal Counsel / Paralegal",
+      "company": "Hong Kong Microelectronics Research and Development Institute Company Limited",
+      "location": "Science Park, Tai Po District",
+      "salary": null,
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/95120324",
+      "excerpt": "We are seeking a motivated and high-calibre legal professional to join our Legal Team as a Junior Legal Counsel or Senior Paralegal.",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4468522601",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Debt Capital Markets)",
+      "company": "Mayer Brown",
+      "location": "Central & Western District, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-mayer-brown-4468522601",
+      "excerpt": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to …",
+      "description": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to creatively anticipating their needs and delivering excellence in everything we do.\n\nWe are a collegial, collaborative and diverse firm where highly motivated individuals with an unwavering commitment to excellence receive the opportunity, support and development they need to grow, thrive and realise their greatest potential all while supporting the Firm’s client service principles of excellence, strategic partnership, commercial instinct, integrated strengths, innovation, and collaboration across our international firm.\n\nIf you are looking to build your career in a dynamic and supportive environment, and share our commitment to exceptional client service, professionalism, initiative, responsiveness and adaptability, we invite you to join our Hong Kong office.\n\nResponsibilities\n\nWe are looking for a highly motivated individual with an unwavering commitment to excellence. The team is busy and is looking for a candidate that has the ability to watch and learn, independently progress their skillset and learning and is able to effectively balance complex, high-stakes work and disruptive hours whilst delivering a high quality work product in a timely manner.\n\nThis is an excellent opportunity for a self-motivated and driven individual to work in a premier legal team and become well-versed in a large variety of debt capital markets with wide geographical exposure.\n\n- Provide support to Partners and Associates in Hong Kong.\n- Matter management (e.g.: reviewing initial and subsequent drafts and summarizing changes and highlighting changes relevant to the client), handling documentation relating to closings and completion and document checklist review and annotation.\n\nQualifications\n\nQualifications, Experience and Personal Attributes\n\n- Paralegal experience from leading U.S. or magic circle legal firms with 3 to 5 years of experience in the Debt Capital Markets practice.\n- Fluent in oral and written English.\n- The candidate will also need to be comfortable participating in conversations and written communications in Chinese (Mandarin and Cantonese) and able to review drafts in Chinese.\n\nExperience And Attributes\n\n- This is a permanent paralegal position in Mayer Brown’s Corporate & Securities practice.\n- Our clients are leading global banks and we are looking for a candidate that can perform routine tasks independently and to a high service quality that is expected from our clients.\n- The practice is high volume and day-to-day work will require a thorough understanding of documentation and timelines. The candidate will need excellent organizational skills and demonstrate the ability to manage multiple projects each with a different scope of work in an efficient, high quality and timely manner.\n- The debt capital markets practice often requires coverage outside of regular working hours and the candidate will be responsible for attending to and handling tasks during non-work hours and on weekends.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4475528659",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal Investment Funds – International Law firm",
+      "company": "Taylor Root",
+      "location": "Hong Kong, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-05",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-investment-funds-%E2%80%93-international-law-firm-at-taylor-root-4475528659",
+      "excerpt": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment. What you would be doing: - Conduct legal research for re…",
+      "description": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment.\n\nWhat you would be doing:\n\n- Conduct legal research for regulatory work and draft legal documents in accordance with the instructions of the lawyers\n- Undertake SFC licensing applications for asset management and other clients, including drafting applications, supporting documents and liaising with the SFC\n- Assist with SFC fund authorisation applications including helping with the drafting of application documents and coordinating in the process\n- Review Chinese translation of certain legal documents\n\nWhat you would have:\n\n- Atleast 1 year of experience gained within a reputable regional or international law firm doing funds work\n- Excellent language skills, including written and spoken English, Cantonese, and Mandarin\n- University degree in law or a business related discipline\n- Knowledge and experience in SFC licensing would be highly preferred",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "linkedin:4486348504",
       "source": "linkedin",
@@ -43,7 +165,7 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-at-catl-4486348504",
       "excerpt": "About us: BESS Broadway develops grid-scale battery energy storage (BESS) projects in the UK, Europe, Australia, Japan and Latin America. We co-invest with developers in projects at an early or mid stage of development, take them to ready-to-build, and sell them. Job Description (BESS Broadway): 1. …",
       "description": "About us: BESS Broadway develops grid-scale battery energy storage (BESS) projects in the UK, Europe, Australia, Japan and Latin America. We co-invest with developers in projects at an early or mid stage of development, take them to ready-to-build, and sell them.\nJob Description (BESS Broadway):\n1. Review routine NDAs, service agreements, and other standard/low-risk contracts against company templates and escalate non-standard terms to legal counsel.\n2. Maintain contract trackers and support approval, signature, and filing workflows.\n3. Maintain legal files and records, schedule corporate governance meetings, prepare meeting materials, track action items, and handle day-to-day legal administrative tasks such as document circulation, expense/payment requests, and cross-functional coordination.\n4. Helping to build our standard documents (term sheets, investment agreements, NDAs, checklists) and the processes our deal team uses.\nKey Qualifications and Skills:\n1. Must hold a valid visa or other legal authorization to work in Hong Kong.\n2. Around 1-2 years' in-house legal, paralegal, or legal administrative experience.\n3. Clear, precise written and spoken English. Chinese is a must.\n4. Basic contract knowledge, strong attention to detail, confidentiality awareness, and proficiency in Word, Excel, PowerPoint, Outlook, and document management systems.\nWhat else to know:\n– Three months in China Mainland to work with group team and regularly catch-up with group team going forward.\n– Travel. Occasional travel to China mainland or overseas project sites.",
-      "stillListed": true
+      "stillListed": false
     },
     {
       "id": "jobsdb:95678656",
@@ -479,24 +601,6 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-capital-markets-at-jones-day-4422424265",
       "excerpt": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client s…",
       "description": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client service.\n\nJones Day seeks to employ the most qualified people, capable of delivering superior client service through professional excellence and teamwork, for every position in the Firm. We offer competitive compensation and benefits in a stimulating work environment.\n\nAre you interested in the opportunity to work for a global leading law firm that will give you the experience and exposure you need to build your knowledge and skills as well as advance your career? If you are, then Jones Day may be the firm for you.\n\nSummary of Essential Duties and Responsibilities:\nParalegals attend due diligence interviews; perform precedent and other ad-hoc legal research; conduct prospectus verification and other IPO-related tasks; assist in preparation of various documents (e.g. A1 documents, prospectuses, due diligence questionnaires etc.); prepare English-Chinese translation of legal documents; and organise client meetings and taking minutes.\n\nRequired Qualifications:\n\n- Law degree is an advantage but not a must.\n- Preferably with prior work experience in capital markets.\n- Excellent command of written and verbal English and Mandarin.\n- Strong communication skills and great attention to detail.\n- Ability to work independently and in a fast-paced and driven environment.\n- Sound knowledge in the use of computer and various IT programs.\n- Occasional travel to PRC may be required.\n- Immediate availability preferred.\n\nONLY RESUMES (C.V.s) IN .PDF FORMAT WILL BE ACCEPTED AND REVIEWED\n*Principals only – No search firms.",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4468522601",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal (Debt Capital Markets)",
-      "company": "Mayer Brown",
-      "location": "Central & Western District, Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-26",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-mayer-brown-4468522601",
-      "excerpt": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to …",
-      "description": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to creatively anticipating their needs and delivering excellence in everything we do.\n\nWe are a collegial, collaborative and diverse firm where highly motivated individuals with an unwavering commitment to excellence receive the opportunity, support and development they need to grow, thrive and realise their greatest potential all while supporting the Firm’s client service principles of excellence, strategic partnership, commercial instinct, integrated strengths, innovation, and collaboration across our international firm.\n\nIf you are looking to build your career in a dynamic and supportive environment, and share our commitment to exceptional client service, professionalism, initiative, responsiveness and adaptability, we invite you to join our Hong Kong office.\n\nResponsibilities\n\nWe are looking for a highly motivated individual with an unwavering commitment to excellence. The team is busy and is looking for a candidate that has the ability to watch and learn, independently progress their skillset and learning and is able to effectively balance complex, high-stakes work and disruptive hours whilst delivering a high quality work product in a timely manner.\n\nThis is an excellent opportunity for a self-motivated and driven individual to work in a premier legal team and become well-versed in a large variety of debt capital markets with wide geographical exposure.\n\n- Provide support to Partners and Associates in Hong Kong.\n- Matter management (e.g.: reviewing initial and subsequent drafts and summarizing changes and highlighting changes relevant to the client), handling documentation relating to closings and completion and document checklist review and annotation.\n\nQualifications\n\nQualifications, Experience and Personal Attributes\n\n- Paralegal experience from leading U.S. or magic circle legal firms with 3 to 5 years of experience in the Debt Capital Markets practice.\n- Fluent in oral and written English.\n- The candidate will also need to be comfortable participating in conversations and written communications in Chinese (Mandarin and Cantonese) and able to review drafts in Chinese.\n\nExperience And Attributes\n\n- This is a permanent paralegal position in Mayer Brown’s Corporate & Securities practice.\n- Our clients are leading global banks and we are looking for a candidate that can perform routine tasks independently and to a high service quality that is expected from our clients.\n- The practice is high volume and day-to-day work will require a thorough understanding of documentation and timelines. The candidate will need excellent organizational skills and demonstrate the ability to manage multiple projects each with a different scope of work in an efficient, high quality and timely manner.\n- The debt capital markets practice often requires coverage outside of regular working hours and the candidate will be responsible for attending to and handling tasks during non-work hours and on weekends.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1250,7 +1354,7 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-at-hong-kong-technology-venture-career-4476254210",
       "excerpt": "What You will be Doing 1. Legal Research & Analysis - Conduct legal research and prepare concise analysis to support business decisions. - Monitor regulatory updates and summarize implications for the company. 2.Document Drafting & Review - Draft and review contracts, statutory records, and legal co…",
       "description": "What You will be Doing\n\n1. Legal Research & Analysis\n\n- Conduct legal research and prepare concise analysis to support business decisions.\n- Monitor regulatory updates and summarize implications for the company.\n2.Document Drafting & Review\n\n- Draft and review contracts, statutory records, and legal correspondence.\n- Assist in preparing board papers, presentations, and other legal materials.\n3.Governance & Compliance Support\n\n- Help implement and update policies and procedures to strengthen corporate governance.\n- Maintain legal databases, folders, and statutory filings.\n4.Stakeholder & Case Management\n\n- Liaise with internal teams and external counsel on routine matters.\n- Support in handling disputes, intellectual property filings, and compliance checks.\n5.Operational & Administrative Duties\n\n- Input legal data into systems, generate reports, and manage assigned portfolio.\n- Handle general administrative tasks and ad‑hoc assignments as required.\n6.Ad-Hoc Assignments\n\n- Manage ad-hoc assignments as needed\n\nWho is Our Right Fit\n\n- A law degree holder with minimum 2-3 years work experience in a commercial environment\n- Candidate without legal qualification will be considered for paralegal role\n- Enjoy a fast-paced and agile corporate environment\n- Multi-tasker, self-starter, and team player\n- Logical, strong thirst for knowledge, comfortable with ambiguity and creative\n- Good communicati\n- on, problem-solving and people skills\n- Organised and detail-oriented\n- Proficient in written and spoken English, Cantonese and Mandarin",
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1362,24 +1466,6 @@
       "suppressNew": true
     },
     {
-      "id": "jobsdb:95120324",
-      "source": "jobsdb",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Junior Legal Counsel / Paralegal",
-      "company": "Hong Kong Microelectronics Research and Development Institute Company Limited",
-      "location": "Science Park, Tai Po District",
-      "salary": null,
-      "postedAt": "2026-10-07",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/95120324",
-      "excerpt": "We are seeking a motivated and high-calibre legal professional to join our Legal Team as a Junior Legal Counsel or Senior Paralegal.",
-      "description": null,
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "linkedin:4476166384",
       "source": "linkedin",
       "tracks": [
@@ -1448,7 +1534,7 @@
       "url": "https://hk.jobsdb.com/job/95089559",
       "excerpt": "Lunch box provided from Mondays to Fridays. We offer competitive remuneration package and a friendly supportive working environmnet.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1485,24 +1571,6 @@
       "excerpt": "Top-Tier HK IPO teams at UK, Magic Circle and Red Circle Law firms are looking for junior Paralegals/ Legal Assistants for their growing Capital Markets team in Hong Kong. If you are a Paralegal with experience in ECM, IPOs and proficient in Mandarin, this could be an excellent career move for you. …",
       "description": "Top-Tier HK IPO teams at UK, Magic Circle and Red Circle Law firms are looking for junior Paralegals/ Legal Assistants for their growing Capital Markets team in Hong Kong. If you are a Paralegal with experience in ECM, IPOs and proficient in Mandarin, this could be an excellent career move for you.\nWorking alongside experienced Partners and Associates you will be actively involved on a range of Hong Kong IPO transactions.\nYou will have:\n\n- 1-3 years of experience in ECM/ IPO transactions gained within a well-recognized law firm (International or Local). Expertise in drafting for HK and US IPOs and due diligence would be a plus.\n- Bachelor's degree from a recognised law school\n- Strong candidates with varied qualification can be considered for a future track and the opportunity for future promotion\nThe position comes with an enticing salary package, inclusive medical benefits, and a fantastic working environment with growth opportunities.",
       "stillListed": false
-    },
-    {
-      "id": "linkedin:4475528659",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal Investment Funds – International Law firm",
-      "company": "Taylor Root",
-      "location": "Hong Kong, Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-05",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-investment-funds-%E2%80%93-international-law-firm-at-taylor-root-4475528659",
-      "excerpt": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment. What you would be doing: - Conduct legal research for re…",
-      "description": "Market leading Investment Funds practice with strongest partners in their field and recognized as the 'very efficient and collaborative' team is seeking Paralegals who are eager to contribute to a fast-paced international law firm environment.\n\nWhat you would be doing:\n\n- Conduct legal research for regulatory work and draft legal documents in accordance with the instructions of the lawyers\n- Undertake SFC licensing applications for asset management and other clients, including drafting applications, supporting documents and liaising with the SFC\n- Assist with SFC fund authorisation applications including helping with the drafting of application documents and coordinating in the process\n- Review Chinese translation of certain legal documents\n\nWhat you would have:\n\n- Atleast 1 year of experience gained within a reputable regional or international law firm doing funds work\n- Excellent language skills, including written and spoken English, Cantonese, and Mandarin\n- University degree in law or a business related discipline\n- Knowledge and experience in SFC licensing would be highly preferred",
-      "stillListed": false,
-      "suppressNew": true
     },
     {
       "id": "jobsdb:95036791",
