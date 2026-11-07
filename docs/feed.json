@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-06T03:40:01.876Z",
+    "ranAt": "2026-11-07T03:13:29.149Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 2,
-      "skipped": 64,
+      "fetched": 0,
+      "skipped": 62,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,58 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:95749826",
+      "source": "jobsdb",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Temporary Full-time / Part-time)",
+      "company": "CUHK Medical Centre Limited",
+      "location": "Sha Tin District",
+      "salary": null,
+      "postedAt": "2026-11-06",
+      "firstSeenAt": "2026-11-07T03:13:29.149Z",
+      "url": "https://hk.jobsdb.com/job/95749826",
+      "excerpt": "Coordinate administration work related to doctor appointments",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "jobsdb:95750877",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Trainee Solicitor",
+      "company": "Ledwin Au & Co., Solicitors   區力行律師事務所",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-06",
+      "firstSeenAt": "2026-11-07T03:13:29.149Z",
+      "url": "https://hk.jobsdb.com/job/95750877",
+      "excerpt": "Have good academic background, Fluent in English and Chinese (fluency in Mandarin is definite an advantage) Self-motivated, organized and able to...",
+      "description": null,
+      "stillListed": true
+    },
+    {
+      "id": "linkedin:4468522601",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Debt Capital Markets)",
+      "company": "Mayer Brown",
+      "location": "Central & Western District, Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-06",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-mayer-brown-4468522601",
+      "excerpt": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to …",
+      "description": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to creatively anticipating their needs and delivering excellence in everything we do.\n\nWe are a collegial, collaborative and diverse firm where highly motivated individuals with an unwavering commitment to excellence receive the opportunity, support and development they need to grow, thrive and realise their greatest potential all while supporting the Firm’s client service principles of excellence, strategic partnership, commercial instinct, integrated strengths, innovation, and collaboration across our international firm.\n\nIf you are looking to build your career in a dynamic and supportive environment, and share our commitment to exceptional client service, professionalism, initiative, responsiveness and adaptability, we invite you to join our Hong Kong office.\n\nResponsibilities\n\nWe are looking for a highly motivated individual with an unwavering commitment to excellence. The team is busy and is looking for a candidate that has the ability to watch and learn, independently progress their skillset and learning and is able to effectively balance complex, high-stakes work and disruptive hours whilst delivering a high quality work product in a timely manner.\n\nThis is an excellent opportunity for a self-motivated and driven individual to work in a premier legal team and become well-versed in a large variety of debt capital markets with wide geographical exposure.\n\n- Provide support to Partners and Associates in Hong Kong.\n- Matter management (e.g.: reviewing initial and subsequent drafts and summarizing changes and highlighting changes relevant to the client), handling documentation relating to closings and completion and document checklist review and annotation.\n\nQualifications\n\nQualifications, Experience and Personal Attributes\n\n- Paralegal experience from leading U.S. or magic circle legal firms with 3 to 5 years of experience in the Debt Capital Markets practice.\n- Fluent in oral and written English.\n- The candidate will also need to be comfortable participating in conversations and written communications in Chinese (Mandarin and Cantonese) and able to review drafts in Chinese.\n\nExperience And Attributes\n\n- This is a permanent paralegal position in Mayer Brown’s Corporate & Securities practice.\n- Our clients are leading global banks and we are looking for a candidate that can perform routine tasks independently and to a high service quality that is expected from our clients.\n- The practice is high volume and day-to-day work will require a thorough understanding of documentation and timelines. The candidate will need excellent organizational skills and demonstrate the ability to manage multiple projects each with a different scope of work in an efficient, high quality and timely manner.\n- The debt capital markets practice often requires coverage outside of regular working hours and the candidate will be responsible for attending to and handling tasks during non-work hours and on weekends.",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95718088",
       "source": "jobsdb",
@@ -111,24 +163,6 @@
       "url": "https://hk.jobsdb.com/job/95120324",
       "excerpt": "We are seeking a motivated and high-calibre legal professional to join our Legal Team as a Junior Legal Counsel or Senior Paralegal.",
       "description": null,
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4468522601",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal (Debt Capital Markets)",
-      "company": "Mayer Brown",
-      "location": "Central & Western District, Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-11-05",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-debt-capital-markets-at-mayer-brown-4468522601",
-      "excerpt": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to …",
-      "description": "Mayer Brown is an international law firm positioned to represent the world’s major corporations, funds, and financial institutions in their most important and complex transactions and disputes. We are recognized by our clients as strategic partners with deep commercial instincts and a commitment to creatively anticipating their needs and delivering excellence in everything we do.\n\nWe are a collegial, collaborative and diverse firm where highly motivated individuals with an unwavering commitment to excellence receive the opportunity, support and development they need to grow, thrive and realise their greatest potential all while supporting the Firm’s client service principles of excellence, strategic partnership, commercial instinct, integrated strengths, innovation, and collaboration across our international firm.\n\nIf you are looking to build your career in a dynamic and supportive environment, and share our commitment to exceptional client service, professionalism, initiative, responsiveness and adaptability, we invite you to join our Hong Kong office.\n\nResponsibilities\n\nWe are looking for a highly motivated individual with an unwavering commitment to excellence. The team is busy and is looking for a candidate that has the ability to watch and learn, independently progress their skillset and learning and is able to effectively balance complex, high-stakes work and disruptive hours whilst delivering a high quality work product in a timely manner.\n\nThis is an excellent opportunity for a self-motivated and driven individual to work in a premier legal team and become well-versed in a large variety of debt capital markets with wide geographical exposure.\n\n- Provide support to Partners and Associates in Hong Kong.\n- Matter management (e.g.: reviewing initial and subsequent drafts and summarizing changes and highlighting changes relevant to the client), handling documentation relating to closings and completion and document checklist review and annotation.\n\nQualifications\n\nQualifications, Experience and Personal Attributes\n\n- Paralegal experience from leading U.S. or magic circle legal firms with 3 to 5 years of experience in the Debt Capital Markets practice.\n- Fluent in oral and written English.\n- The candidate will also need to be comfortable participating in conversations and written communications in Chinese (Mandarin and Cantonese) and able to review drafts in Chinese.\n\nExperience And Attributes\n\n- This is a permanent paralegal position in Mayer Brown’s Corporate & Securities practice.\n- Our clients are leading global banks and we are looking for a candidate that can perform routine tasks independently and to a high service quality that is expected from our clients.\n- The practice is high volume and day-to-day work will require a thorough understanding of documentation and timelines. The candidate will need excellent organizational skills and demonstrate the ability to manage multiple projects each with a different scope of work in an efficient, high quality and timely manner.\n- The debt capital markets practice often requires coverage outside of regular working hours and the candidate will be responsible for attending to and handling tasks during non-work hours and on weekends.",
       "stillListed": true,
       "suppressNew": true
     },
@@ -1444,7 +1478,7 @@
       "url": "https://hk.jobsdb.com/job/95104149",
       "excerpt": "2-3 years' experience in handling employees’ compensation/personal injuries files Good command of English and Chinese",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1462,7 +1496,7 @@
       "url": "https://hk.jobsdb.com/job/95104884",
       "excerpt": "Assist legal counsel and commercial team with legal research, drafting and reviewing contracts, ensuring regulatory compliance .....",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {

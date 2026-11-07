@@ -1,0 +1,40 @@
+[
+  {
+    "id": "jobsdb:95749826",
+    "source": "jobsdb",
+    "tracks": [
+      "paralegal"
+    ],
+    "title": "Paralegal (Temporary Full-time / Part-time)",
+    "company": "CUHK Medical Centre Limited",
+    "location": "Sha Tin District",
+    "salary": null,
+    "postedAt": "2026-11-06",
+    "firstSeenAt": "2026-11-07T03:13:29.149Z",
+    "lastSeenAt": "2026-11-07T03:13:29.149Z",
+    "url": "https://hk.jobsdb.com/job/95749826",
+    "excerpt": "Coordinate administration work related to doctor appointments",
+    "description": null,
+    "fingerprint": "00470d2584dd8e06540a597b7b732becd8c3b471",
+    "stillListed": true
+  },
+  {
+    "id": "jobsdb:95750877",
+    "source": "jobsdb",
+    "tracks": [
+      "trainee"
+    ],
+    "title": "Trainee Solicitor",
+    "company": "Ledwin Au & Co., Solicitors   區力行律師事務所",
+    "location": "Hong Kong SAR",
+    "salary": null,
+    "postedAt": "2026-11-06",
+    "firstSeenAt": "2026-11-07T03:13:29.149Z",
+    "lastSeenAt": "2026-11-07T03:13:29.149Z",
+    "url": "https://hk.jobsdb.com/job/95750877",
+    "excerpt": "Have good academic background, Fluent in English and Chinese (fluency in Mandarin is definite an advantage) Self-motivated, organized and able to...",
+    "description": null,
+    "fingerprint": "f70af465fc7ad19ee65fa83dfa86df469c6f81e7",
+    "stillListed": true
+  }
+]
