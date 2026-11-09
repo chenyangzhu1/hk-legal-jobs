@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-08T02:43:04.638Z",
+    "ranAt": "2026-11-09T02:59:13.281Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -19,8 +19,8 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 0,
-      "skipped": 59,
+      "fetched": 1,
+      "skipped": 54,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,42 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4451200195",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal/ Legal Manager - Corporate Transactions",
+      "company": "Ashurst Perkins Coie",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-legal-manager-corporate-transactions-at-ashurst-perkins-coie-4451200195",
+      "excerpt": "Description At Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, en…",
+      "description": "Description\n\nAt Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, energy & infrastructure, and financial services. Our people work on market-leading matters that drive innovation, growth, and transformation around the world. For Ashurst Perkins Coie, innovation is our tradition.\n\nDepartment / Role overview\n\nWe are currently looking for a paralegal / Legal Manager to join our Corporate Transactions group. The job holder will work closely with partners, counsel and associates in Hong Kong, Beijing and Shanghai to provide transactional support to ensure that our lawyers can focus on clients' needs and deliver quality and efficient service.\n\nMain Responsibilities\n\n- Draft, review and proofread documents.\n- Assist with legal due diligence exercises and prepare legal due diligence questionnaires and reports.\n- Attend on-site due diligence trips and meetings.\n- Conduct legal and company research and analysis.\n- Handle legal translations.\n- Assist with verification of disclosure documents.\n- Assist with the signing and completion of the transactions.\n\nRisk and Control: Ensure that all activities and duties are carried out in full compliance with our regulatory requirements and internal policies.\n\nEssential Skills And Experience\n\n- A university law degree/ Master of Law with excellent academic achievements.\n- Excellent verbal and written communication skills in English and native Mandarin speaker;\n- Willingness to travel frequently for due diligence trips and printer sessions;\n- Ability to demonstrate initiative, maturity and common sense with good judgment;\n- Good work ethic and ability to work to deadlines.\n- Good organisational skills and attention to detail.\n- Ideally with relevant 1-2 years' experience in IPO and M&A.\n\nBackground checks\n\nIn order to comply with regulatory and client requirements, the Firm will undertake appropriate vetting of staff. When applicants accept a job offer, the Firm, alongside a specialist provider, will undertake professional verification and background checks. These checks are only undertaken with consent, and in accordance with our legal and regulatory obligations.",
+      "stillListed": true,
+      "suppressNew": true
+    },
+    {
+      "id": "linkedin:4476290312",
+      "source": "linkedin",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Solicitor and Trainee Solicitor",
+      "company": "MUNG",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-08",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/solicitor-and-trainee-solicitor-at-mung-4476290312",
+      "excerpt": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work. The firm has expanded its regional footprint with its MUNG network of l…",
+      "description": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work.\n\nThe firm has expanded its regional footprint with its MUNG network of law practices in Singapore and Tokyo.\n\nThus, MUNG covers a wide range of interesting corporate and commercial transactions as well as cross border arbitration and litigation work.\n\nRole Description\n\nWe invite a range of Consultants, Hong Kong qualified lawyers especially in dispute resolution and trainees to send in your CVs and reference letters to : mu@munglegal.com.\n\nQualifications\n\n- Strong academics in a LLB degree, with the ability to analyze complex legal issues and provide clear, practical advice.\n- Ability to multitask\n- Proficiency in English, with Chinese language skills (Cantonese and/or Mandarin) considered an advantage.",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "jobsdb:95749826",
       "source": "jobsdb",
@@ -968,24 +1004,6 @@
       "suppressNew": true
     },
     {
-      "id": "linkedin:4451200195",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal/ Legal Manager - Corporate Transactions",
-      "company": "Ashurst Perkins Coie",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-17",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-legal-manager-corporate-transactions-at-ashurst-perkins-coie-4451200195",
-      "excerpt": "Description At Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, en…",
-      "description": "Description\n\nAt Ashurst Perkins Coie, we're helping shape the future economy. With a global team of more than 3,500 legal professionals across 52 offices, we partner with leading organisations to solve complex challenges across a diverse range of industries, with a distinct strength in technology, energy & infrastructure, and financial services. Our people work on market-leading matters that drive innovation, growth, and transformation around the world. For Ashurst Perkins Coie, innovation is our tradition.\n\nDepartment / Role overview\n\nWe are currently looking for a paralegal / Legal Manager to join our Corporate Transactions group. The job holder will work closely with partners, counsel and associates in Hong Kong, Beijing and Shanghai to provide transactional support to ensure that our lawyers can focus on clients' needs and deliver quality and efficient service.\n\nMain Responsibilities\n\n- Draft, review and proofread documents.\n- Assist with legal due diligence exercises and prepare legal due diligence questionnaires and reports.\n- Attend on-site due diligence trips and meetings.\n- Conduct legal and company research and analysis.\n- Handle legal translations.\n- Assist with verification of disclosure documents.\n- Assist with the signing and completion of the transactions.\n\nRisk and Control: Ensure that all activities and duties are carried out in full compliance with our regulatory requirements and internal policies.\n\nEssential Skills And Experience\n\n- A university law degree/ Master of Law with excellent academic achievements.\n- Excellent verbal and written communication skills in English and native Mandarin speaker;\n- Willingness to travel frequently for due diligence trips and printer sessions;\n- Ability to demonstrate initiative, maturity and common sense with good judgment;\n- Good work ethic and ability to work to deadlines.\n- Good organisational skills and attention to detail.\n- Ideally with relevant 1-2 years' experience in IPO and M&A.\n\nBackground checks\n\nIn order to comply with regulatory and client requirements, the Firm will undertake appropriate vetting of staff. When applicants accept a job offer, the Firm, alongside a specialist provider, will undertake professional verification and background checks. These checks are only undertaken with consent, and in accordance with our legal and regulatory obligations.",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
       "id": "jobsdb:95320111",
       "source": "jobsdb",
       "tracks": [
@@ -1261,7 +1279,7 @@
       "url": "https://hk.jobsdb.com/job/95160578",
       "excerpt": "A law degree holder with minimum 2-3 years work experience in a commercial environment",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1279,7 +1297,7 @@
       "url": "https://hk.jobsdb.com/job/95162674",
       "excerpt": "FIRST HAND SALE PARALEGAL/TRAINEE PROGRAMME",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1297,7 +1315,7 @@
       "url": "https://hk.jobsdb.com/job/95163168",
       "excerpt": "Our civil litigation team as a Legal Executive/Pralegal. Work directly with solicitors and build courtroom experience through on-the-job training.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1316,7 +1334,7 @@
       "url": "https://hk.jobsdb.com/job/95163371",
       "excerpt": "Paralegal/trainee solicitor to provide legal support including document drafting, research and court preparation.",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1334,7 +1352,7 @@
       "url": "https://hk.jobsdb.com/job/95170153",
       "excerpt": "• Handling conveyancing/tenancy/wills/probate matters; • Drafting legal documents; • 5 day work week, medical benefits, discretionary year end bonus",
       "description": null,
-      "stillListed": true,
+      "stillListed": false,
       "suppressNew": true
     },
     {
@@ -1388,24 +1406,6 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-at-hong-kong-technology-venture-career-4476254210",
       "excerpt": "What You will be Doing 1. Legal Research & Analysis - Conduct legal research and prepare concise analysis to support business decisions. - Monitor regulatory updates and summarize implications for the company. 2.Document Drafting & Review - Draft and review contracts, statutory records, and legal co…",
       "description": "What You will be Doing\n\n1. Legal Research & Analysis\n\n- Conduct legal research and prepare concise analysis to support business decisions.\n- Monitor regulatory updates and summarize implications for the company.\n2.Document Drafting & Review\n\n- Draft and review contracts, statutory records, and legal correspondence.\n- Assist in preparing board papers, presentations, and other legal materials.\n3.Governance & Compliance Support\n\n- Help implement and update policies and procedures to strengthen corporate governance.\n- Maintain legal databases, folders, and statutory filings.\n4.Stakeholder & Case Management\n\n- Liaise with internal teams and external counsel on routine matters.\n- Support in handling disputes, intellectual property filings, and compliance checks.\n5.Operational & Administrative Duties\n\n- Input legal data into systems, generate reports, and manage assigned portfolio.\n- Handle general administrative tasks and ad‑hoc assignments as required.\n6.Ad-Hoc Assignments\n\n- Manage ad-hoc assignments as needed\n\nWho is Our Right Fit\n\n- A law degree holder with minimum 2-3 years work experience in a commercial environment\n- Candidate without legal qualification will be considered for paralegal role\n- Enjoy a fast-paced and agile corporate environment\n- Multi-tasker, self-starter, and team player\n- Logical, strong thirst for knowledge, comfortable with ambiguity and creative\n- Good communicati\n- on, problem-solving and people skills\n- Organised and detail-oriented\n- Proficient in written and spoken English, Cantonese and Mandarin",
-      "stillListed": false,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4476290312",
-      "source": "linkedin",
-      "tracks": [
-        "trainee"
-      ],
-      "title": "Solicitor and Trainee Solicitor",
-      "company": "MUNG",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-09",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/solicitor-and-trainee-solicitor-at-mung-4476290312",
-      "excerpt": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work. The firm has expanded its regional footprint with its MUNG network of l…",
-      "description": "Company Description MUNG is a boutique tech law firm founded in Hong Kong in 2018, specialising in emerging technology sectors such as blockchain, AI, healthtech, onchain finance as well as in financial services regulatory work.\n\nThe firm has expanded its regional footprint with its MUNG network of law practices in Singapore and Tokyo.\n\nThus, MUNG covers a wide range of interesting corporate and commercial transactions as well as cross border arbitration and litigation work.\n\nRole Description\n\nWe invite a range of Consultants, Hong Kong qualified lawyers especially in dispute resolution and trainees to send in your CVs and reference letters to : mu@munglegal.com.\n\nQualifications\n\n- Strong academics in a LLB degree, with the ability to analyze complex legal issues and provide clear, practical advice.\n- Ability to multitask\n- Proficiency in English, with Chinese language skills (Cantonese and/or Mandarin) considered an advantage.",
       "stillListed": false,
       "suppressNew": true
     },
