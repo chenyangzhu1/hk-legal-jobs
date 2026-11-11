@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-10T04:47:21.791Z",
+    "ranAt": "2026-11-11T03:03:39.006Z",
     "complete": true,
     "sources": {
       "jobsdb": "ok",
@@ -20,7 +20,7 @@
     },
     "descriptions": {
       "fetched": 0,
-      "skipped": 54,
+      "skipped": 55,
       "failed": 1,
       "blocked": [
         "jobsdb"
@@ -28,6 +28,24 @@
     }
   },
   "jobs": [
+    {
+      "id": "jobsdb:94971796",
+      "source": "jobsdb",
+      "tracks": [
+        "trainee"
+      ],
+      "title": "Assistant Solicitor / Trainee Solicitor",
+      "company": "Bond Ng Solicitors",
+      "location": "Wan Chai, Wan Chai District",
+      "salary": null,
+      "postedAt": "2026-11-11",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.jobsdb.com/job/94971796",
+      "excerpt": "Assistant Solicitor (Civil and Criminal litigation) (0-5 PQE) Experience in handling personal injuries, employees’ compensation, criminal...",
+      "description": null,
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "linkedin:4444378192",
       "source": "linkedin",
@@ -1746,24 +1764,6 @@
       "firstSeenAt": "2026-10-12T15:53:34.866Z",
       "url": "https://hk.jobsdb.com/job/94964603",
       "excerpt": "Launch your legal career with mentoring and exposure to diverse practice areas in a supportive firm.",
-      "description": null,
-      "stillListed": false,
-      "suppressNew": true
-    },
-    {
-      "id": "jobsdb:94971796",
-      "source": "jobsdb",
-      "tracks": [
-        "trainee"
-      ],
-      "title": "Assistant Solicitor / Trainee Solicitor",
-      "company": "Bond Ng Solicitors",
-      "location": "Wan Chai, Wan Chai District",
-      "salary": null,
-      "postedAt": "2026-09-30",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.jobsdb.com/job/94971796",
-      "excerpt": "Assistant Solicitor (Civil and Criminal litigation) (0-5 PQE) Experience in handling personal injuries, employees’ compensation, criminal...",
       "description": null,
       "stillListed": false,
       "suppressNew": true
