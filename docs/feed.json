@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-14T03:35:31.572Z",
+    "ranAt": "2026-11-15T03:06:07.649Z",
     "complete": false,
     "sources": {
       "jobsdb": "failed: https://hk.jobsdb.com/api/jobsearch/v5/search?siteKey=HK-Main&keywords=trainee+solicitor&pageSize=100&page=1 返回 HTTP 403 Forbidden",
@@ -26,6 +26,24 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4472885409",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Contract Paralegal (3 to 4-month contract)",
+      "company": "Christie's",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-14",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/contract-paralegal-3-to-4-month-contract-at-christie-s-4472885409",
+      "excerpt": "MAJOR RESPONSIBILITIES/TASKS (Duties include but are not limited to the following): Based in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General Counsel, APAC. - Conduct legal research into various topics concerning …",
+      "description": "MAJOR RESPONSIBILITIES/TASKS (Duties include but are not limited to the following):\n\nBased in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General Counsel, APAC.\n\n- Conduct legal research into various topics concerning art law, art finance, general commercial issues and compliance topics such as data privacy, AML, sanctions and labour law.\n- Draft non-disclosure agreements, demand letters to debtors and other commercial contracts based on global templates.\n- Support copyright clearance and other related intellectual property matters such as tackling online infringement.\n- Liaise with artist representative associations and other colleagues in the relevant departments.\n- Assist with translations and template management.\n\nQUALIFICATION REQUIREMENTS:\n\n- Final or penultimate year student or graduate from LLB or other LLB dual degree.\n- Prior experience in in-house legal teams, barristers’ chambers or law firms is preferred.\n- Diligent and reliable, with high integrity and a strong commitment to professional ethics and confidentiality.\n- Team player and ability to work independently.\n- Highly flexible and adaptive to rapid changes in the working environment.\n- Ability to work under pressure and meet deadlines.\n- Excellent interpersonal skills and organizational skills.\n- Detail-oriented and self-motivated.\n- Excellent command of both spoken and written English, Cantonese and Mandarin.\n- Proficiency in Microsoft Office (Word, Outlook, Excel, PowerPoint and Chinese Word Processing are pre-requisites).\n\nClosing Date\n\n31 January 2027\n\nSalary Range\n\nHKD20,000 to 22,000 per month",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "linkedin:4482048031",
       "source": "linkedin",
@@ -844,24 +862,6 @@
       "url": "https://hk.jobsdb.com/job/95147432",
       "excerpt": "We are looking for junior-to-senior paralegals who are passionate about the Tech Industry and in-house legal counselling to join the team.",
       "description": null,
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4472885409",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Contract Paralegal (3 to 4-month contract)",
-      "company": "Christie's",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-23",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/contract-paralegal-3-to-4-month-contract-at-christie-s-4472885409",
-      "excerpt": "MAJOR RESPONSIBILITIES/TASKS (Duties include but are not limited to the following): Based in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General Counsel, APAC. - Conduct legal research into various topics concerning …",
-      "description": "MAJOR RESPONSIBILITIES/TASKS (Duties include but are not limited to the following):\n\nBased in Hong Kong, the successful candidate will be part of Christie's Asia Pacific Legal team and report to the Vice President, Deputy General Counsel, APAC.\n\n- Conduct legal research into various topics concerning art law, art finance, general commercial issues and compliance topics such as data privacy, AML, sanctions and labour law.\n- Draft non-disclosure agreements, demand letters to debtors and other commercial contracts based on global templates.\n- Support copyright clearance and other related intellectual property matters such as tackling online infringement.\n- Liaise with artist representative associations and other colleagues in the relevant departments.\n- Assist with translations and template management.\n\nQUALIFICATION REQUIREMENTS:\n\n- Final or penultimate year student or graduate from LLB or other LLB dual degree.\n- Prior experience in in-house legal teams, barristers’ chambers or law firms is preferred.\n- Diligent and reliable, with high integrity and a strong commitment to professional ethics and confidentiality.\n- Team player and ability to work independently.\n- Highly flexible and adaptive to rapid changes in the working environment.\n- Ability to work under pressure and meet deadlines.\n- Excellent interpersonal skills and organizational skills.\n- Detail-oriented and self-motivated.\n- Excellent command of both spoken and written English, Cantonese and Mandarin.\n- Proficiency in Microsoft Office (Word, Outlook, Excel, PowerPoint and Chinese Word Processing are pre-requisites).\n\nClosing Date\n\n31 January 2027\n\nSalary Range\n\nHKD20,000 to 22,000 per month",
       "stillListed": true,
       "suppressNew": true
     },
