@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-15T03:06:07.649Z",
+    "ranAt": "2026-11-16T03:09:23.010Z",
     "complete": false,
     "sources": {
       "jobsdb": "failed: https://hk.jobsdb.com/api/jobsearch/v5/search?siteKey=HK-Main&keywords=trainee+solicitor&pageSize=100&page=1 返回 HTTP 403 Forbidden",
@@ -26,6 +26,24 @@
     }
   },
   "jobs": [
+    {
+      "id": "linkedin:4464884736",
+      "source": "linkedin",
+      "tracks": [
+        "paralegal"
+      ],
+      "title": "Paralegal (Speculative)",
+      "company": "Simpson Thacher & Bartlett LLP",
+      "location": "Hong Kong SAR",
+      "salary": null,
+      "postedAt": "2026-11-15",
+      "firstSeenAt": "2026-10-12T15:53:34.866Z",
+      "url": "https://hk.linkedin.com/jobs/view/paralegal-speculative-at-simpson-thacher-bartlett-llp-4464884736",
+      "excerpt": "The firm Simpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction …",
+      "description": "The firm\n\nSimpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction of an experienced attorney.\n\nDescription/Job Summary\n\n- Assist attorneys with preparation of legal documents, due diligence review, subscription document review and tracking, and related tasks\n- Translation of documents\n- Complete forms required for the formation/dissolution/amendment and qualification of corporations, LLC’s and partnerships\n- Organize and maintain electronic files, and paper files where necessary\n- Organize and maintain due diligence and subscription documents\n- Perform due diligence searches\n- Utilize and manage electronic databases\n- Proofread, organize and track documents; prepare closing sets of necessary documents following completion of a transaction; organize and distribute post-closing documents\n- Assist with document/information gathering, logistics and coordination of items received\n- Maintain well organized files\n- Update document management platforms and databases and categorize documents for efficient accessibility\n- Liaise with internal departments and outside vendors\n- Perform other tasks as assigned by deal teams\n- Be flexible to adjust hours to meet departmental need\n\nRequired Skills\n\n- Fluency in both English and Chinese or additional languages such as Korean or Japanese\n- Detail oriented, with excellent organizational and communication skills\n- Able to work in a fast paced environment, both independently or on a team\n- Flexibility, time management and an ability to prioritize tasks and deadlines\n- Proficiency with legal terminology relevant to the industry\n- Critical thinking and solution oriented mindset\n- Present information clearly and concisely, both verbally and in writing\n- Self-starter who can organize, plan and complete multi-task work activities\n- Ability to proofread for contextual, grammatical and spelling errors\n\nPreferred Skills\n\n- Related experience in a law firm or other professional services firm\n- Knowledge of MS Office applications and Excel preferred\n\nRequired Education\n\nBachelor’s degree or Law degree required",
+      "stillListed": true,
+      "suppressNew": true
+    },
     {
       "id": "linkedin:4472885409",
       "source": "linkedin",
@@ -740,24 +758,6 @@
       "url": "https://hk.linkedin.com/jobs/view/paralegal-capital-markets-at-jones-day-4422424265",
       "excerpt": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client s…",
       "description": "Jones Day is a global law firm with 40 offices in major centers of business and finance throughout the world. Covering 19 countries on five continents, our unique governance system fosters an unparalleled level of integration and contributes to our ranking as one of the best in the world in client service.\n\nJones Day seeks to employ the most qualified people, capable of delivering superior client service through professional excellence and teamwork, for every position in the Firm. We offer competitive compensation and benefits in a stimulating work environment.\n\nAre you interested in the opportunity to work for a global leading law firm that will give you the experience and exposure you need to build your knowledge and skills as well as advance your career? If you are, then Jones Day may be the firm for you.\n\nSummary of Essential Duties and Responsibilities:\nParalegals attend due diligence interviews; perform precedent and other ad-hoc legal research; conduct prospectus verification and other IPO-related tasks; assist in preparation of various documents (e.g. A1 documents, prospectuses, due diligence questionnaires etc.); prepare English-Chinese translation of legal documents; and organise client meetings and taking minutes.\n\nRequired Qualifications:\n\n- Law degree is an advantage but not a must.\n- Preferably with prior work experience in capital markets.\n- Excellent command of written and verbal English and Mandarin.\n- Strong communication skills and great attention to detail.\n- Ability to work independently and in a fast-paced and driven environment.\n- Sound knowledge in the use of computer and various IT programs.\n- Occasional travel to PRC may be required.\n- Immediate availability preferred.\n\nONLY RESUMES (C.V.s) IN .PDF FORMAT WILL BE ACCEPTED AND REVIEWED\n*Principals only – No search firms.",
-      "stillListed": true,
-      "suppressNew": true
-    },
-    {
-      "id": "linkedin:4464884736",
-      "source": "linkedin",
-      "tracks": [
-        "paralegal"
-      ],
-      "title": "Paralegal (Speculative)",
-      "company": "Simpson Thacher & Bartlett LLP",
-      "location": "Hong Kong SAR",
-      "salary": null,
-      "postedAt": "2026-10-24",
-      "firstSeenAt": "2026-10-12T15:53:34.866Z",
-      "url": "https://hk.linkedin.com/jobs/view/paralegal-speculative-at-simpson-thacher-bartlett-llp-4464884736",
-      "excerpt": "The firm Simpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction …",
-      "description": "The firm\n\nSimpson Thacher is seeking a career paralegal to join our Hong Kong office or Tokyo office. The Paralegal is responsible for performing a broad variety of work during all phases of various transactions within their specific practice area. This role works under the supervision and direction of an experienced attorney.\n\nDescription/Job Summary\n\n- Assist attorneys with preparation of legal documents, due diligence review, subscription document review and tracking, and related tasks\n- Translation of documents\n- Complete forms required for the formation/dissolution/amendment and qualification of corporations, LLC’s and partnerships\n- Organize and maintain electronic files, and paper files where necessary\n- Organize and maintain due diligence and subscription documents\n- Perform due diligence searches\n- Utilize and manage electronic databases\n- Proofread, organize and track documents; prepare closing sets of necessary documents following completion of a transaction; organize and distribute post-closing documents\n- Assist with document/information gathering, logistics and coordination of items received\n- Maintain well organized files\n- Update document management platforms and databases and categorize documents for efficient accessibility\n- Liaise with internal departments and outside vendors\n- Perform other tasks as assigned by deal teams\n- Be flexible to adjust hours to meet departmental need\n\nRequired Skills\n\n- Fluency in both English and Chinese or additional languages such as Korean or Japanese\n- Detail oriented, with excellent organizational and communication skills\n- Able to work in a fast paced environment, both independently or on a team\n- Flexibility, time management and an ability to prioritize tasks and deadlines\n- Proficiency with legal terminology relevant to the industry\n- Critical thinking and solution oriented mindset\n- Present information clearly and concisely, both verbally and in writing\n- Self-starter who can organize, plan and complete multi-task work activities\n- Ability to proofread for contextual, grammatical and spelling errors\n\nPreferred Skills\n\n- Related experience in a law firm or other professional services firm\n- Knowledge of MS Office applications and Excel preferred\n\nRequired Education\n\nBachelor’s degree or Law degree required",
       "stillListed": true,
       "suppressNew": true
     },
