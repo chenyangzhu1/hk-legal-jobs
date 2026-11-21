@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-20T04:19:44.465Z",
+    "ranAt": "2026-11-21T04:17:32.011Z",
     "complete": false,
     "sources": {
       "jobsdb": "failed: https://hk.jobsdb.com/api/jobsearch/v5/search?siteKey=HK-Main&keywords=trainee+solicitor&pageSize=100&page=1 返回 HTTP 403 Forbidden",
@@ -19,7 +19,7 @@
       "linkedin": "LinkedIn"
     },
     "descriptions": {
-      "fetched": 1,
+      "fetched": 0,
       "skipped": 0,
       "failed": 0,
       "blocked": []
@@ -58,7 +58,7 @@
       "url": "https://hk.linkedin.com/jobs/view/trainee-solicitor-2027-intake-at-arthur-hong-llp-4492257806",
       "excerpt": "Company Description Arthur Hong LLP is a full-service law firm, which provides comprehensive local and cross-border legal services, across a wide range of practice areas, including but not limited, criminal litigation and regulatory, civil litigation and arbitration, family law, probate and administ…",
       "description": "Company Description\n\nArthur Hong LLP is a full-service law firm, which provides comprehensive local and cross-border legal services, across a wide range of practice areas, including but not limited, criminal litigation and regulatory, civil litigation and arbitration, family law, probate and administration, and conveyancing. We also advise on non-contentious matters, including annual retainer legal services for enterprises, employment, project investments and general commercial matters.\n\nRole Description\n\nThis is a full-time, on-site role for a Trainee Solicitor (2027-intake) at Arthur Hong LLP, located in Hong Kong. The Trainee Solicitor will be responsible for assisting with legal research, preparing legal documents, supporting solicitors in case preparation, attending court hearings, and communicating with clients. The role involves gaining hands-on experience in abovementioned various areas of legal practice.\n\nQualifications\n\n- Strong academic qualifications and completion of PCLL required\n- Fluent in spoken and written English and Chinese (Cantonese and Mandarin)\n- Passionate in civil and criminal litigation practice and the legal profession, and eager to learn from a comprehensive legal practice\n- Responsible and self-initiative\n- Good drafting and communication skills, and team player\n\nTo apply online please click the 'Apply' button below. Please send in your CV and expected salary. All information in applications will be treated with strict confidence, and will be removed within four months of application.",
-      "stillListed": true
+      "stillListed": false
     },
     {
       "id": "linkedin:4491453877",
