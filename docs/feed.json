@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-21T04:17:32.011Z",
+    "ranAt": "2026-11-22T03:29:45.529Z",
     "complete": false,
     "sources": {
       "jobsdb": "failed: https://hk.jobsdb.com/api/jobsearch/v5/search?siteKey=HK-Main&keywords=trainee+solicitor&pageSize=100&page=1 返回 HTTP 403 Forbidden",
