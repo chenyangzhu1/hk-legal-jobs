@@ -1,6 +1,6 @@
 {
   "meta": {
-    "ranAt": "2026-11-22T03:29:45.529Z",
+    "ranAt": "2026-11-23T04:00:12.184Z",
     "complete": false,
     "sources": {
       "jobsdb": "failed: https://hk.jobsdb.com/api/jobsearch/v5/search?siteKey=HK-Main&keywords=trainee+solicitor&pageSize=100&page=1 返回 HTTP 403 Forbidden",
@@ -912,7 +912,7 @@
       "url": "https://hk.linkedin.com/jobs/view/corporate-paralegal-%E2%80%93-international-law-firm-hong-kong-at-als-international-4482819764",
       "excerpt": "A leading international law firm is seeking a Corporate Paralegal to join its high-performing team in Hong Kong. This is a fantastic opportunity for a motivated legal professional to gain hands-on experience across a wide range of corporate transactions and capital markets work. Key Responsibilities…",
       "description": "A leading international law firm is seeking a Corporate Paralegal to join its high-performing team in Hong Kong. This is a fantastic opportunity for a motivated legal professional to gain hands-on experience across a wide range of corporate transactions and capital markets work.\n\nKey Responsibilities:\nYou’ll support lawyers on matters including:\n\n- Hong Kong listings (IPOs and secondary offerings such as placements, rights issues, public offerings, and block trades)\n- Pre-listing restructuring and financing\n- Post-listing compliance\n- Mergers & acquisitions\n\nWhat We’re Looking For:\n\n- Prior experience in corporate or capital markets work preferred\n- Strong attention to detail and organisational skills\n- Ability to work independently and as part of a collaborative team\n- Fluent in English and Chinese\n- A proactive mindset and eagerness to learn\n\nTo apply for the above position, please submit your resume in Word file by clicking \"APPLY NOW\" below or contact Joanne Goh on j.goh@alsrecruit.com for further information.",
-      "stillListed": true
+      "stillListed": false
     },
     {
       "id": "jobsdb:95114388",
